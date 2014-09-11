@@ -1,0 +1,68 @@
+PODS:
+  - BBlock (1.2.0):
+    - BBlock/AppKit
+    - BBlock/Foundation
+    - BBlock/StoreKit
+    - BBlock/UIKit
+  - BBlock/Foundation (1.2.0)
+  - BBlock/StoreKit (1.2.0)
+  - BBlock/UIKit (1.2.0)
+  - BlocksKit (2.2.5):
+    - BlocksKit/All
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BSKeyboardControls (2.2)
+  - DAKeyboardControl (2.4.0)
+  - ISO8601DateFormatter (0.7)
+  - iToast (0.0.1)
+  - LamKit (0.0.1):
+    - LOG_EXPR
+    - NSLogger
+  - LOG_EXPR (1.2)
+  - MBProgressHUD (0.9)
+  - MCDateExtensions (1.0.0)
+  - MTDates (0.13.0)
+  - NSLogger (1.5)
+
+DEPENDENCIES:
+  - BBlock (~> 1.2)
+  - BlocksKit (~> 2.2)
+  - BSKeyboardControls (~> 2.2)
+  - DAKeyboardControl (~> 2.3)
+  - ISO8601DateFormatter (~> 0.7)
+  - iToast (~> 0.0.1)
+  - LamKit (from `https://github.com/atelierdumobile/LamKit-iOS`)
+  - MBProgressHUD (~> 0.8)
+  - MCDateExtensions (~> 1.0)
+  - MTDates (~> 0.12)
+
+EXTERNAL SOURCES:
+  LamKit:
+    :git: https://github.com/atelierdumobile/LamKit-iOS
+
+SPEC CHECKSUMS:
+  BBlock: 90f0ae0e3ba94fc88be6b9a85b4adbb73b8a7c9a
+  BlocksKit: 4439e7f30a9f90743462ca63545a15c1f4304cef
+  BSKeyboardControls: c9aa1bdbb5ecd454aa3d0b2279f79c5dc4b6c6ad
+  DAKeyboardControl: 45a363c85c48a7df76f21f236d9f85800e001775
+  ISO8601DateFormatter: 59731cd880cf87e71b4fa95f0d6b713dcbc4cbce
+  iToast: 4de112d3dd42a3a8bf685572e6cda723c9cbc4f2
+  LamKit: 425edc23197f948f63e6a88ae0fdceea77486ee8
+  LOG_EXPR: 8163e1664f5526a2603f7e09312a6ef29e8a038b
+  MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
+  MCDateExtensions: f37ffd43f216cd075b7dc3bbc213dd680e5f74ea
+  MTDates: 8eb0bfe67c492ba292d0aa3320ad013004e156cb
+  NSLogger: 84ed0bf00985df483153ce344d8171c9ec83be2b
+
+COCOAPODS: 0.33.0

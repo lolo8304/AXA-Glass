@@ -9,6 +9,7 @@
 #import "ChooserViewController.h"
 
 @interface ChooserViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *image1;
 
 @end
 
@@ -33,6 +34,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (IBAction)selectImage:(id)sender {
+
 }
 
 /*

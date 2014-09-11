@@ -1,0 +1,5 @@
+#include "Pods-NSLogger.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1 ${PODS_NSLOGGER_GCC_PREPROCESSOR_DEFINITIONS}
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/NSLogger" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/BBlock" "${PODS_ROOT}/Headers/BSKeyboardControls" "${PODS_ROOT}/Headers/BlocksKit" "${PODS_ROOT}/Headers/DAKeyboardControl" "${PODS_ROOT}/Headers/ISO8601DateFormatter" "${PODS_ROOT}/Headers/LOG_EXPR" "${PODS_ROOT}/Headers/LamKit" "${PODS_ROOT}/Headers/MBProgressHUD" "${PODS_ROOT}/Headers/MCDateExtensions" "${PODS_ROOT}/Headers/MTDates" "${PODS_ROOT}/Headers/NSLogger" "${PODS_ROOT}/Headers/iToast"
+OTHER_LDFLAGS = -ObjC ${PODS_NSLOGGER_OTHER_LDFLAGS}
+PODS_ROOT = ${SRCROOT}

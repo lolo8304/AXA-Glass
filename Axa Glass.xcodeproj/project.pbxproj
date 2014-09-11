@@ -22,6 +22,22 @@
 		15C795EF19C1D0CB0068B8F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15C795ED19C1D0CB0068B8F2 /* InfoPlist.strings */; };
 		15C795F119C1D0CB0068B8F2 /* Axa_GlassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C795F019C1D0CB0068B8F2 /* Axa_GlassTests.m */; };
 		15C795FC19C1D6E80068B8F2 /* ChooserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C795FB19C1D6E80068B8F2 /* ChooserViewController.m */; };
+		15C7960B19C1DD4A0068B8F2 /* Icon in Resources */ = {isa = PBXBuildFile; fileRef = 15C7960019C1DD4A0068B8F2 /* Icon */; };
+		15C7960C19C1DD4A0068B8F2 /* image-0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15C7960119C1DD4A0068B8F2 /* image-0.jpg */; };
+		15C7960D19C1DD4A0068B8F2 /* image-0.json in Resources */ = {isa = PBXBuildFile; fileRef = 15C7960219C1DD4A0068B8F2 /* image-0.json */; };
+		15C7960E19C1DD4A0068B8F2 /* images-0-0.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 15C7960319C1DD4A0068B8F2 /* images-0-0.jpeg */; };
+		15C7960F19C1DD4A0068B8F2 /* images-0-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 15C7960419C1DD4A0068B8F2 /* images-0-1.jpeg */; };
+		15C7961019C1DD4A0068B8F2 /* images-0-2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 15C7960519C1DD4A0068B8F2 /* images-0-2.jpeg */; };
+		15C7961119C1DD4A0068B8F2 /* images-0-3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 15C7960619C1DD4A0068B8F2 /* images-0-3.jpeg */; };
+		15C7961219C1DD4A0068B8F2 /* images-0-4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 15C7960719C1DD4A0068B8F2 /* images-0-4.jpeg */; };
+		15C7961319C1DD4A0068B8F2 /* images-0-5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 15C7960819C1DD4A0068B8F2 /* images-0-5.jpeg */; };
+		15C7961419C1DD4A0068B8F2 /* images-0-6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 15C7960919C1DD4A0068B8F2 /* images-0-6.jpeg */; };
+		15C7961519C1DD4A0068B8F2 /* images-0-7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 15C7960A19C1DD4A0068B8F2 /* images-0-7.jpeg */; };
+		15C7961819C1DD860068B8F2 /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C7961719C1DD860068B8F2 /* ImageModel.m */; };
+		15C7961C19C1DFA10068B8F2 /* SimilarImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C7961B19C1DFA10068B8F2 /* SimilarImage.m */; };
+		15C7961F19C1E0BC0068B8F2 /* ImagesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C7961E19C1E0BC0068B8F2 /* ImagesModel.m */; };
+		15C7962319C1E2B90068B8F2 /* ImageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C7962219C1E2B90068B8F2 /* ImageDetailViewController.m */; };
+		A55376FA0FB743CDB1AC8383 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D638101794301B40466E9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +72,27 @@
 		15C795F019C1D0CB0068B8F2 /* Axa_GlassTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Axa_GlassTests.m; sourceTree = "<group>"; };
 		15C795FA19C1D6E80068B8F2 /* ChooserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooserViewController.h; sourceTree = "<group>"; };
 		15C795FB19C1D6E80068B8F2 /* ChooserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooserViewController.m; sourceTree = "<group>"; };
+		15C7960019C1DD4A0068B8F2 /* Icon */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Icon"; sourceTree = "<group>"; };
+		15C7960119C1DD4A0068B8F2 /* image-0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "image-0.jpg"; sourceTree = "<group>"; };
+		15C7960219C1DD4A0068B8F2 /* image-0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "image-0.json"; sourceTree = "<group>"; };
+		15C7960319C1DD4A0068B8F2 /* images-0-0.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-0-0.jpeg"; sourceTree = "<group>"; };
+		15C7960419C1DD4A0068B8F2 /* images-0-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-0-1.jpeg"; sourceTree = "<group>"; };
+		15C7960519C1DD4A0068B8F2 /* images-0-2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-0-2.jpeg"; sourceTree = "<group>"; };
+		15C7960619C1DD4A0068B8F2 /* images-0-3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-0-3.jpeg"; sourceTree = "<group>"; };
+		15C7960719C1DD4A0068B8F2 /* images-0-4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-0-4.jpeg"; sourceTree = "<group>"; };
+		15C7960819C1DD4A0068B8F2 /* images-0-5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-0-5.jpeg"; sourceTree = "<group>"; };
+		15C7960919C1DD4A0068B8F2 /* images-0-6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-0-6.jpeg"; sourceTree = "<group>"; };
+		15C7960A19C1DD4A0068B8F2 /* images-0-7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-0-7.jpeg"; sourceTree = "<group>"; };
+		15C7961619C1DD860068B8F2 /* ImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
+		15C7961719C1DD860068B8F2 /* ImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
+		15C7961A19C1DFA10068B8F2 /* SimilarImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimilarImage.h; sourceTree = "<group>"; };
+		15C7961B19C1DFA10068B8F2 /* SimilarImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimilarImage.m; sourceTree = "<group>"; };
+		15C7961D19C1E0BC0068B8F2 /* ImagesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesModel.h; sourceTree = "<group>"; };
+		15C7961E19C1E0BC0068B8F2 /* ImagesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesModel.m; sourceTree = "<group>"; };
+		15C7962119C1E2B90068B8F2 /* ImageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDetailViewController.h; sourceTree = "<group>"; };
+		15C7962219C1E2B90068B8F2 /* ImageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDetailViewController.m; sourceTree = "<group>"; };
+		90D8EF492E9E4317BBFE257F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		ED3D638101794301B40466E9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +103,7 @@
 				15C795C519C1D0CB0068B8F2 /* CoreGraphics.framework in Frameworks */,
 				15C795C719C1D0CB0068B8F2 /* UIKit.framework in Frameworks */,
 				15C795C319C1D0CB0068B8F2 /* Foundation.framework in Frameworks */,
+				A55376FA0FB743CDB1AC8383 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +127,7 @@
 				15C795EA19C1D0CB0068B8F2 /* Axa GlassTests */,
 				15C795C119C1D0CB0068B8F2 /* Frameworks */,
 				15C795C019C1D0CB0068B8F2 /* Products */,
+				90D8EF492E9E4317BBFE257F /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +147,7 @@
 				15C795C419C1D0CB0068B8F2 /* CoreGraphics.framework */,
 				15C795C619C1D0CB0068B8F2 /* UIKit.framework */,
 				15C795E419C1D0CB0068B8F2 /* XCTest.framework */,
+				ED3D638101794301B40466E9 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,13 +155,12 @@
 		15C795C819C1D0CB0068B8F2 /* Axa Glass */ = {
 			isa = PBXGroup;
 			children = (
+				15C795FE19C1DD4A0068B8F2 /* Ressources */,
+				15C795FD19C1DC290068B8F2 /* Model */,
 				15C795D119C1D0CB0068B8F2 /* AppDelegate.h */,
 				15C795D219C1D0CB0068B8F2 /* AppDelegate.m */,
 				15C795D419C1D0CB0068B8F2 /* Main.storyboard */,
-				15C795D719C1D0CB0068B8F2 /* HomeViewController.h */,
-				15C795FA19C1D6E80068B8F2 /* ChooserViewController.h */,
-				15C795FB19C1D6E80068B8F2 /* ChooserViewController.m */,
-				15C795D819C1D0CB0068B8F2 /* HomeViewController.m */,
+				15C7962019C1E2980068B8F2 /* Controllers */,
 				15C795DD19C1D0CB0068B8F2 /* Images.xcassets */,
 				15C795C919C1D0CB0068B8F2 /* Supporting Files */,
 			);
@@ -157,6 +196,58 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		15C795FD19C1DC290068B8F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				15C7961619C1DD860068B8F2 /* ImageModel.h */,
+				15C7961719C1DD860068B8F2 /* ImageModel.m */,
+				15C7961A19C1DFA10068B8F2 /* SimilarImage.h */,
+				15C7961B19C1DFA10068B8F2 /* SimilarImage.m */,
+				15C7961D19C1E0BC0068B8F2 /* ImagesModel.h */,
+				15C7961E19C1E0BC0068B8F2 /* ImagesModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		15C795FE19C1DD4A0068B8F2 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				15C795FF19C1DD4A0068B8F2 /* image-0 */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		15C795FF19C1DD4A0068B8F2 /* image-0 */ = {
+			isa = PBXGroup;
+			children = (
+				15C7960019C1DD4A0068B8F2 /* Icon */,
+				15C7960119C1DD4A0068B8F2 /* image-0.jpg */,
+				15C7960219C1DD4A0068B8F2 /* image-0.json */,
+				15C7960319C1DD4A0068B8F2 /* images-0-0.jpeg */,
+				15C7960419C1DD4A0068B8F2 /* images-0-1.jpeg */,
+				15C7960519C1DD4A0068B8F2 /* images-0-2.jpeg */,
+				15C7960619C1DD4A0068B8F2 /* images-0-3.jpeg */,
+				15C7960719C1DD4A0068B8F2 /* images-0-4.jpeg */,
+				15C7960819C1DD4A0068B8F2 /* images-0-5.jpeg */,
+				15C7960919C1DD4A0068B8F2 /* images-0-6.jpeg */,
+				15C7960A19C1DD4A0068B8F2 /* images-0-7.jpeg */,
+			);
+			path = "image-0";
+			sourceTree = "<group>";
+		};
+		15C7962019C1E2980068B8F2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				15C795D719C1D0CB0068B8F2 /* HomeViewController.h */,
+				15C795FA19C1D6E80068B8F2 /* ChooserViewController.h */,
+				15C795FB19C1D6E80068B8F2 /* ChooserViewController.m */,
+				15C795D819C1D0CB0068B8F2 /* HomeViewController.m */,
+				15C7962119C1E2B90068B8F2 /* ImageDetailViewController.h */,
+				15C7962219C1E2B90068B8F2 /* ImageDetailViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15C795F419C1D0CB0068B8F2 /* Build configuration list for PBXNativeTarget "Axa Glass" */;
 			buildPhases = (
+				132CE5BE3F5C4516AF1DFE9F /* Check Pods Manifest.lock */,
 				15C795BB19C1D0CB0068B8F2 /* Sources */,
 				15C795BC19C1D0CB0068B8F2 /* Frameworks */,
 				15C795BD19C1D0CB0068B8F2 /* Resources */,
+				FD5DEF1F85E54FBB83AC5A95 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,9 +326,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C7961519C1DD4A0068B8F2 /* images-0-7.jpeg in Resources */,
+				15C7960E19C1DD4A0068B8F2 /* images-0-0.jpeg in Resources */,
+				15C7960D19C1DD4A0068B8F2 /* image-0.json in Resources */,
+				15C7961019C1DD4A0068B8F2 /* images-0-2.jpeg in Resources */,
 				15C795DE19C1D0CB0068B8F2 /* Images.xcassets in Resources */,
+				15C7961119C1DD4A0068B8F2 /* images-0-3.jpeg in Resources */,
+				15C7960C19C1DD4A0068B8F2 /* image-0.jpg in Resources */,
+				15C7961419C1DD4A0068B8F2 /* images-0-6.jpeg in Resources */,
+				15C7960F19C1DD4A0068B8F2 /* images-0-1.jpeg in Resources */,
 				15C795CD19C1D0CB0068B8F2 /* InfoPlist.strings in Resources */,
+				15C7961319C1DD4A0068B8F2 /* images-0-5.jpeg in Resources */,
 				15C795D619C1D0CB0068B8F2 /* Main.storyboard in Resources */,
+				15C7960B19C1DD4A0068B8F2 /* Icon in Resources */,
+				15C7961219C1DD4A0068B8F2 /* images-0-4.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,15 +353,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		132CE5BE3F5C4516AF1DFE9F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD5DEF1F85E54FBB83AC5A95 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		15C795BB19C1D0CB0068B8F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C7961F19C1E0BC0068B8F2 /* ImagesModel.m in Sources */,
+				15C7961819C1DD860068B8F2 /* ImageModel.m in Sources */,
 				15C795FC19C1D6E80068B8F2 /* ChooserViewController.m in Sources */,
+				15C7962319C1E2B90068B8F2 /* ImageDetailViewController.m in Sources */,
 				15C795D319C1D0CB0068B8F2 /* AppDelegate.m in Sources */,
 				15C795D919C1D0CB0068B8F2 /* HomeViewController.m in Sources */,
 				15C795CF19C1D0CB0068B8F2 /* main.m in Sources */,
+				15C7961C19C1DFA10068B8F2 /* SimilarImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +520,7 @@
 		};
 		15C795F519C1D0CB0068B8F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90D8EF492E9E4317BBFE257F /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -392,6 +534,7 @@
 		};
 		15C795F619C1D0CB0068B8F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90D8EF492E9E4317BBFE257F /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -462,6 +605,7 @@
 				15C795F619C1D0CB0068B8F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15C795F719C1D0CB0068B8F2 /* Build configuration list for PBXNativeTarget "Axa GlassTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +614,7 @@
 				15C795F919C1D0CB0068B8F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

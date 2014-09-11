@@ -1,0 +1,2 @@
+PODS_LAMKIT_GCC_PREPROCESSOR_DEFINITIONS = ${inherited} LAM_BUILD_USERNAME="${USER}"
+PODS_LAMKIT_OTHER_LDFLAGS = -framework CoreGraphics -framework QuartzCore
