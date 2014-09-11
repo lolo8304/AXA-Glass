@@ -1,5 +1,5 @@
 //
-//  MasterViewController.h
+//  ChooserViewController.h
 //  Axa Glass
 //
 //  Created by Nicolas Lauquin on 11/09/2014.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MasterViewController : UITableViewController
+@interface ChooserViewController : UIViewController
 
 @end
