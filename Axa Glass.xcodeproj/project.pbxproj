@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1588837719C2DF8900127E1A /* ImageResultTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1588837619C2DF8900127E1A /* ImageResultTableViewController.m */; };
+		1588837A19C2E0F700127E1A /* ResultImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1588837919C2E0F700127E1A /* ResultImageCell.m */; };
+		1588837F19C2E6EC00127E1A /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1588837E19C2E6EC00127E1A /* Background@2x.png */; };
+		1588838719C2F12E00127E1A /* 1-my-consultant@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1588838019C2F12E00127E1A /* 1-my-consultant@2x.png */; };
+		1588838819C2F12E00127E1A /* 2-my-securities@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1588838119C2F12E00127E1A /* 2-my-securities@2x.png */; };
+		1588838919C2F12E00127E1A /* 3-my-claims@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1588838219C2F12E00127E1A /* 3-my-claims@2x.png */; };
+		1588838A19C2F12E00127E1A /* Boutton-report-item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1588838319C2F12E00127E1A /* Boutton-report-item@2x.png */; };
+		1588838B19C2F12E00127E1A /* Graph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1588838419C2F12E00127E1A /* Graph@2x.png */; };
+		1588838C19C2F12E00127E1A /* logo-axa-glass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1588838519C2F12E00127E1A /* logo-axa-glass@2x.png */; };
+		1588838D19C2F12E00127E1A /* logo-axa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1588838619C2F12E00127E1A /* logo-axa@2x.png */; };
 		15C795C319C1D0CB0068B8F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C795C219C1D0CB0068B8F2 /* Foundation.framework */; };
 		15C795C519C1D0CB0068B8F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C795C419C1D0CB0068B8F2 /* CoreGraphics.framework */; };
 		15C795C719C1D0CB0068B8F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C795C619C1D0CB0068B8F2 /* UIKit.framework */; };
@@ -51,6 +61,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1588837519C2DF8900127E1A /* ImageResultTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageResultTableViewController.h; sourceTree = "<group>"; };
+		1588837619C2DF8900127E1A /* ImageResultTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageResultTableViewController.m; sourceTree = "<group>"; };
+		1588837819C2E0F700127E1A /* ResultImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultImageCell.h; sourceTree = "<group>"; };
+		1588837919C2E0F700127E1A /* ResultImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultImageCell.m; sourceTree = "<group>"; };
+		1588837E19C2E6EC00127E1A /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
+		1588838019C2F12E00127E1A /* 1-my-consultant@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-my-consultant@2x.png"; sourceTree = "<group>"; };
+		1588838119C2F12E00127E1A /* 2-my-securities@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-my-securities@2x.png"; sourceTree = "<group>"; };
+		1588838219C2F12E00127E1A /* 3-my-claims@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3-my-claims@2x.png"; sourceTree = "<group>"; };
+		1588838319C2F12E00127E1A /* Boutton-report-item@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Boutton-report-item@2x.png"; sourceTree = "<group>"; };
+		1588838419C2F12E00127E1A /* Graph@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Graph@2x.png"; sourceTree = "<group>"; };
+		1588838519C2F12E00127E1A /* logo-axa-glass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-axa-glass@2x.png"; sourceTree = "<group>"; };
+		1588838619C2F12E00127E1A /* logo-axa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-axa@2x.png"; sourceTree = "<group>"; };
 		15C795BF19C1D0CB0068B8F2 /* Axa Glass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Axa Glass.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C795C219C1D0CB0068B8F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		15C795C419C1D0CB0068B8F2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -120,6 +142,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1588837B19C2E6A200127E1A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1588837E19C2E6EC00127E1A /* Background@2x.png */,
+				1588838019C2F12E00127E1A /* 1-my-consultant@2x.png */,
+				1588838119C2F12E00127E1A /* 2-my-securities@2x.png */,
+				1588838219C2F12E00127E1A /* 3-my-claims@2x.png */,
+				1588838319C2F12E00127E1A /* Boutton-report-item@2x.png */,
+				1588838419C2F12E00127E1A /* Graph@2x.png */,
+				1588838519C2F12E00127E1A /* logo-axa-glass@2x.png */,
+				1588838619C2F12E00127E1A /* logo-axa@2x.png */,
+			);
+			name = Images;
+			path = "Axa Glass/Images";
+			sourceTree = SOURCE_ROOT;
+		};
 		15C795B619C1D0CB0068B8F2 = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +250,7 @@
 		15C795FE19C1DD4A0068B8F2 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				1588837B19C2E6A200127E1A /* Images */,
 				15C795FF19C1DD4A0068B8F2 /* image-0 */,
 			);
 			path = Ressources;
@@ -244,6 +283,10 @@
 				15C795D819C1D0CB0068B8F2 /* HomeViewController.m */,
 				15C7962119C1E2B90068B8F2 /* ImageDetailViewController.h */,
 				15C7962219C1E2B90068B8F2 /* ImageDetailViewController.m */,
+				1588837519C2DF8900127E1A /* ImageResultTableViewController.h */,
+				1588837619C2DF8900127E1A /* ImageResultTableViewController.m */,
+				1588837819C2E0F700127E1A /* ResultImageCell.h */,
+				1588837919C2E0F700127E1A /* ResultImageCell.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -297,6 +340,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Axa;
 				TargetAttributes = {
+					15C795BE19C1D0CB0068B8F2 = {
+						DevelopmentTeam = GTWSK8DVU4;
+					};
 					15C795E219C1D0CB0068B8F2 = {
 						TestTargetID = 15C795BE19C1D0CB0068B8F2;
 					};
@@ -326,20 +372,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1588838D19C2F12E00127E1A /* logo-axa@2x.png in Resources */,
 				15C7961519C1DD4A0068B8F2 /* images-0-7.jpeg in Resources */,
 				15C7960E19C1DD4A0068B8F2 /* images-0-0.jpeg in Resources */,
 				15C7960D19C1DD4A0068B8F2 /* image-0.json in Resources */,
+				1588837F19C2E6EC00127E1A /* Background@2x.png in Resources */,
 				15C7961019C1DD4A0068B8F2 /* images-0-2.jpeg in Resources */,
 				15C795DE19C1D0CB0068B8F2 /* Images.xcassets in Resources */,
+				1588838C19C2F12E00127E1A /* logo-axa-glass@2x.png in Resources */,
 				15C7961119C1DD4A0068B8F2 /* images-0-3.jpeg in Resources */,
 				15C7960C19C1DD4A0068B8F2 /* image-0.jpg in Resources */,
 				15C7961419C1DD4A0068B8F2 /* images-0-6.jpeg in Resources */,
+				1588838819C2F12E00127E1A /* 2-my-securities@2x.png in Resources */,
 				15C7960F19C1DD4A0068B8F2 /* images-0-1.jpeg in Resources */,
+				1588838B19C2F12E00127E1A /* Graph@2x.png in Resources */,
 				15C795CD19C1D0CB0068B8F2 /* InfoPlist.strings in Resources */,
 				15C7961319C1DD4A0068B8F2 /* images-0-5.jpeg in Resources */,
 				15C795D619C1D0CB0068B8F2 /* Main.storyboard in Resources */,
 				15C7960B19C1DD4A0068B8F2 /* Icon in Resources */,
 				15C7961219C1DD4A0068B8F2 /* images-0-4.jpeg in Resources */,
+				1588838A19C2F12E00127E1A /* Boutton-report-item@2x.png in Resources */,
+				1588838719C2F12E00127E1A /* 1-my-consultant@2x.png in Resources */,
+				1588838919C2F12E00127E1A /* 3-my-claims@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +445,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1588837A19C2E0F700127E1A /* ResultImageCell.m in Sources */,
+				1588837719C2DF8900127E1A /* ImageResultTableViewController.m in Sources */,
 				15C7961F19C1E0BC0068B8F2 /* ImagesModel.m in Sources */,
 				15C7961819C1DD860068B8F2 /* ImageModel.m in Sources */,
 				15C795FC19C1D6E80068B8F2 /* ChooserViewController.m in Sources */,
@@ -464,7 +520,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -482,6 +538,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "86B51F12-DE83-47B6-92C8-88B65E233007";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -502,7 +559,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -513,6 +570,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "86B51F12-DE83-47B6-92C8-88B65E233007";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -524,6 +582,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Axa Glass/Axa Glass-Prefix.pch";
 				INFOPLIST_FILE = "Axa Glass/Axa Glass-Info.plist";
@@ -538,6 +597,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Axa Glass/Axa Glass-Prefix.pch";
 				INFOPLIST_FILE = "Axa Glass/Axa Glass-Info.plist";

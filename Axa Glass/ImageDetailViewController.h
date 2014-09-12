@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "BSKeyboardControls.h"
 
-@interface ImageDetailViewController : UIViewController <BSKeyboardControlsDelegate>
+@interface ImageDetailViewController : UIViewController <BSKeyboardControlsDelegate, UITextFieldDelegate, UITextViewDelegate>
 
 @end

@@ -28,4 +28,9 @@
 	#import "LamKit.h"
 	//#import "UIStoryboard+fastAccess.h"
 	#import <BlocksKit/BlocksKit.h>
+
+
+
+	#import "ImagesModel.h"
+
 #endif
