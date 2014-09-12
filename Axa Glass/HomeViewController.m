@@ -10,8 +10,9 @@
 
 #import "DetailViewController.h"
 
-@interface HomeViewController () {
-}
+@interface HomeViewController ()
+	@property (nonatomic,strong) UIImageView *titleView;
+
 @end
 
 @implementation HomeViewController
@@ -21,9 +22,36 @@
     [super awakeFromNib];
 }
 
+
+-(void)viewWillAppear:(BOOL)animated {
+//
+//	UINavigationBar *navBar = self.navigationController.navigationBar;
+//	UIImage *image = [UIImage imageNamed:@"logo-axa-glass.png"];
+//	[navBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
+	
+	
+	//self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo-axa-glass.png"]];
+
+	
+	UIImage *image = [UIImage imageNamed:@"logo-axa-glass_marge.png"];
+	UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+	self.titleView = imageView;
+
+	[self.navigationController.navigationBar addSubview:imageView];
+	
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+	[UIView animateWithDuration:0.4 animations:^{
+		[self.titleView removeFromSuperview];
+	}];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	
+	
 	// Do any additional setup after loading the view, typically from a nib.
 	//self.navigationItem.leftBarButtonItem = self.editButtonItem;
 

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1547AA3C19C3001B00245389 /* logo-axa-glass_marge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1547AA3B19C3001B00245389 /* logo-axa-glass_marge@2x.png */; };
+		1547AA4819C309F800245389 /* ITCFranklinGothicStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1547AA4519C309F500245389 /* ITCFranklinGothicStd-Book.otf */; };
+		1547AA4919C309F800245389 /* ITCFranklinGothicStd-Demi.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1547AA4619C309F500245389 /* ITCFranklinGothicStd-Demi.otf */; };
+		1547AA4A19C309F800245389 /* ITCFranklinGothicStd-DmCd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1547AA4719C309F500245389 /* ITCFranklinGothicStd-DmCd.otf */; };
 		1588837719C2DF8900127E1A /* ImageResultTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1588837619C2DF8900127E1A /* ImageResultTableViewController.m */; };
 		1588837A19C2E0F700127E1A /* ResultImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1588837919C2E0F700127E1A /* ResultImageCell.m */; };
 		1588837F19C2E6EC00127E1A /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1588837E19C2E6EC00127E1A /* Background@2x.png */; };
@@ -61,6 +65,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1547AA3B19C3001B00245389 /* logo-axa-glass_marge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-axa-glass_marge@2x.png"; sourceTree = "<group>"; };
+		1547AA4419C3070700245389 /* Const.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
+		1547AA4519C309F500245389 /* ITCFranklinGothicStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ITCFranklinGothicStd-Book.otf"; sourceTree = "<group>"; };
+		1547AA4619C309F500245389 /* ITCFranklinGothicStd-Demi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ITCFranklinGothicStd-Demi.otf"; sourceTree = "<group>"; };
+		1547AA4719C309F500245389 /* ITCFranklinGothicStd-DmCd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ITCFranklinGothicStd-DmCd.otf"; sourceTree = "<group>"; };
 		1588837519C2DF8900127E1A /* ImageResultTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageResultTableViewController.h; sourceTree = "<group>"; };
 		1588837619C2DF8900127E1A /* ImageResultTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageResultTableViewController.m; sourceTree = "<group>"; };
 		1588837819C2E0F700127E1A /* ResultImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultImageCell.h; sourceTree = "<group>"; };
@@ -142,6 +151,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1547AA3D19C304DE00245389 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				1547AA4519C309F500245389 /* ITCFranklinGothicStd-Book.otf */,
+				1547AA4619C309F500245389 /* ITCFranklinGothicStd-Demi.otf */,
+				1547AA4719C309F500245389 /* ITCFranklinGothicStd-DmCd.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		1588837B19C2E6A200127E1A /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +168,7 @@
 				1588838019C2F12E00127E1A /* 1-my-consultant@2x.png */,
 				1588838119C2F12E00127E1A /* 2-my-securities@2x.png */,
 				1588838219C2F12E00127E1A /* 3-my-claims@2x.png */,
+				1547AA3B19C3001B00245389 /* logo-axa-glass_marge@2x.png */,
 				1588838319C2F12E00127E1A /* Boutton-report-item@2x.png */,
 				1588838419C2F12E00127E1A /* Graph@2x.png */,
 				1588838519C2F12E00127E1A /* logo-axa-glass@2x.png */,
@@ -201,6 +221,7 @@
 				15C7962019C1E2980068B8F2 /* Controllers */,
 				15C795DD19C1D0CB0068B8F2 /* Images.xcassets */,
 				15C795C919C1D0CB0068B8F2 /* Supporting Files */,
+				1547AA4419C3070700245389 /* Const.h */,
 			);
 			path = "Axa Glass";
 			sourceTree = "<group>";
@@ -250,6 +271,7 @@
 		15C795FE19C1DD4A0068B8F2 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				1547AA3D19C304DE00245389 /* Font */,
 				1588837B19C2E6A200127E1A /* Images */,
 				15C795FF19C1DD4A0068B8F2 /* image-0 */,
 			);
@@ -278,9 +300,9 @@
 			isa = PBXGroup;
 			children = (
 				15C795D719C1D0CB0068B8F2 /* HomeViewController.h */,
+				15C795D819C1D0CB0068B8F2 /* HomeViewController.m */,
 				15C795FA19C1D6E80068B8F2 /* ChooserViewController.h */,
 				15C795FB19C1D6E80068B8F2 /* ChooserViewController.m */,
-				15C795D819C1D0CB0068B8F2 /* HomeViewController.m */,
 				15C7962119C1E2B90068B8F2 /* ImageDetailViewController.h */,
 				15C7962219C1E2B90068B8F2 /* ImageDetailViewController.m */,
 				1588837519C2DF8900127E1A /* ImageResultTableViewController.h */,
@@ -376,8 +398,10 @@
 				15C7961519C1DD4A0068B8F2 /* images-0-7.jpeg in Resources */,
 				15C7960E19C1DD4A0068B8F2 /* images-0-0.jpeg in Resources */,
 				15C7960D19C1DD4A0068B8F2 /* image-0.json in Resources */,
+				1547AA4919C309F800245389 /* ITCFranklinGothicStd-Demi.otf in Resources */,
 				1588837F19C2E6EC00127E1A /* Background@2x.png in Resources */,
 				15C7961019C1DD4A0068B8F2 /* images-0-2.jpeg in Resources */,
+				1547AA4A19C309F800245389 /* ITCFranklinGothicStd-DmCd.otf in Resources */,
 				15C795DE19C1D0CB0068B8F2 /* Images.xcassets in Resources */,
 				1588838C19C2F12E00127E1A /* logo-axa-glass@2x.png in Resources */,
 				15C7961119C1DD4A0068B8F2 /* images-0-3.jpeg in Resources */,
@@ -390,7 +414,9 @@
 				15C7961319C1DD4A0068B8F2 /* images-0-5.jpeg in Resources */,
 				15C795D619C1D0CB0068B8F2 /* Main.storyboard in Resources */,
 				15C7960B19C1DD4A0068B8F2 /* Icon in Resources */,
+				1547AA4819C309F800245389 /* ITCFranklinGothicStd-Book.otf in Resources */,
 				15C7961219C1DD4A0068B8F2 /* images-0-4.jpeg in Resources */,
+				1547AA3C19C3001B00245389 /* logo-axa-glass_marge@2x.png in Resources */,
 				1588838A19C2F12E00127E1A /* Boutton-report-item@2x.png in Resources */,
 				1588838719C2F12E00127E1A /* 1-my-consultant@2x.png in Resources */,
 				1588838919C2F12E00127E1A /* 3-my-claims@2x.png in Resources */,

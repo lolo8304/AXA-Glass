@@ -23,7 +23,9 @@
     }
     return self;
 }
-
+-(void)viewWillAppear:(BOOL)animated {
+	//self.navigationItem.titleView = nil;
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];

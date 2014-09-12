@@ -44,5 +44,11 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>ITCFranklinGothicStd-Book.otf</string>
+		<string>ITCFranklinGothicStd-Demi.otf</string>
+		<string>ITCFranklinGothicStd-DmCd.otf</string>
+	</array>
 </dict>
 </plist>

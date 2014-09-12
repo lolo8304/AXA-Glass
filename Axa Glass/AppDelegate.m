@@ -12,11 +12,34 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+	
+	NSDictionary * dictionnary = @{NSFontAttributeName :[UIFont fontWithName:FONT_BOOK size:14.0],
+								   NSForegroundColorAttributeName:[UIColor colorWithRed:0.090196F green:0.560784F blue:0.823529F alpha:1.0F]};
+	
+	[[UIBarButtonItem appearance] setTitleTextAttributes:dictionnary forState:UIControlStateNormal];
 
-    // Override point for customization after application launch.
-    return YES;
+	
+//#ifdef DEBUG
+//[self debugFontAvailables];
+//#endif
+	
+	return YES;
 }
-							
+
+- (void) debugFontAvailables {
+	
+	for (NSString* family in [UIFont familyNames])
+	{
+		NSLog(@"%@", family);
+		
+		for (NSString* name in [UIFont fontNamesForFamilyName: family])
+		{
+			NSLog(@"  %@", name);
+		}
+	}
+}
+
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
 	// Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
