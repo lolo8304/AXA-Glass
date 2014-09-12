@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BSKeyboardControls.h"
 
-@interface ImageDetailViewController : UIViewController <BSKeyboardControlsDelegate, UITextFieldDelegate, UITextViewDelegate>
+@interface ImageDetailViewController : UIViewController <BSKeyboardControlsDelegate, UITextFieldDelegate, UITextViewDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UILabel *yourProtectionTitle;
 
 @end

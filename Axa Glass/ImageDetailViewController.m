@@ -8,6 +8,7 @@
 
 #import "ImageDetailViewController.h"
 #import "BSKeyboardControls.h"
+#import "InsurenceOptionCell.h"
 
 
 @interface ImageDetailViewController ()
@@ -35,6 +36,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 	
+	[self defineFont];
+	
 	//Init fields
 	NSArray *fields = @[ self.tag, self.price ];
 	
@@ -59,6 +62,15 @@
 	self.price.text = [NSString stringWithFormat:@"%@ %@", imageModel.price, imageModel.currency];
 	
 	self.image.image = [UIImage imageNamed:imageModel.imageName];
+}
+
+
+- (void) defineFont {
+	self.tag.font = [UIFont fontWithName:FONT_BOOK size:12];
+	self.category.font = [UIFont fontWithName:FONT_BOOK size:12];
+	self.price.font = [UIFont fontWithName:FONT_BOOK size:12];
+	
+	self.yourProtectionTitle.font = [UIFont fontWithName:FONT_DEMI size:24];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -101,5 +113,63 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+
+#pragma mark - Tableview
+
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+	// Return the number of sections.
+	return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+	// Return the number of rows in the section.
+	return 4;
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+	return 70;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	InsurenceOptionCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InsurenceOptionCell" forIndexPath:indexPath];
+	
+	cell.desc.text = @"In the car";
+	//cell.infoLogo.image = nil;
+	//cell.logo.image = nil;
+	
+//	//best match
+//	if (indexPath.section == 0) {
+//		cell.photo.image = [UIImage imageNamed:self.imageModel.imageName];
+//		cell.keyword.text = self.imageModel.keywords;
+//	}
+//	else if (indexPath.section==1){
+//		
+//		SimilarImage * similarImage = self.imageModel.similarImages[indexPath.row];
+//		
+//		cell.photo.image = [UIImage imageNamed:similarImage.imageName];
+//		
+//		cell.keyword.text = similarImage.keywords;
+//	}
+	
+	return cell;
+}
+
+
+
+// Override to support conditional editing of the table view.
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	// Return NO if you do not want the specified item to be editable.
+	return NO;
+}
+
+
+
+
 
 @end

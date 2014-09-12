@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ImageResultTableViewController : UITableViewController
+@interface ImageResultController : UIViewController <UITextViewDelegate, UITableViewDataSource, UITableViewDelegate>
 
 @end

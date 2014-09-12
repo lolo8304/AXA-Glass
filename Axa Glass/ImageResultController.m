@@ -6,26 +6,18 @@
 //  Copyright (c) 2014 Axa. All rights reserved.
 //
 
-#import "ImageResultTableViewController.h"
+#import "ImageResultController.h"
 #import "ResultImageCell.h"
 #import "SimilarImage.h"
 
-@interface ImageResultTableViewController ()
+@interface ImageResultController ()
 
 @property (nonatomic, strong) ImageModel * imageModel;
 
 @end
 
-@implementation ImageResultTableViewController
+@implementation ImageResultController
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
