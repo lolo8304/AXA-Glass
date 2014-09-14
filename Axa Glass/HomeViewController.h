@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface HomeViewController : UIViewController
+- (IBAction)consultantAction:(id)sender;
+- (IBAction)securitiesAction:(id)sender;
+- (IBAction)claimsAction:(id)sender;
 
 @end

@@ -10,4 +10,6 @@
 
 @interface ImageResultController : UIViewController <UITextViewDelegate, UITableViewDataSource, UITableViewDelegate>
 
+@property (nonatomic, strong) ImageModel * imageModel;
+
 @end

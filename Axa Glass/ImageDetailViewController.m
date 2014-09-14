@@ -51,17 +51,12 @@
 	self.keyboardControls.previousTitle = NSLocalizedString(@"Previous", @"Previous");
 	self.keyboardControls.nextTitle = NSLocalizedString(@"Next",@"Next");
 	self.keyboardControls.doneTitle = NSLocalizedString(@"End", @"End");
-			
-	[[ImagesModel sharedManager] fakeData];
 	
-	LoggerData(1, @"Data count %lu", (unsigned long)[[ImagesModel sharedManager].images count]);
+	self.tag.text = self.imageModel.keywords;
+	self.category.text = self.imageModel.categorizations.lastObject;
+	self.price.text = [NSString stringWithFormat:@"%@ %@", self.imageModel.price, self.imageModel.currency];
 	
-	ImageModel * imageModel = [ImagesModel sharedManager].imageModelAtCurrentIndex;
-	self.tag.text = imageModel.keywords;
-	self.category.text = imageModel.categorizations.lastObject;
-	self.price.text = [NSString stringWithFormat:@"%@ %@", imageModel.price, imageModel.currency];
-	
-	self.image.image = [UIImage imageNamed:imageModel.imageName];
+	self.image.image = [UIImage imageNamed:self.imageModel.imageName];
 }
 
 
@@ -138,23 +133,31 @@
 {
 	InsurenceOptionCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InsurenceOptionCell" forIndexPath:indexPath];
 	
-	cell.desc.text = @"In the car";
-	//cell.infoLogo.image = nil;
-	//cell.logo.image = nil;
-	
-//	//best match
-//	if (indexPath.section == 0) {
-//		cell.photo.image = [UIImage imageNamed:self.imageModel.imageName];
-//		cell.keyword.text = self.imageModel.keywords;
-//	}
-//	else if (indexPath.section==1){
-//		
-//		SimilarImage * similarImage = self.imageModel.similarImages[indexPath.row];
-//		
-//		cell.photo.image = [UIImage imageNamed:similarImage.imageName];
-//		
-//		cell.keyword.text = similarImage.keywords;
-//	}
+	if (indexPath.row == 0) {
+		cell.desc.text = @"At home";
+		cell.logo.image = [UIImage imageNamed:@"option-at-home.png"];
+		[cell.informationButton setImage:[UIImage imageNamed:@"info1.png"] forState:UIControlStateNormal];
+
+	}
+	else if (indexPath.row == 1) {
+		cell.desc.text = @"In the car";
+		[cell.informationButton setImage:[UIImage imageNamed:@"info2-get-now.png"] forState:UIControlStateNormal];
+		cell.logo.image = [UIImage imageNamed:@"option-in-the-car.png"];
+
+		//info1.png
+	}
+	else if (indexPath.row == 2) {
+		cell.desc.text = @"Outside";
+		[cell.informationButton setImage:[UIImage imageNamed:@"info3-viewconditions.png"] forState:UIControlStateNormal];
+		cell.logo.image = [UIImage imageNamed:@"option-outside.png"];
+
+	}
+	else if (indexPath.row == 3) {
+		cell.desc.text = @"Traveling";
+		[cell.informationButton setImage:[UIImage imageNamed:@"info3-viewconditions.png"] forState:UIControlStateNormal];
+		cell.logo.image = [UIImage imageNamed:@"option-traveling.png"];
+
+	}
 	
 	return cell;
 }

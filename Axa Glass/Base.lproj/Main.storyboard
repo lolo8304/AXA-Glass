@@ -50,18 +50,28 @@
                                 <state key="normal" image="1-my-consultant.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="consultantAction:" destination="K7L-tY-Tp1" eventType="touchUpInside" id="nbL-HI-ZxV"/>
+                                    <segue destination="hYS-2m-Os4" kind="modal" modalTransitionStyle="flipHorizontal" id="tAG-H2-O0T"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUb-Ah-Ftk">
                                 <rect key="frame" x="113" y="427" width="94" height="121"/>
                                 <state key="normal" image="2-my-securities.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="securitiesAction:" destination="K7L-tY-Tp1" eventType="touchUpInside" id="uc9-9G-djR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKK-3F-28Q">
                                 <rect key="frame" x="218" y="427" width="94" height="121"/>
                                 <state key="normal" image="3-my-claims.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="claimsAction:" destination="K7L-tY-Tp1" eventType="touchUpInside" id="Ami-8b-wqJ"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Graph.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Z0-tS-dAE">
                                 <rect key="frame" x="10" y="121" width="293" height="134"/>
@@ -77,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SfM-aq-Kbz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="522" y="64"/>
+            <point key="canvasLocation" x="496" y="70"/>
         </scene>
         <!--Detail-->
         <scene sceneID="Cn3-H9-jdl">
@@ -91,31 +101,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MKS-Mk-Ak4" userLabel="Photo">
-                                <rect key="frame" x="2" y="72" width="80" height="80"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo.png" translatesAutoresizingMaskIntoConstraints="NO" id="MKS-Mk-Ak4" userLabel="Photo">
+                                <rect key="frame" x="2" y="67" width="104" height="95"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="Nc8-FC-6Zd"/>
+                                    <constraint firstAttribute="width" constant="104" id="XSI-Gm-SA6"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image-0.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Lj9-5f-7J8" userLabel="Image1">
-                                <rect key="frame" x="98" y="72" width="80" height="80"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-0.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Lj9-5f-7J8" userLabel="Image1">
+                                <rect key="frame" x="108" y="67" width="104" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="eo8-JU-B9U"/>
+                                    <constraint firstAttribute="height" constant="95" id="xqw-kz-ovh"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06F-9h-lub" userLabel="Button1">
-                                <rect key="frame" x="98" y="72" width="80" height="80"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06F-9h-lub" userLabel="Button1">
+                                <rect key="frame" x="108" y="67" width="104" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="fps-ga-HlD"/>
+                                    <constraint firstAttribute="height" constant="95" id="qaE-7K-q4r"/>
+                                </constraints>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="selectImage:" destination="Ah7-4n-0Wa" eventType="touchUpInside" id="5YA-gp-4lY"/>
-                                    <segue destination="5RE-mG-gSS" kind="push" id="HCw-2G-P1t"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" red="0.23921568627450981" green="0.23921568627450981" blue="0.23921568627450981" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="06F-9h-lub" firstAttribute="leading" secondItem="MKS-Mk-Ak4" secondAttribute="trailing" constant="2" id="9eJ-Fq-k04"/>
+                            <constraint firstItem="Lj9-5f-7J8" firstAttribute="leading" secondItem="MKS-Mk-Ak4" secondAttribute="trailing" constant="2" id="9ma-vu-oex"/>
+                            <constraint firstItem="MKS-Mk-Ak4" firstAttribute="top" secondItem="cIm-e0-J51" secondAttribute="bottom" constant="3" id="jZ5-Lp-uPL"/>
+                            <constraint firstItem="MKS-Mk-Ak4" firstAttribute="leading" secondItem="MMQ-IT-qOo" secondAttribute="leadingMargin" constant="-14" id="rMY-bl-0QV"/>
+                            <constraint firstItem="06F-9h-lub" firstAttribute="top" secondItem="cIm-e0-J51" secondAttribute="bottom" constant="3" id="vtu-tC-Xhq"/>
+                            <constraint firstItem="Lj9-5f-7J8" firstAttribute="top" secondItem="cIm-e0-J51" secondAttribute="bottom" constant="3" id="yiM-jU-SXI"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Choose image" id="cra-N8-TIN">
                         <barButtonItem key="backBarButtonItem" title="Photo" id="Sdi-cd-z9a"/>
                     </navigationItem>
                     <connections>
                         <outlet property="image1" destination="06F-9h-lub" id="kcU-NZ-2pY"/>
+                        <segue destination="5RE-mG-gSS" kind="push" identifier="showImageMatch" id="Caw-yX-8TV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
@@ -211,6 +241,9 @@
                                                     <state key="normal" image="info1.png">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <segue destination="hYS-2m-Os4" kind="modal" identifier="showProtectionDetail" modalTransitionStyle="flipHorizontal" id="zLD-w2-VfO"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -227,6 +260,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="desc" destination="U0m-YI-5Fo" id="3Yj-KU-Wzj"/>
+                                            <outlet property="informationButton" destination="lrG-Kk-DD0" id="tDg-Pr-FfE"/>
                                             <outlet property="logo" destination="uAc-rH-doL" id="sNe-dZ-QfJ"/>
                                         </connections>
                                     </tableViewCell>
@@ -288,7 +322,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdP-Ej-Eoe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2115" y="271"/>
+            <point key="canvasLocation" x="1474" y="762"/>
+        </scene>
+        <!--InformationVIew-->
+        <scene sceneID="LBX-nN-CXs">
+            <objects>
+                <viewController modalPresentationStyle="overFullScreen" id="hYS-2m-Os4" userLabel="InformationVIew" customClass="InformationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="87d-uQ-pXs"/>
+                        <viewControllerLayoutGuide type="bottom" id="b97-s2-VOd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1VU-3n-MTn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Background.png" translatesAutoresizingMaskIntoConstraints="NO" id="eUA-hU-ISB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0H-nD-B2h">
+                                <rect key="frame" x="260" y="28" width="56" height="30"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="close:" destination="hYS-2m-Os4" eventType="touchUpInside" id="Eio-cY-DD3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="eUA-hU-ISB" firstAttribute="height" secondItem="1VU-3n-MTn" secondAttribute="height" id="Be6-cC-Ae9"/>
+                            <constraint firstItem="eUA-hU-ISB" firstAttribute="width" secondItem="1VU-3n-MTn" secondAttribute="width" id="ZR1-AU-qzc"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cap-P8-9j4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2040" y="762"/>
         </scene>
         <!--Detect scene-->
         <scene sceneID="BbS-cD-AeP">
@@ -345,7 +418,7 @@
                                         <connections>
                                             <outlet property="keyword" destination="ejA-vE-p8h" id="WdD-Ou-sHQ"/>
                                             <outlet property="photo" destination="0lr-I0-GHG" id="5ok-8t-nJN"/>
-                                            <segue destination="Thf-2p-TID" kind="push" id="per-Fs-qj6"/>
+                                            <segue destination="Thf-2p-TID" kind="push" identifier="showInsurenceDetail" id="per-Fs-qj6"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -371,7 +444,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aZg-Ir-FA4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1453" y="70"/>
+            <point key="canvasLocation" x="1474" y="76"/>
         </scene>
     </scenes>
     <resources>
@@ -381,6 +454,7 @@
         <image name="Background.png" width="320" height="568"/>
         <image name="Boutton-report-item.png" width="305" height="50"/>
         <image name="Graph.png" width="293" height="134"/>
+        <image name="Photo.png" width="104" height="95"/>
         <image name="barre.png" width="275" height="7"/>
         <image name="elipse-category.png" width="32" height="34"/>
         <image name="elipse-tag.png" width="32" height="31"/>
@@ -394,5 +468,8 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="tAG-H2-O0T"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>

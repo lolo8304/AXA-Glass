@@ -21,7 +21,7 @@
 }
 
 - (void)awakeFromNib {
-	UIFont *myFont = [ UIFont fontWithName:FONT_DEMI size: 13.0 ];
+	UIFont *myFont = [ UIFont fontWithName:FONT_DEMI size: 15.0 ];
 	self.desc.font = myFont;
 	self.desc.textColor = [UIColor colorWithRed:0.925490F green:0.925490F blue:0.925490F alpha:1.0F] ;
 }

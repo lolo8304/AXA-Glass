@@ -9,10 +9,11 @@
 #import "ImageResultController.h"
 #import "ResultImageCell.h"
 #import "SimilarImage.h"
+#import "ImageDetailViewController.h"
+
 
 @interface ImageResultController ()
 
-@property (nonatomic, strong) ImageModel * imageModel;
 
 @end
 
@@ -24,12 +25,6 @@
     [super viewDidLoad];
 	
 	
-	[[ImagesModel sharedManager] fakeData];
-	self.imageModel = [ImagesModel sharedManager].imageModelAtCurrentIndex;
-	
-	LoggerData(1, @"Similar images count %lu", (unsigned long)[self.imageModel.similarImages count]);
-	
-    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -123,15 +118,14 @@
 }
 */
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+#pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+	if ([segue.identifier isEqualToString:@"showInsurenceDetail"]) {
+		ImageDetailViewController * destViewController = segue.destinationViewController;
+		destViewController.imageModel = self.imageModel ;
+		
+	}
 }
-*/
-
 @end

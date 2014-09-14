@@ -32,7 +32,7 @@
 	
 	//self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo-axa-glass.png"]];
 
-	
+	//Set the title which is an image
 	UIImage *image = [UIImage imageNamed:@"logo-axa-glass_marge.png"];
 	UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
 	self.titleView = imageView;
@@ -67,6 +67,9 @@
 
 
 
+
+
+
 //- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 //{
 //    if ([[segue identifier] isEqualToString:@"showDetail"]) {
@@ -76,4 +79,13 @@
 //    }
 //}
 
+- (IBAction)consultantAction:(id)sender {
+	
+}
+
+- (IBAction)securitiesAction:(id)sender {
+}
+
+- (IBAction)claimsAction:(id)sender {
+}
 @end

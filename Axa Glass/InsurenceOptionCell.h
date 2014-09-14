@@ -10,7 +10,7 @@
 
 @interface InsurenceOptionCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *logo;
-@property (weak, nonatomic) IBOutlet UIImageView *infoLogo;
 @property (weak, nonatomic) IBOutlet UILabel *desc;
+@property (weak, nonatomic) IBOutlet UIButton *informationButton;
 
 @end

@@ -7,9 +7,11 @@
 //
 
 #import "ChooserViewController.h"
+#import "ImageResultController.h"
 
 @interface ChooserViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *image1;
+@property (strong, nonatomic) MBProgressHUD * hud;
 
 @end
 
@@ -35,23 +37,70 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+
     // Dispose of any resources that can be recreated.
 }
 
 
 - (IBAction)selectImage:(id)sender {
+	
+	
+	MBProgressHUD * hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+	self.hud = hud;
+	hud.animationType = MBProgressHUDAnimationFade;
+	//self.hud.mode = MBProgressHUDModeDeterminateHorizontalBar;
+	hud.dimBackground=YES;
+	//hud.minShowTime = 2;
+	//hud.graceTime=0.1;
+	
+	hud.mode = MBProgressHUDModeAnnularDeterminate;
+	hud.labelText = @"Analyzing image";
+	//hud.detailsLabelText = @"Processing";
+	//[hud showWhileExecuting:@selector(doSomeFunkyStuff) onTarget:self withObject:nil animated:YES];
+	
+	
+	[hud showAnimated:YES whileExecutingBlock:^{
+		[self simulateLoader];
+	// hud.progress = 1.0f;
+	} completionBlock:^{
+		if (self.isViewLoaded && self.view.window && self.parentViewController != nil) {
+			[self performSegueWithIdentifier:@"showImageMatch" sender:sender];}
+	}];
 
 }
 
-/*
+- (void)simulateLoader {
+	float progress = 0.0;
+	
+	while (progress < 1.0) {
+		progress += 0.02;
+		self.hud.progress = progress;
+		usleep(50000);
+	}
+}
+
+
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"showImageMatch"]) {
+		ImageResultController * destViewController = segue.destinationViewController;
+		
+		
+		[ImagesModel sharedManager].currentImageIndex = ((UIButton *)sender).tag;
+		
+		[[ImagesModel sharedManager] fakeData];
+		//TODO detect position
+		ImageModel * imageModel = [ImagesModel sharedManager].imageModelAtCurrentIndex;
+		
+		LoggerData(1, @"Similar images count %lu", (unsigned long)[imageModel.similarImages count]);
+		destViewController.imageModel = imageModel ;
+		
+	}
 }
-*/
+
 
 @end
