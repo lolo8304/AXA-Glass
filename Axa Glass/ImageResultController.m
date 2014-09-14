@@ -14,7 +14,7 @@
 
 @interface ImageResultController ()
 
-
+@property (strong) SimilarImage * similarImage;
 @end
 
 @implementation ImageResultController
@@ -23,6 +23,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	
+	self.similarImage = nil;
 	
 	
     // Uncomment the following line to preserve selection between presentations.
@@ -89,6 +91,17 @@
 }
 
 
+
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	if (indexPath.section == 1) {
+		self.similarImage = self.imageModel.similarImages[indexPath.row];
+	}
+	else {
+		self.similarImage = nil;
+	}
+	return indexPath;
+}
+
 /*
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
@@ -125,6 +138,7 @@
 	if ([segue.identifier isEqualToString:@"showInsurenceDetail"]) {
 		ImageDetailViewController * destViewController = segue.destinationViewController;
 		destViewController.imageModel = self.imageModel ;
+		destViewController.similarImage = self.similarImage ;
 		
 	}
 }

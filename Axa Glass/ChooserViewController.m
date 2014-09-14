@@ -75,7 +75,12 @@
 	while (progress < 1.0) {
 		progress += 0.02;
 		self.hud.progress = progress;
-		usleep(50000);
+		if (FAST_MODE) {
+			usleep(10000);
+		}
+		else {
+			usleep(50000);
+		}
 	}
 }
 

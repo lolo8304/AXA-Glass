@@ -52,9 +52,16 @@
 	self.keyboardControls.nextTitle = NSLocalizedString(@"Next",@"Next");
 	self.keyboardControls.doneTitle = NSLocalizedString(@"End", @"End");
 	
-	self.tag.text = self.imageModel.keywords;
 	self.category.text = self.imageModel.categorizations.lastObject;
-	self.price.text = [NSString stringWithFormat:@"%@ %@", self.imageModel.price, self.imageModel.currency];
+
+	if( self.similarImage ==nil) {
+		self.tag.text = self.imageModel.keywords;
+		self.price.text = [NSString stringWithFormat:@"%@ %@", self.imageModel.price, self.imageModel.currency];
+	}
+	else {
+		self.tag.text = self.similarImage.keywords;
+		self.price.text = [NSString stringWithFormat:@"%@ %@", self.similarImage.price, self.similarImage.currency];
+	}
 	
 	self.image.image = [UIImage imageNamed:self.imageModel.imageName];
 }

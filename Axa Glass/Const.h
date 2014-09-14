@@ -13,4 +13,7 @@
 #define FONT_DEMI @"ITCFranklinGothicStd-Demi"
 #define FONT_DEMI_CONDENSED @"ITCFranklinGothicStd-DmCd"
 
+
+#define FAST_MODE 1
+
 #endif
