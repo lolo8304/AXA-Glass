@@ -65,6 +65,7 @@
 {
 	
 	ResultImageCell *cell = nil;
+	
 	if (indexPath.section == 0) {
 		cell = [tableView dequeueReusableCellWithIdentifier:@"BestMatchHeader" forIndexPath:indexPath];
 	}
@@ -78,10 +79,16 @@
 		cell = [tableView dequeueReusableCellWithIdentifier:@"ResultImageCell" forIndexPath:indexPath];
 	}
 	
+	if (indexPath.section == 0 || indexPath.section == 2) {
+		UILabel *title = (UILabel *)[cell viewWithTag:1];
+		title.font = [UIFont fontWithName:FONT_DEMI size:25.0f];
+	}
+	
 	//best match
 	if (indexPath.section == 1) {
 		cell.photo.image = [UIImage imageNamed:self.imageModel.imageName];
 		cell.keyword.text = self.imageModel.keywords;
+		cell.price.text = [NSString stringWithFormat:@"%@ %@",self.imageModel.price,self.imageModel.currency];
 	}
 	else if (indexPath.section==3){
 		
@@ -136,15 +143,15 @@
 	if (indexPath.section==0) {
 		return 65;
 	}
-	else if (indexPath.section == 1) return 100;
-
+	else if (indexPath.section == 1 || indexPath.section==3) {
+		return 85;
+	}
 	else if (indexPath.section==2) {
 		return 43;
 	}
 	else {
-		return 100;
+		return 0;
 	}
-	
 	
 	//}
 }
