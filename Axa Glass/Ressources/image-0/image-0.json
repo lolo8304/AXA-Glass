@@ -1,5 +1,5 @@
 {
-  "keywords": "certina ds podium gmt",
+  "keywords": "Certina ds podium gmt",
   "image": "image-0.jpg",
   "categorizations": [
     "Clothing, Shoes & Jewelry",
@@ -9,7 +9,7 @@
   ],
   "prize": {
     "value": "564",
-    "currency": "EUR"
+    "currency": "€"
   },
   "similarImages": [
     {
@@ -32,7 +32,7 @@
       "image": "images-0-0.jpeg",
       "prize": {
         "value": "1021",
-        "currency": "EUR"
+        "currency": "€"
       }
     },
     {
@@ -55,7 +55,7 @@
       "image": "images-0-1.jpeg",
       "prize": {
         "value": "566",
-        "currency": "EUR"
+        "currency": "€"
       }
     },
     {
@@ -77,7 +77,7 @@
       "image": "images-0-2.jpeg",
       "prize": {
         "value": "564",
-        "currency": "EUR"
+        "currency": "€"
       }
     },
     {
@@ -97,7 +97,7 @@
       "image": "images-0-3.jpeg",
       "prize": {
         "value": "475",
-        "currency": "EUR"
+        "currency": "€"
       }
     },
     {
@@ -117,7 +117,7 @@
       "image": "images-0-4.jpeg",
       "prize": {
         "value": "480",
-        "currency": "EUR"
+        "currency": "€"
       }
     },
     {
@@ -138,7 +138,7 @@
       "image": "images-0-5.jpeg",
       "prize": {
         "value": "565",
-        "currency": "EUR"
+        "currency": "€"
       }
     },
     {
@@ -160,7 +160,7 @@
       "image": "images-0-6.jpeg",
       "prize": {
         "value": "475",
-        "currency": "EUR"
+        "currency": "€"
       }
     },
     {
@@ -180,7 +180,7 @@
       "image": "images-0-7.jpeg",
       "prize": {
         "value": "500",
-        "currency": "EUR"
+        "currency": "€"
       }
     }
   ]
