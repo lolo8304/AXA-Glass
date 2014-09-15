@@ -164,10 +164,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background.png" translatesAutoresizingMaskIntoConstraints="NO" id="oHV-3C-py7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundSearchResults.png" translatesAutoresizingMaskIntoConstraints="NO" id="oHV-3C-py7">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-0.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gel-Wp-Lrg">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-0.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gel-Wp-Lrg">
                                 <rect key="frame" x="0.0" y="81" width="90" height="96"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -244,8 +244,8 @@
                                                         <constraint firstAttribute="width" constant="50" id="iiz-b9-EEp"/>
                                                     </constraints>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrG-Kk-DD0">
-                                                    <rect key="frame" x="202" y="21" width="100" height="27"/>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrG-Kk-DD0">
+                                                    <rect key="frame" x="188" y="13" width="114" height="43"/>
                                                     <state key="normal" image="info1.png">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -319,6 +319,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Your assurance" id="qZk-WH-Xn5">
                         <barButtonItem key="backBarButtonItem" title="Image" id="fDb-3s-tBV"/>
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="72t-89-yE7">
+                            <connections>
+                                <action selector="done:" destination="Thf-2p-TID" id="S5r-OG-NKH"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="category" destination="N04-aO-CAD" id="nEO-9p-5G6"/>
@@ -550,7 +555,7 @@ MATCH</string>
         <image name="elipse-tag.png" width="32" height="31"/>
         <image name="ellipse-price.png" width="32" height="34"/>
         <image name="image-0.jpg" width="288" height="512"/>
-        <image name="info1.png" width="100" height="27"/>
+        <image name="info1.png" width="114" height="43"/>
         <image name="option-at-home.png" width="48" height="48"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

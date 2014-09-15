@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *category;
 @property (weak, nonatomic) IBOutlet UITextField *price;
 @property (weak, nonatomic) IBOutlet UIImageView *image;
+@property (strong, nonatomic) MBProgressHUD * hud;
 
 @property (strong, nonatomic) BSKeyboardControls * keyboardControls;
 
@@ -31,6 +32,7 @@
     }
     return self;
 }
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -179,6 +181,29 @@
 }
 
 
+
+#pragma mark loader
+
+- (void) loader {
+	MBProgressHUD * hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+	self.hud = hud;
+	hud.mode = MBProgressHUDModeCustomView;
+	
+	hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"check.png"]];
+	int duration = 2;
+	if (DEBUG) {
+		duration = 1;
+	}
+	[hud hide:YES afterDelay:duration];
+	[hud setCompletionBlock:^{
+		[self.navigationController popToRootViewControllerAnimated:YES];
+	}];
+	
+}
+
+- (IBAction)done:(id)sender {
+	[self loader];
+}
 
 
 
