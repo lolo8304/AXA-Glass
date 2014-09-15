@@ -45,12 +45,14 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
-    return 2;
+    return 4;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-	if (section == 0) return 1;//best match
+	if (section == 0) return 1;//best match header
+	else if (section == 1) return 1; //best match cell
+	else if (section == 2) return 1; // header similar
 	else {
 		return [self.imageModel.similarImages count];
 	}
@@ -63,20 +65,25 @@
 {
 	
 	ResultImageCell *cell = nil;
-	
 	if (indexPath.section == 0) {
+		cell = [tableView dequeueReusableCellWithIdentifier:@"BestMatchHeader" forIndexPath:indexPath];
+	}
+	else if (indexPath.section == 1) {
 		cell = [tableView dequeueReusableCellWithIdentifier:@"ResultImageCell" forIndexPath:indexPath];
+	}
+	else if (indexPath.section == 2) {
+		cell = [tableView dequeueReusableCellWithIdentifier:@"SimilarHeader" forIndexPath:indexPath];
 	}
 	else {
 		cell = [tableView dequeueReusableCellWithIdentifier:@"ResultImageCell" forIndexPath:indexPath];
 	}
 	
 	//best match
-	if (indexPath.section == 0) {
+	if (indexPath.section == 1) {
 		cell.photo.image = [UIImage imageNamed:self.imageModel.imageName];
 		cell.keyword.text = self.imageModel.keywords;
 	}
-	else if (indexPath.section==1){
+	else if (indexPath.section==3){
 		
 		SimilarImage * similarImage = self.imageModel.similarImages[indexPath.row];
 		
@@ -106,8 +113,9 @@
 
 
 
+
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	if (indexPath.section == 1) {
+	if (indexPath.section == 3) {
 		self.similarImage = self.imageModel.similarImages[indexPath.row];
 	}
 	else {
@@ -124,45 +132,58 @@
 	//		return 175;
 	//	}
 	//	else {
-	return 100;
+	
+	if (indexPath.section==0) {
+		return 65;
+	}
+	else if (indexPath.section == 1) return 100;
+
+	else if (indexPath.section==2) {
+		return 43;
+	}
+	else {
+		return 100;
+	}
+	
+	
 	//}
 }
 
 #pragma mark - header
 
--(UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-	NSString * cellIdentifier = nil;
-	if (section==0) {
-		cellIdentifier = @"BestMatchHeader";
-	}
-	else if (section == 1) {
-		cellIdentifier = @"SimilarHeader";
-	}
-	
-	if (cellIdentifier) {
-		UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-		UILabel *title = (UILabel *)[cell viewWithTag:1];
-		title.font = [UIFont fontWithName:FONT_DEMI size:25.0f];
-		if (cell == nil){
-			[NSException raise:@"headerView == nil.." format:@"No cells with matching CellIdentifier loaded from your storyboard"];
-		}
-		return cell;
-		
-	}
-	return nil;
-}
+//-(UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+//	NSString * cellIdentifier = nil;
+//	if (section==0) {
+//		cellIdentifier = @"BestMatchHeader";
+//	}
+//	else if (section == 1) {
+//		cellIdentifier = @"SimilarHeader";
+//	}
+//	
+//	if (cellIdentifier) {
+//		UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+//		UILabel *title = (UILabel *)[cell viewWithTag:1];
+//		title.font = [UIFont fontWithName:FONT_DEMI size:25.0f];
+//		if (cell == nil){
+//			[NSException raise:@"headerView == nil.." format:@"No cells with matching CellIdentifier loaded from your storyboard"];
+//		}
+//		return cell;
+//		
+//	}
+//	return nil;
+//}
 
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-	if (section==0) {
-		return 65;
-	}
-	else if (section==1) {
-		return 43;
-	}
-	return 0;
-	
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+//	if (section==0) {
+//		return 65;
+//	}
+//	else if (section==1) {
+//		return 43;
+//	}
+//	return 0;
+//	
+//}
 
 /*
 // Override to support editing the table view.

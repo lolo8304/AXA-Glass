@@ -388,11 +388,11 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundSearchResults.png" translatesAutoresizingMaskIntoConstraints="NO" id="62e-ge-xn6">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="9ql-h2-uZc">
+                            <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="9ql-h2-uZc">
                                 <rect key="frame" x="0.0" y="64" width="320" height="568"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BestMatchHeader" rowHeight="65" id="UR1-Ny-YSA" userLabel="HeaderBestMatch">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BestMatchHeader" rowHeight="65" id="UR1-Ny-YSA" userLabel="HeaderBestMatch">
                                         <rect key="frame" x="0.0" y="86" width="320" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UR1-Ny-YSA" id="rFZ-Lg-9Yq">
@@ -474,9 +474,10 @@ MATCH</string>
                                             <outlet property="keyword" destination="vtn-s1-g4m" id="vGe-TH-Laq"/>
                                             <outlet property="photo" destination="RoM-sf-4kl" id="YNJ-VJ-3uM"/>
                                             <outlet property="price" destination="7Wg-Dj-pJm" id="p85-d0-Ok4"/>
+                                            <segue destination="Thf-2p-TID" kind="push" identifier="showInsurenceDetail" id="4IZ-Av-zYh"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SimilarHeader" rowHeight="43" id="HGY-Un-qEJ" userLabel="HeaderBestMatch">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SimilarHeader" rowHeight="43" id="HGY-Un-qEJ" userLabel="HeaderBestMatch">
                                         <rect key="frame" x="0.0" y="249" width="320" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HGY-Un-qEJ" id="kHe-1U-cHA">
@@ -511,11 +512,11 @@ MATCH</string>
                             <constraint firstAttribute="centerY" secondItem="62e-ge-xn6" secondAttribute="centerY" id="7Ru-Jw-75e"/>
                             <constraint firstItem="62e-ge-xn6" firstAttribute="height" secondItem="5qL-RC-RV1" secondAttribute="height" id="CPA-lt-Zug"/>
                             <constraint firstItem="62e-ge-xn6" firstAttribute="height" secondItem="5qL-RC-RV1" secondAttribute="height" id="EwX-I0-9Ds"/>
+                            <constraint firstAttribute="bottom" secondItem="9ql-h2-uZc" secondAttribute="bottom" id="Kub-VI-84G"/>
                             <constraint firstAttribute="width" secondItem="9ql-h2-uZc" secondAttribute="width" id="Phu-TP-Qa3"/>
                             <constraint firstAttribute="centerX" secondItem="62e-ge-xn6" secondAttribute="centerX" id="Q40-qE-V5o"/>
                             <constraint firstAttribute="centerX" secondItem="9ql-h2-uZc" secondAttribute="centerX" id="h3t-sp-H3p"/>
-                            <constraint firstItem="9ql-h2-uZc" firstAttribute="top" secondItem="gGd-cB-bju" secondAttribute="bottom" id="jUp-Q0-Qve"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="9ql-h2-uZc" secondAttribute="bottom" constant="-64" id="kXA-cL-KKP"/>
+                            <constraint firstItem="9ql-h2-uZc" firstAttribute="top" secondItem="gGd-cB-bju" secondAttribute="bottom" id="rrM-Wp-GtJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Search result" id="wB6-OM-QAr"/>
