@@ -14,6 +14,7 @@
 
 @interface ImageResultController ()
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong) SimilarImage * similarImage;
 @end
 
@@ -56,14 +57,20 @@
 }
 
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-	return 100;
-}
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    ResultImageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ResultImageCell" forIndexPath:indexPath];
-    
+	
+	ResultImageCell *cell = nil;
+	
+	if (indexPath.section == 0) {
+		cell = [tableView dequeueReusableCellWithIdentifier:@"ResultImageCell" forIndexPath:indexPath];
+	}
+	else {
+		cell = [tableView dequeueReusableCellWithIdentifier:@"ResultImageCell" forIndexPath:indexPath];
+	}
+	
 	//best match
 	if (indexPath.section == 0) {
 		cell.photo.image = [UIImage imageNamed:self.imageModel.imageName];
@@ -76,6 +83,13 @@
 		cell.photo.image = [UIImage imageNamed:similarImage.imageName];
 		
 		cell.keyword.text = similarImage.keywords;
+		if ( !IsEmpty(similarImage.price) ) {
+			cell.price.hidden = NO;
+			cell.price.text = [NSString stringWithFormat:@"%@ %@",similarImage.price,similarImage.currency];
+		}
+		else {
+			cell.price.hidden = YES;
+		}
 	}
     
     return cell;
@@ -100,6 +114,54 @@
 		self.similarImage = nil;
 	}
 	return indexPath;
+}
+
+
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+	//	if (indexPath.section == 0) {
+	//		return 175;
+	//	}
+	//	else {
+	return 100;
+	//}
+}
+
+#pragma mark - header
+
+-(UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+	NSString * cellIdentifier = nil;
+	if (section==0) {
+		cellIdentifier = @"BestMatchHeader";
+	}
+	else if (section == 1) {
+		cellIdentifier = @"SimilarHeader";
+	}
+	
+	if (cellIdentifier) {
+		UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+		UILabel *title = (UILabel *)[cell viewWithTag:1];
+		title.font = [UIFont fontWithName:FONT_DEMI size:25.0f];
+		if (cell == nil){
+			[NSException raise:@"headerView == nil.." format:@"No cells with matching CellIdentifier loaded from your storyboard"];
+		}
+		return cell;
+		
+	}
+	return nil;
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+	if (section==0) {
+		return 65;
+	}
+	else if (section==1) {
+		return 43;
+	}
+	return 0;
+	
 }
 
 /*

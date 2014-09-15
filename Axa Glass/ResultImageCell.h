@@ -10,6 +10,7 @@
 
 @interface ResultImageCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *keyword;
+@property (weak, nonatomic) IBOutlet UILabel *price;
 @property (weak, nonatomic) IBOutlet UIImageView *photo;
 @property (nonatomic) BOOL isBestMatch;
 

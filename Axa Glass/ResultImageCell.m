@@ -23,6 +23,11 @@
 {
 	[self setSelectionStyle:UITableViewCellSelectionStyleNone];
 
+	UIFont *myFontText = [ UIFont fontWithName:FONT_BOOK size: 12.0 ];
+	UIFont *myFontPrice = [ UIFont fontWithName:FONT_DEMI size: 13.0 ];
+	self.keyword.font = myFontText;
+	self.price.font = myFontPrice;
+	
     // Initialization code
 }
 

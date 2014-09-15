@@ -36,6 +36,9 @@
 		1588838B19C2F12E00127E1A /* Graph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1588838419C2F12E00127E1A /* Graph@2x.png */; };
 		1588838C19C2F12E00127E1A /* logo-axa-glass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1588838519C2F12E00127E1A /* logo-axa-glass@2x.png */; };
 		1588838D19C2F12E00127E1A /* logo-axa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1588838619C2F12E00127E1A /* logo-axa@2x.png */; };
+		15A9067F19C643660068D0C4 /* BackgroundSearchResults@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A9067E19C643660068D0C4 /* BackgroundSearchResults@2x.png */; };
+		15A9068119C644300068D0C4 /* DisclosureBlue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A9068019C644300068D0C4 /* DisclosureBlue@2x.png */; };
+		15A9068319C6CA280068D0C4 /* GlassCell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A9068219C6CA280068D0C4 /* GlassCell@2x.png */; };
 		15C795C319C1D0CB0068B8F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C795C219C1D0CB0068B8F2 /* Foundation.framework */; };
 		15C795C519C1D0CB0068B8F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C795C419C1D0CB0068B8F2 /* CoreGraphics.framework */; };
 		15C795C719C1D0CB0068B8F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C795C619C1D0CB0068B8F2 /* UIKit.framework */; };
@@ -114,6 +117,9 @@
 		1588838419C2F12E00127E1A /* Graph@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Graph@2x.png"; sourceTree = "<group>"; };
 		1588838519C2F12E00127E1A /* logo-axa-glass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-axa-glass@2x.png"; sourceTree = "<group>"; };
 		1588838619C2F12E00127E1A /* logo-axa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-axa@2x.png"; sourceTree = "<group>"; };
+		15A9067E19C643660068D0C4 /* BackgroundSearchResults@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BackgroundSearchResults@2x.png"; sourceTree = "<group>"; };
+		15A9068019C644300068D0C4 /* DisclosureBlue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DisclosureBlue@2x.png"; sourceTree = "<group>"; };
+		15A9068219C6CA280068D0C4 /* GlassCell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GlassCell@2x.png"; sourceTree = "<group>"; };
 		15C795BF19C1D0CB0068B8F2 /* Axa Glass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Axa Glass.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C795C219C1D0CB0068B8F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		15C795C419C1D0CB0068B8F2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -269,6 +275,7 @@
 		1588837B19C2E6A200127E1A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				15A9067D19C643660068D0C4 /* SearchResults */,
 				153E1E8A19C35C7A001A76E6 /* Photo@2x.png */,
 				153E1E6819C33292001A76E6 /* options */,
 				1588837E19C2E6EC00127E1A /* Background@2x.png */,
@@ -288,6 +295,16 @@
 			name = Images;
 			path = "Axa Glass/Images";
 			sourceTree = SOURCE_ROOT;
+		};
+		15A9067D19C643660068D0C4 /* SearchResults */ = {
+			isa = PBXGroup;
+			children = (
+				15A9068219C6CA280068D0C4 /* GlassCell@2x.png */,
+				15A9068019C644300068D0C4 /* DisclosureBlue@2x.png */,
+				15A9067E19C643660068D0C4 /* BackgroundSearchResults@2x.png */,
+			);
+			path = SearchResults;
+			sourceTree = "<group>";
 		};
 		15C795B619C1D0CB0068B8F2 = {
 			isa = PBXGroup;
@@ -527,7 +544,9 @@
 				15C7961319C1DD4A0068B8F2 /* images-0-5.jpeg in Resources */,
 				153E1E8B19C35C7A001A76E6 /* Photo@2x.png in Resources */,
 				153E1E8919C3533E001A76E6 /* option-outside@2x.png in Resources */,
+				15A9067F19C643660068D0C4 /* BackgroundSearchResults@2x.png in Resources */,
 				153E1E7919C332FD001A76E6 /* info1@2x.png in Resources */,
+				15A9068319C6CA280068D0C4 /* GlassCell@2x.png in Resources */,
 				15C795D619C1D0CB0068B8F2 /* Main.storyboard in Resources */,
 				153E1E7C19C332FD001A76E6 /* option-at-home@2x.png in Resources */,
 				15C7960B19C1DD4A0068B8F2 /* Icon in Resources */,
@@ -535,6 +554,7 @@
 				1547AA5319C30D0B00245389 /* ellipse-price@2x.png in Resources */,
 				1547AA4819C309F800245389 /* ITCFranklinGothicStd-Book.otf in Resources */,
 				15C7961219C1DD4A0068B8F2 /* images-0-4.jpeg in Resources */,
+				15A9068119C644300068D0C4 /* DisclosureBlue@2x.png in Resources */,
 				1547AA3C19C3001B00245389 /* logo-axa-glass_marge@2x.png in Resources */,
 				1588838A19C2F12E00127E1A /* Boutton-report-item@2x.png in Resources */,
 				1588838719C2F12E00127E1A /* 1-my-consultant@2x.png in Resources */,
