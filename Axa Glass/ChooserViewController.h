@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ChooserViewController : UIViewController
+@interface ChooserViewController : UIViewController<UIActionSheetDelegate>
 
 @end

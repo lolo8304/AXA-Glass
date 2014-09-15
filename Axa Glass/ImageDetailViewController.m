@@ -320,9 +320,7 @@
 	
 	hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"check.png"]];
 	int duration = 2;
-	if (DEBUG) {
-		duration = 2;
-	}
+	
 	[hud hide:YES afterDelay:duration];
 	[hud setCompletionBlock:^{
 		[self.navigationController popToRootViewControllerAnimated:YES];

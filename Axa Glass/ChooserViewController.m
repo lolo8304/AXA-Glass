@@ -105,6 +105,15 @@
 		
 	}
 }
+- (IBAction)takeAPhoto:(id)sender {
+	
+	UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Choose your functionnality" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Picture", @"eMail receipt", @"Scan barcode", @"Scan paper receipt", nil];
+	
+	actionSheet.actionSheetStyle = UIActionSheetStyleDefault; [actionSheet showInView:self.view];
+	
+}
+
+
 
 
 @end
