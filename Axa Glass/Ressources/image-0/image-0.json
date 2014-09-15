@@ -8,7 +8,7 @@
     "Wrist Watches"
   ],
   "prize": {
-    "value": "564",
+    "value": 564,
     "currency": "€"
   },
   "similarImages": [
@@ -31,7 +31,7 @@
       "oh": 1440,
       "image": "images-0-0.jpeg",
       "prize": {
-        "value": "1021",
+        "value": 1021,
         "currency": "€"
       }
     },
@@ -54,7 +54,7 @@
       "oh": 1440,
       "image": "images-0-1.jpeg",
       "prize": {
-        "value": "566",
+        "value": 566,
         "currency": "€"
       }
     },
@@ -76,7 +76,7 @@
       "oh": 1440,
       "image": "images-0-2.jpeg",
       "prize": {
-        "value": "564",
+        "value": 564,
         "currency": "€"
       }
     },
@@ -96,7 +96,7 @@
       "oh": 56,
       "image": "images-0-3.jpeg",
       "prize": {
-        "value": "475",
+        "value": 475,
         "currency": "€"
       }
     },
@@ -116,7 +116,7 @@
       "oh": 450,
       "image": "images-0-4.jpeg",
       "prize": {
-        "value": "480",
+        "value": 480,
         "currency": "€"
       }
     },
@@ -137,7 +137,7 @@
       "oh": 390,
       "image": "images-0-5.jpeg",
       "prize": {
-        "value": "565",
+        "value": 565,
         "currency": "€"
       }
     },
@@ -159,7 +159,7 @@
       "oh": 800,
       "image": "images-0-6.jpeg",
       "prize": {
-        "value": "475",
+        "value": 475,
         "currency": "€"
       }
     },
@@ -179,7 +179,7 @@
       "oh": 1600,
       "image": "images-0-7.jpeg",
       "prize": {
-        "value": "500",
+        "value": 500,
         "currency": "€"
       }
     }
