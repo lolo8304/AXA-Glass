@@ -86,6 +86,7 @@
 	
 	//best match
 	if (indexPath.section == 1) {
+		LoggerData(1, @"self.imageModel.imageName:%@",self.imageModel.imageName);
 		cell.photo.image = [UIImage imageNamed:self.imageModel.imageName];
 		cell.keyword.text = self.imageModel.keywords;
 		cell.price.text = [NSString stringWithFormat:@"%@ %@",self.imageModel.price,self.imageModel.currency];

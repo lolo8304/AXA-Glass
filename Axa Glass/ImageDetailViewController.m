@@ -20,6 +20,14 @@
 #define kNumberProtection 4
 
 
+//Mode
+#define kStatusCheck @"option-check.png"
+#define kStatusKO @"option-croix.png"
+#define kStatusWarning @"option-exclamation.png"
+
+#define kImacIndex 3
+#define kVuittonIndex 1
+
 @interface ImageDetailViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *tag;
@@ -80,9 +88,9 @@
 
 
 - (void) defineFont {
-	self.tag.font = [UIFont fontWithName:FONT_BOOK size:12];
-	self.category.font = [UIFont fontWithName:FONT_BOOK size:12];
-	self.price.font = [UIFont fontWithName:FONT_BOOK size:12];
+	self.tag.font = [UIFont fontWithName:FONT_BOOK size:14];
+	self.category.font = [UIFont fontWithName:FONT_BOOK size:14];
+	self.price.font = [UIFont fontWithName:FONT_BOOK size:14];
 	
 	self.yourProtectionTitle.font = [UIFont fontWithName:FONT_DEMI size:24];
 }
@@ -163,32 +171,60 @@
 	else if (indexPath.section==kProtectionSectionIndex) {
 		ProtectionCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ProtectionCell" forIndexPath:indexPath];
 		
+
 		if (indexPath.row == 0) {
 			cell.desc.text = @"At home";
 			cell.logo.image = [UIImage imageNamed:@"option-at-home.png"];
 			[cell.informationButton setImage:[UIImage imageNamed:@"option-info.png"] forState:UIControlStateNormal];
-			cell.status.image =[UIImage imageNamed:@"option-check.png"];
+			cell.status.image =[UIImage imageNamed:kStatusCheck];
+			
+			if ([ImagesModel sharedManager].currentImageIndex == kImacIndex) {
+				cell.status.image =[UIImage imageNamed:kStatusCheck];
+			}
+			else if ([ImagesModel sharedManager].currentImageIndex == kVuittonIndex) {
+				cell.status.image =[UIImage imageNamed:kStatusCheck];
+			}
 		}
 		else if (indexPath.row == 1) {
 			cell.desc.text = @"In the car";
 			[cell.informationButton setImage:[UIImage imageNamed:@"option-info.png"] forState:UIControlStateNormal];
 			cell.logo.image = [UIImage imageNamed:@"option-in-the-car.png"];
-			cell.status.image =[UIImage imageNamed:@"option-croix.png"];
+			cell.status.image =[UIImage imageNamed:kStatusKO];
 			
 			//option-info.png
+			if ([ImagesModel sharedManager].currentImageIndex == kImacIndex) {
+				cell.status.image =[UIImage imageNamed:kStatusWarning];
+			}
+			else if ([ImagesModel sharedManager].currentImageIndex == kVuittonIndex) {
+				cell.status.image =[UIImage imageNamed:kStatusKO];
+			}
+			
 		}
 		else if (indexPath.row == 2) {
 			cell.desc.text = @"Outside";
 			[cell.informationButton setImage:[UIImage imageNamed:@"option-info.png"] forState:UIControlStateNormal];
 			cell.logo.image = [UIImage imageNamed:@"option-outside.png"];
-			cell.status.image =[UIImage imageNamed:@"option-exclamation.png"];
+			cell.status.image =[UIImage imageNamed:kStatusWarning];
+			if ([ImagesModel sharedManager].currentImageIndex == kImacIndex) {
+				cell.status.image =[UIImage imageNamed:kStatusKO];
+			}
+			else if ([ImagesModel sharedManager].currentImageIndex == kVuittonIndex) {
+				cell.status.image =[UIImage imageNamed:kStatusKO];
+			}
 			
 		}
 		else if (indexPath.row == 3) {
 			cell.desc.text = @"Traveling";
 			[cell.informationButton setImage:[UIImage imageNamed:@"option-info.png"] forState:UIControlStateNormal];
 			cell.logo.image = [UIImage imageNamed:@"option-traveling.png"];
-			cell.status.image =[UIImage imageNamed:@"option-exclamation.png"];
+			cell.status.image =[UIImage imageNamed:kStatusWarning];
+			
+			if ([ImagesModel sharedManager].currentImageIndex == kImacIndex) {
+				cell.status.image =[UIImage imageNamed:kStatusKO];
+			}
+			else if ([ImagesModel sharedManager].currentImageIndex == kVuittonIndex) {
+				cell.status.image =[UIImage imageNamed:kStatusWarning];
+			}
 			
 		}
 		return cell;
@@ -268,7 +304,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
 	if (section==0) return 0;//TODO
-	return 70;
+	return 50;
 }
 
 
@@ -285,7 +321,7 @@
 	hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"check.png"]];
 	int duration = 2;
 	if (DEBUG) {
-		duration = 3;
+		duration = 2;
 	}
 	[hud hide:YES afterDelay:duration];
 	[hud setCompletionBlock:^{

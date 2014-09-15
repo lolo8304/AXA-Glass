@@ -29,6 +29,10 @@
 	return nil;
 }
 
+- (NSString *)description {
+	return [NSString stringWithFormat:@"%@ %@ %@ %@", self.keywords, self.imageName, self.price, self.currency];
+}
+
 
 
 @end

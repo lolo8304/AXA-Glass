@@ -45,4 +45,13 @@
 }
 
 
+- (NSString *)description {
+	NSMutableString  * string = [NSMutableString stringWithFormat:@"%@ %@ %@ %@ %@ - similars images count %lu", self.keywords, self.imageName, self.categorizations, self.price, self.currency, (long)[self.similarImages count]];
+	for (SimilarImage * similarImage in self.similarImages) {
+		[string appendFormat:@"\n%@", similarImage];
+	}
+	return string;
+	
+}
+
 @end

@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>${PRODUCT_NAME}</string>
+	<string>AXA Glass</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -24,6 +24,12 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>ITCFranklinGothicStd-Book.otf</string>
+		<string>ITCFranklinGothicStd-Demi.otf</string>
+		<string>ITCFranklinGothicStd-DmCd.otf</string>
+	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -43,12 +49,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>ITCFranklinGothicStd-Book.otf</string>
-		<string>ITCFranklinGothicStd-Demi.otf</string>
-		<string>ITCFranklinGothicStd-DmCd.otf</string>
 	</array>
 </dict>
 </plist>

@@ -17,7 +17,7 @@
 @property (nonatomic, strong) NSMutableArray * images;
 @property (nonatomic) NSInteger currentImageIndex;
 
-- (void) fakeData;
+- (void) loadData;
 
 - (ImageModel *) imageModelAtIndex:(NSUInteger) index;
 - (ImageModel *) imageModelAtCurrentIndex;

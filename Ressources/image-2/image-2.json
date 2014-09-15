@@ -1,11 +1,15 @@
 {
-  "image": "http://www.apfelpage.de/wp-content/uploads/2014/02/design_unibody2_2x.jpg",
+  "image": "image-2.jpg",
   "keywords": "macbook air 13",
   "categorizations": [
     "Electronics",
     "Computers &amp; Accessories",
     "Laptops"
   ],
+  "prize": {
+    "value": 889,
+    "currency": "€"
+  },
   "similarImages": [
     {
       "os": "17KB",
@@ -19,10 +23,15 @@
       "tu": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTde1OATT0UT4o3NHU8AiUfLNgJ3FUhDjwGjFzLn7S2ToWbMS8ne0ZriuA",
       "s": "Buy apple <b>macbook air 13</b>-inch md761hn/a, Shop Online apple <b>...</b>",
       "tw": 87,
-      "pt": "Buy apple macbook air 13-inch md761hn/a, Shop Online apple ...",
+      "pt": "apple macbook air 13-inch md761hn/a",
       "rt": 0,
       "ru": "http://www.vijaysales.com/buy/Apple-MacBook-Air-13-inch-MD761HN-A/2369",
-      "oh": 416
+      "oh": 416,
+      "image": "images-2-0.jpeg",
+      "prize": {
+        "value": 1000,
+        "currency": "€"
+      }
     },
     {
       "os": "89KB",
@@ -38,10 +47,15 @@
       "s": "Sell <b>MacBook Air 13</b> inch - core-2-duo, i5 and i7! We buy <b>...</b>",
       "tw": 116,
       "cl": 12,
-      "pt": "Sell MacBook Air 13 inch - core-2-duo, i5 and i7! We buy ...",
+      "pt": "MacBook Air 13 inch - core-2-duo, i5 and i7",
       "rt": 0,
       "ru": "http://gadgetmill.co.uk/sell-my/macbook-air-13-inch/",
-      "oh": 450
+      "oh": 450,
+      "image": "images-2-1.jpeg",
+      "prize": {
+        "value": 1100,
+        "currency": "€"
+      }
     },
     {
       "os": "191KB",
@@ -57,10 +71,15 @@
       "s": "<b>Macbook Air 13</b> 2013 - Viewing Gallery",
       "tw": 162,
       "cl": 3,
-      "pt": "Macbook Air 13 2013 - Viewing Gallery",
+      "pt": "Macbook Air 13 2013",
       "rt": 0,
       "ru": "http://galleryhip.com/macbook-air-13-2013.html",
-      "oh": 1208
+      "oh": 1208,
+      "image": "images-2-2.jpeg",
+      "prize": {
+        "value": 750,
+        "currency": "€"
+      }
     },
     {
       "os": "14KB",
@@ -76,10 +95,15 @@
       "s": "Review Apple <b>MacBook Air 13</b>-Inch (2014): Apple <b>MacBook Air 13</b>-",
       "tw": 111,
       "cl": 3,
-      "pt": "Review Apple MacBook Air 13-Inch (2014): Apple MacBook Air 13-",
+      "pt": "Apple MacBook Air 13-Inch (2014)",
       "rt": 0,
       "ru": "http://uk.pcmag.com/apple-macbook-air-13-inch-2014/10236/review/apple-macbook-air-13-inch-2014",
-      "oh": 251
+      "oh": 251,
+      "image": "images-2-3.jpeg",
+      "prize": {
+        "value": 1210,
+        "currency": "€"
+      }
     },
     {
       "os": "25KB",
@@ -95,10 +119,15 @@
       "s": "<b>MacBook Air 13</b>&quot; Moshi iVisor <b>Air</b> AG Screen Protector by Moshi",
       "tw": 87,
       "cl": 9,
-      "pt": "MacBook Air 13&quot; Moshi iVisor Air AG Screen Protector by Moshi",
+      "pt": "MacBook Air 13 Moshi iVisor Air Screen Protector",
       "rt": 0,
       "ru": "http://www.imobile-wireless.com/en/macbook-air-13-moshi-ivisor-air-ag-screen-protector-by-moshi.html",
-      "oh": 600
+      "oh": 600,
+      "image": "images-2-4.jpeg",
+      "prize": {
+        "value": 75,
+        "currency": "€"
+      }
     },
     {
       "os": "8KB",
@@ -114,10 +143,15 @@
       "s": "Speck <b>MacBook Air 13</b>&quot; Peacock",
       "tw": 93,
       "cl": 3,
-      "pt": "Speck MacBook Air 13&quot; Peacock",
+      "pt": "MacBook Air 13 Peacock",
       "rt": 0,
       "ru": "http://cstore.ucf.edu/browse.cfm/speck-macbook-air-13-peacock/4,9114.html",
-      "oh": 300
+      "oh": 300,
+      "image": "images-2-5.jpeg",
+      "prize": {
+        "value": 45,
+        "currency": "€"
+      }
     },
     {
       "os": "11KB",
@@ -131,10 +165,15 @@
       "s": "GMYLE Brown Premium Quality PU Leather With Crazy Horse <b>...</b>",
       "tw": 129,
       "cl": 6,
-      "pt": "GMYLE Brown Premium Quality PU Leather With Crazy Horse ...",
+      "pt": "GMYLE Brown Premium Quality PU Leather",
       "rt": 0,
       "ru": "http://kuwait.souq.com/kw-en/gmyle-brown-premium-quality-pu-leather-with-crazy-horse-pattern-dual-zipper-sleeve-bag-skin-case-cover-for-apple-macbook-air-13-inches-5757559/i/",
-      "oh": 217
+      "oh": 217,
+      "image": "images-2-6.jpeg",
+      "prize": {
+        "value": 17,
+        "currency": "€"
+      }
     },
     {
       "os": "13KB",
@@ -149,10 +188,15 @@
       "s": "Apple <b>MacBook Air 13</b>&#39;&#39; 128GB MD231 · 13.3&#39;&#39; / Core i5 <b>...</b>",
       "tw": 93,
       "cl": 3,
-      "pt": "Apple MacBook Air 13&#39;&#39; 128GB MD231 · 13.3&#39;&#39; / Core i5 ...",
+      "pt": "Apple MacBook Air 13 - 128GB MD231 13.3 / Core i5",
       "rt": 0,
       "ru": "http://www.redcoon.at/B394266-Apple-MacBook-Air-13-128GB-MD231_Mit-Glossy-Display-Hochglanz",
-      "oh": 450
+      "oh": 450,
+      "image": "images-2-7.jpeg",
+      "prize": {
+        "value": 1367,
+        "currency": "€"
+      }
     },
     {
       "os": "35KB",
@@ -168,10 +212,15 @@
       "s": "pc_matte_hard_case_for_<b>macbook</b>_<b>air</b>_<b>13</b>_-_light_blue_3.jpg",
       "tw": 93,
       "cl": 3,
-      "pt": "pc_matte_hard_case_for_macbook_air_13_-_light_blue_3.jpg",
+      "pt": "PC Matte Hard Case for MacBook Air 13 inch - Light Blue",
       "rt": 0,
       "ru": "http://www.sw-box.com/PC-Matte-Hard-Case-for-MacBook-Air-13-inch-Light-Blue.html",
-      "oh": 600
+      "oh": 600,
+      "image": "images-2-8.jpeg",
+      "prize": {
+        "value": 4,
+        "currency": "€"
+      }
     },
     {
       "os": "13KB",
@@ -190,7 +239,12 @@
       "pt": "Ultraportable Mac Laptop: Apple MacBook Air 13-inch, 128GB ...",
       "rt": 0,
       "ru": "http://it.dss.ucdavis.edu/purchasing/computers/laptop/ultraportable-mac-laptop",
-      "oh": 326
+      "oh": 326,
+      "image": "images-2-9.jpeg",
+      "prize": {
+        "value": 1701,
+        "currency": "€"
+      }
     }
   ]
 }

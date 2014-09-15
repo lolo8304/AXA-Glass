@@ -31,6 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	[[ImagesModel sharedManager] loadData];
     // Do any additional setup after loading the view.
 }
 
@@ -97,8 +98,6 @@
 		
 		[ImagesModel sharedManager].currentImageIndex = ((UIButton *)sender).tag;
 		
-		[[ImagesModel sharedManager] fakeData];
-		//TODO detect position
 		ImageModel * imageModel = [ImagesModel sharedManager].imageModelAtCurrentIndex;
 		
 		LoggerData(1, @"Similar images count %lu", (unsigned long)[imageModel.similarImages count]);

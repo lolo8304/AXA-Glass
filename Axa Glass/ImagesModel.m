@@ -43,23 +43,31 @@
 }
 
 
-- (void) fakeData {
-	NSError * error = nil;
-	NSBundle *bundle = [NSBundle mainBundle];
-	NSString *path = [bundle pathForResource: @"image-0" ofType:@"json"];
-	NSString *data = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
-	if (error!=nil) {
-		LoggerError(0, @"File not found %@", path);
-	}
-	id jsonData = [NSJSONSerialization JSONObjectWithData:[data dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableContainers error:&error];
+#define kTotalElements 4
+- (void) loadData {
+	[self.images removeAllObjects];
 	
-	if (error!=nil) {
-		LoggerError(0, @"JsonData is empty for %@", path);
-	}
-	
-	ImageModel * imageModel = [[ImageModel alloc] initWithJson:jsonData];
-	if (!IsEmpty(imageModel)) {
-		[self.images addObject:imageModel];
+	for (int i=0; i<=kTotalElements;i++) {
+		
+		NSError * error = nil;
+		NSBundle *bundle = [NSBundle mainBundle];
+		NSString * jsonName = [NSString stringWithFormat:@"image-%ld", (long)i];
+		NSString *path = [bundle pathForResource: jsonName ofType:@"json"];
+		NSString *data = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
+		if (error!=nil) {
+			LoggerError(0, @"File not found %@", path);
+		}
+		id jsonData = [NSJSONSerialization JSONObjectWithData:[data dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableContainers error:&error];
+		
+		if (error!=nil) {
+			LoggerError(0, @"JsonData is empty for %@", path);
+		}
+		
+		ImageModel * imageModel = [[ImageModel alloc] initWithJson:jsonData];
+		if (!IsEmpty(imageModel)) {
+			[self.images addObject:imageModel];
+			LoggerData(2, @"imageModel=%@", imageModel);
+		}
 	}
 }
 
