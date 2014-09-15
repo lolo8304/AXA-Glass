@@ -1,5 +1,5 @@
 {
-  "keywords": "certina ds podium gmt",
+  "keywords": "Certina ds podium gmt",
   "image": "image-0.jpg",
   "categorizations": [
     "Clothing, Shoes & Jewelry",
@@ -9,7 +9,7 @@
   ],
   "prize": {
     "value": 564,
-    "currency": "EUR"
+    "currency": "€"
   },
   "similarImages": [
     {
@@ -29,10 +29,10 @@
       "rt": 0,
       "ru": "http://uhrforum.de/certina-ds-podium-big-size-c001-617-26-057-00-a-t143966",
       "oh": 1440,
-      "image": "images-0-0.jpg",
+      "image": "images-0-0.jpeg",
       "prize": {
-        "value": "1021",
-        "currency": "EUR"
+        "value": 1021,
+        "currency": "€"
       }
     },
     {
@@ -52,10 +52,10 @@
       "rt": 0,
       "ru": "http://uhrforum.de/certina-ds-podium-big-size-c001-617-26-057-00-a-t143966",
       "oh": 1440,
-      "image": "images-0-1.jpg",
+      "image": "images-0-1.jpeg",
       "prize": {
-        "value": "566",
-        "currency": "EUR"
+        "value": 566,
+        "currency": "€"
       }
     },
     {
@@ -74,10 +74,10 @@
       "rt": 0,
       "ru": "http://uhrforum.de/certina-ds-podium-big-size-c001-617-26-057-00-a-t143966",
       "oh": 1440,
-      "image": "images-0-2.jpg",
+      "image": "images-0-2.jpeg",
       "prize": {
-        "value": "564",
-        "currency": "EUR"
+        "value": 564,
+        "currency": "€"
       }
     },
     {
@@ -94,10 +94,10 @@
       "rt": 0,
       "ru": "http://www.chrono24.de/certina/ds-podium-gmt--id2313732.htm",
       "oh": 56,
-      "image": "images-0-3.jpg",
+      "image": "images-0-3.jpeg",
       "prize": {
-        "value": "475",
-        "currency": "EUR"
+        "value": 475,
+        "currency": "€"
       }
     },
     {
@@ -114,10 +114,10 @@
       "rt": 0,
       "ru": "http://www.relojes-especiales.com/foros/foro-de-compraventa-relojes-fcvr-701-/certina-ds-podium-gmt-crono-160349/",
       "oh": 450,
-      "image": "images-0-4.jpg",
+      "image": "images-0-4.jpeg",
       "prize": {
-        "value": "480",
-        "currency": "EUR"
+        "value": 480,
+        "currency": "€"
       }
     },
     {
@@ -135,10 +135,10 @@
       "rt": 0,
       "ru": "http://forums.watchuseek.com/f29/certina-ds-podium-big-size-619802.html",
       "oh": 390,
-      "image": "images-0-5.jpg",
+      "image": "images-0-5.jpeg",
       "prize": {
-        "value": "565",
-        "currency": "EUR"
+        "value": 565,
+        "currency": "€"
       }
     },
     {
@@ -157,10 +157,10 @@
       "rt": 0,
       "ru": "http://uhrforum.de/certina-ds-podium-c001-639-16-057-01-a-t172606",
       "oh": 800,
-      "image": "images-0-6.jpg",
+      "image": "images-0-6.jpeg",
       "prize": {
-        "value": "475",
-        "currency": "EUR"
+        "value": 475,
+        "currency": "€"
       }
     },
     {
@@ -177,10 +177,10 @@
       "rt": 0,
       "ru": "http://uhrforum.de/certina-ds-podium-big-size-c001-617-26-057-00-a-t143966",
       "oh": 1600,
-      "image": "images-0-7.jpg",
+      "image": "images-0-7.jpeg",
       "prize": {
-        "value": "500",
-        "currency": "EUR"
+        "value": 500,
+        "currency": "€"
       }
     }
   ]

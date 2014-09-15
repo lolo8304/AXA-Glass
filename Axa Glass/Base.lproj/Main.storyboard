@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rS3-R9-Ivy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="MTm-mZ-3g0">
     <dependencies>
         <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
@@ -10,16 +10,17 @@
         <scene sceneID="cUi-kZ-frf">
             <objects>
                 <navigationController id="rS3-R9-Ivy" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="MKp-1r-Kbq"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="yXu-0R-QUA">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="K7L-tY-Tp1" kind="relationship" relationship="rootViewController" id="twp-6r-zyD"/>
+                        <segue destination="K7L-tY-Tp1" kind="relationship" relationship="rootViewController" id="kRf-ar-GGU"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eq9-QA-ai8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1" y="64"/>
+            <point key="canvasLocation" x="-21" y="232"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Z36-fG-ebg">
@@ -33,9 +34,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zk5-Od-scG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeAxa.png" translatesAutoresizingMaskIntoConstraints="NO" id="zk5-Od-scG">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMy-Fg-ENN">
+                                <rect key="frame" x="0.0" y="-20" width="320" height="593"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rS3-R9-Ivy" kind="modal" modalTransitionStyle="flipHorizontal" id="aBa-WE-KKe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -45,10 +55,14 @@
                             <constraint firstAttribute="height" secondItem="zk5-Od-scG" secondAttribute="height" id="yVc-nT-CCw"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" id="H28-sb-icO"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TPO-ig-DLU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="294" y="714"/>
+            <point key="canvasLocation" x="-21" y="-537"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="cyp-xp-PPE">
@@ -81,7 +95,7 @@
                                 </state>
                                 <connections>
                                     <action selector="consultantAction:" destination="K7L-tY-Tp1" eventType="touchUpInside" id="nbL-HI-ZxV"/>
-                                    <segue destination="hYS-2m-Os4" kind="modal" modalTransitionStyle="flipHorizontal" id="tAG-H2-O0T"/>
+                                    <segue destination="Iqg-bq-EtU" kind="modal" id="OCS-DO-t2g"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUb-Ah-Ftk">
@@ -100,6 +114,7 @@
                                 </state>
                                 <connections>
                                     <action selector="claimsAction:" destination="K7L-tY-Tp1" eventType="touchUpInside" id="Ami-8b-wqJ"/>
+                                    <segue destination="MTm-mZ-3g0" kind="modal" modalTransitionStyle="flipHorizontal" id="JnJ-4D-dkp"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Graph.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Z0-tS-dAE">
@@ -117,6 +132,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SfM-aq-Kbz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="496" y="70"/>
+        </scene>
+        <!--My Consultant View Controller-->
+        <scene sceneID="UEb-py-8q7">
+            <objects>
+                <viewController id="Iqg-bq-EtU" customClass="MyConsultantViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="itL-mb-E17"/>
+                        <viewControllerLayoutGuide type="bottom" id="83I-1T-4rE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2kI-k8-bNc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my-consultant.png" translatesAutoresizingMaskIntoConstraints="NO" id="95V-cl-WyV">
+                                <rect key="frame" x="0.0" y="-10" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h45-zw-MkZ">
+                                <rect key="frame" x="284" y="17" width="23" height="23"/>
+                                <state key="normal" backgroundImage="Info-croix.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="close:" destination="Iqg-bq-EtU" eventType="touchUpInside" id="ntz-qd-MR1"/>
+                                    <action selector="close:" destination="hYS-2m-Os4" eventType="touchUpInside" id="zda-Ic-wTa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="h45-zw-MkZ" firstAttribute="top" secondItem="itL-mb-E17" secondAttribute="bottom" constant="17" id="Dql-PG-Ccc"/>
+                            <constraint firstItem="95V-cl-WyV" firstAttribute="leading" secondItem="2kI-k8-bNc" secondAttribute="leading" id="asG-QR-uJc"/>
+                            <constraint firstAttribute="trailing" secondItem="h45-zw-MkZ" secondAttribute="trailing" constant="13" id="be3-Ph-0Hu"/>
+                            <constraint firstItem="95V-cl-WyV" firstAttribute="top" secondItem="itL-mb-E17" secondAttribute="bottom" constant="-10" id="c52-qK-MAI"/>
+                            <constraint firstAttribute="trailing" secondItem="95V-cl-WyV" secondAttribute="trailing" id="eK9-FF-XSb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CBo-9B-Jbf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Adg-Sj-6gN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="496" y="801"/>
         </scene>
         <!--Detail-->
         <scene sceneID="Cn3-H9-jdl">
@@ -740,6 +796,7 @@ MATCH</string>
         <image name="DisclosureBlue.png" width="12" height="21"/>
         <image name="GlassCell.png" width="320" height="102"/>
         <image name="Graph.png" width="293" height="134"/>
+        <image name="HomeAxa.png" width="320" height="568"/>
         <image name="Info-background.png" width="320" height="568"/>
         <image name="Info-croix.png" width="23" height="23"/>
         <image name="Info-done.png" width="305" height="50"/>
@@ -752,6 +809,7 @@ MATCH</string>
         <image name="image-1.jpg" width="600" height="600"/>
         <image name="image-2.jpg" width="1846" height="1082"/>
         <image name="image-3.jpg" width="399" height="304"/>
+        <image name="my-consultant.png" width="320" height="568"/>
         <image name="option-at-home.png" width="48" height="48"/>
         <image name="option-check.png" width="16" height="16"/>
         <image name="option-info.png" width="27" height="27"/>
@@ -761,8 +819,5 @@ MATCH</string>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="sUK-gL-dAc"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
