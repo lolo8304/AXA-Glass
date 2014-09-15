@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface InsurenceOptionCell : UITableViewCell
+@interface ProtectionCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *logo;
 @property (weak, nonatomic) IBOutlet UILabel *desc;
 @property (weak, nonatomic) IBOutlet UIButton *informationButton;
+
+@property (weak, nonatomic) IBOutlet UIImageView *status;
 
 @end

@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Axa. All rights reserved.
 //
 
-#import "InsurenceOptionCell.h"
+#import "ProtectionCell.h"
 
-@implementation InsurenceOptionCell
+@implementation ProtectionCell
 
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
