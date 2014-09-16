@@ -71,6 +71,8 @@
 		1547AA5019C30CE100245389 /* elipse-tag@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1547AA4D19C30CE100245389 /* elipse-tag@2x.png */; };
 		1547AA5119C30CE100245389 /* ellipse-price@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1547AA4E19C30CE100245389 /* ellipse-price@2x.png */; };
 		1547AA5719C31A8800245389 /* ProtectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1547AA5619C31A8800245389 /* ProtectionCell.m */; };
+		157B1BBA19C8823F0022E5BD /* LoginTop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 157B1BB819C8823E0022E5BD /* LoginTop@2x.png */; };
+		157B1BBB19C8823F0022E5BD /* LoginBackgroundWithoutTop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 157B1BB919C8823F0022E5BD /* LoginBackgroundWithoutTop@2x.png */; };
 		1588837719C2DF8900127E1A /* ImageResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1588837619C2DF8900127E1A /* ImageResultController.m */; };
 		1588837A19C2E0F700127E1A /* ResultImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1588837919C2E0F700127E1A /* ResultImageCell.m */; };
 		1588837F19C2E6EC00127E1A /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1588837E19C2E6EC00127E1A /* Background@2x.png */; };
@@ -199,6 +201,8 @@
 		1547AA4E19C30CE100245389 /* ellipse-price@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ellipse-price@2x.png"; sourceTree = "<group>"; };
 		1547AA5519C31A8800245389 /* ProtectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtectionCell.h; sourceTree = "<group>"; };
 		1547AA5619C31A8800245389 /* ProtectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtectionCell.m; sourceTree = "<group>"; };
+		157B1BB819C8823E0022E5BD /* LoginTop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginTop@2x.png"; sourceTree = "<group>"; };
+		157B1BB919C8823F0022E5BD /* LoginBackgroundWithoutTop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginBackgroundWithoutTop@2x.png"; sourceTree = "<group>"; };
 		1588837519C2DF8900127E1A /* ImageResultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageResultController.h; sourceTree = "<group>"; };
 		1588837619C2DF8900127E1A /* ImageResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageResultController.m; sourceTree = "<group>"; };
 		1588837819C2E0F700127E1A /* ResultImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultImageCell.h; sourceTree = "<group>"; };
@@ -447,6 +451,8 @@
 		1588837B19C2E6A200127E1A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				157B1BB819C8823E0022E5BD /* LoginTop@2x.png */,
+				157B1BB919C8823F0022E5BD /* LoginBackgroundWithoutTop@2x.png */,
 				1510FBEB19C8414F00D81805 /* Home-last-items@2x.png */,
 				1510FBEC19C8414F00D81805 /* my-watch-list@2x.png */,
 				151A40DC19C74915002970C6 /* my-consultant@2x.png */,
@@ -731,6 +737,8 @@
 				15A9069E19C70DB30068D0C4 /* option-traveling@2x.png in Resources */,
 				151A40D019C743CC002970C6 /* images-3-6.jpeg in Resources */,
 				151A40A919C743CC002970C6 /* images-0-1.jpeg in Resources */,
+				157B1BBB19C8823F0022E5BD /* LoginBackgroundWithoutTop@2x.png in Resources */,
+				157B1BBA19C8823F0022E5BD /* LoginTop@2x.png in Resources */,
 				15C795DE19C1D0CB0068B8F2 /* Images.xcassets in Resources */,
 				151A40B019C743CC002970C6 /* image-1.jpg in Resources */,
 				151A40AF19C743CC002970C6 /* images-0-7.jpeg in Resources */,

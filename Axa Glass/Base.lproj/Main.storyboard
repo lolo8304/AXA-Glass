@@ -42,11 +42,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeAxa.png" translatesAutoresizingMaskIntoConstraints="NO" id="zk5-Od-scG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginBackgroundWithoutTop.png" translatesAutoresizingMaskIntoConstraints="NO" id="zk5-Od-scG">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMy-Fg-ENN">
-                                <rect key="frame" x="0.0" y="20" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -54,16 +54,21 @@
                                     <segue destination="rS3-R9-Ivy" kind="modal" identifier="showHome" modalTransitionStyle="flipHorizontal" id="aBa-WE-KKe"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginTop.png" translatesAutoresizingMaskIntoConstraints="NO" id="LdR-PM-koZ">
+                                <rect key="frame" x="0.0" y="24" width="320" height="83"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="zk5-Od-scG" firstAttribute="leading" secondItem="cej-EE-7QC" secondAttribute="leading" id="2eM-Sq-X2W"/>
                             <constraint firstItem="buY-GJ-pCn" firstAttribute="top" secondItem="zk5-Od-scG" secondAttribute="bottom" id="2sz-Ap-FdP"/>
                             <constraint firstAttribute="width" secondItem="SMy-Fg-ENN" secondAttribute="width" id="DU5-LF-B26"/>
-                            <constraint firstItem="SMy-Fg-ENN" firstAttribute="top" secondItem="cej-EE-7QC" secondAttribute="top" constant="20" id="QRT-V8-KGq"/>
+                            <constraint firstItem="LdR-PM-koZ" firstAttribute="top" secondItem="cej-EE-7QC" secondAttribute="top" constant="24" id="Wfa-vp-252"/>
                             <constraint firstAttribute="height" secondItem="SMy-Fg-ENN" secondAttribute="height" id="Z2H-Tf-hUG"/>
                             <constraint firstItem="SMy-Fg-ENN" firstAttribute="leading" secondItem="cej-EE-7QC" secondAttribute="leading" id="d2M-49-t9p"/>
-                            <constraint firstItem="zk5-Od-scG" firstAttribute="top" secondItem="cej-EE-7QC" secondAttribute="top" id="jJY-DN-SKN"/>
+                            <constraint firstItem="LdR-PM-koZ" firstAttribute="leading" secondItem="cej-EE-7QC" secondAttribute="leading" id="eY9-6L-bxt"/>
+                            <constraint firstAttribute="trailing" secondItem="LdR-PM-koZ" secondAttribute="trailing" id="mVg-bz-0E8"/>
+                            <constraint firstAttribute="bottom" secondItem="SMy-Fg-ENN" secondAttribute="bottom" id="nR3-Yw-qRW"/>
                             <constraint firstAttribute="trailing" secondItem="zk5-Od-scG" secondAttribute="trailing" id="ykp-V3-zFJ"/>
                         </constraints>
                     </view>
@@ -908,10 +913,11 @@ MATCH</string>
         <image name="DisclosureBlue.png" width="12" height="21"/>
         <image name="GlassCell.png" width="320" height="102"/>
         <image name="Home-last-items.png" width="320" height="188"/>
-        <image name="HomeAxa.png" width="320" height="568"/>
         <image name="Info-background.png" width="320" height="568"/>
         <image name="Info-croix.png" width="23" height="23"/>
         <image name="Info-done.png" width="305" height="50"/>
+        <image name="LoginBackgroundWithoutTop.png" width="320" height="568"/>
+        <image name="LoginTop.png" width="320" height="83"/>
         <image name="Photo.png" width="104" height="95"/>
         <image name="applepay.png" width="53" height="51"/>
         <image name="elipse-category.png" width="32" height="34"/>
