@@ -9,6 +9,7 @@
 #import "ImageDetailViewController.h"
 #import "BSKeyboardControls.h"
 #import "ProtectionCell.h"
+#import <UIAlertView+BBlock.h>
 
 //Sections
 #define kOptionSectionIndex 0
@@ -232,17 +233,17 @@
 	return nil;
 }
 
-
-- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	
-//	UITableViewCell * cell = [self.tableView cellForRowAtIndexPath:indexPath];
-//	if ([cell.reuseIdentifier isEqualToString: @"PayFooter" ]) {
-//	//if ( indexPath.section == (kProtectionSectionIndex) && indexPath.row == (kNumberProtection-1)) {
-//		return indexPath;
-//	}
-	return nil;
-}
-
+//
+//- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//	
+////	UITableViewCell * cell = [self.tableView cellForRowAtIndexPath:indexPath];
+////	if ([cell.reuseIdentifier isEqualToString: @"PayFooter" ]) {
+////	//if ( indexPath.section == (kProtectionSectionIndex) && indexPath.row == (kNumberProtection-1)) {
+////		return indexPath;
+////	}
+//	return nil;
+//}
+//
 
 
 //- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -323,21 +324,93 @@
 }
 
 - (IBAction)payButton:(id)sender {
-	[self loader];
+	UIAlertView * alerte = [[UIAlertView alloc] initWithTitle:@"Payement" message:@"Do you confirm the payement of 5€ ?"
+					 cancelButtonTitle:@"Cancel"
+					  otherButtonTitle:@"Pay"
+					   completionBlock:^(NSInteger buttonIndex, UIAlertView *alertView) {
+						   if (buttonIndex == 1) {
+							   [self loader];
+						   }
+						   else {
+							   
+						   }
+		
+	}];
+	
+	[alerte show];
+	 
+	 
+//	 showWithTitle:@"Drink Selection"
+//					   message:@"Choose a refreshing beverage"
+//			 cancelButtonTitle:@"Cancel"
+//			 otherButtonTitles:@[@"Beer", @"Wine"]
+//					  tapBlock:^(UIAlertView *alertView, NSInteger buttonIndex) {
+//						  if (buttonIndex == [alertView cancelButtonIndex]) {
+//							  NSLog(@"Cancelled");
+//						  } else if ([[alertView buttonTitleAtIndex:buttonIndex] isEqualToString:@"Beer"]) {
+//							  NSLog(@"Have a cold beer");
+//						  } else if ([[alertView buttonTitleAtIndex:buttonIndex] isEqualToString:@"Wine"]) {
+//							  NSLog(@"Have a glass of chardonnay");
+//						  }
+//					  }];
+//	
+	
 }
+
+-(void) loader {
+	MBProgressHUD * hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+	self.hud = hud;
+	hud.animationType = MBProgressHUDAnimationFade;
+	//self.hud.mode = MBProgressHUDModeDeterminateHorizontalBar;
+	hud.dimBackground=YES;
+	//hud.minShowTime = 2;
+	//hud.graceTime=0.1;
+	
+	hud.mode = MBProgressHUDModeAnnularDeterminate;
+	hud.labelText = @"Processing payement";
+	//hud.detailsLabelText = @"Processing";
+	//[hud showWhileExecuting:@selector(doSomeFunkyStuff) onTarget:self withObject:nil animated:YES];
+	
+	
+	[hud showAnimated:YES whileExecutingBlock:^{
+		[self simulateLoader];
+		// hud.progress = 1.0f;
+	} completionBlock:^{
+		[self displayCheck];
+	}];
+
+}
+
+
+
+- (void)simulateLoader {
+	float progress = 0.0;
+	
+	while (progress < 1.0) {
+		progress += 0.02;
+		self.hud.progress = progress;
+		if (FAST_MODE) {
+			usleep(10000);
+		}
+		else {
+			usleep(50000);
+		}
+	}
+}
+
 
 
 
 
 #pragma mark loader
 
-- (void) loader {
+- (void) displayCheck {
 	MBProgressHUD * hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 	self.hud = hud;
 	hud.mode = MBProgressHUDModeCustomView;
 	
 	hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"check.png"]];
-	int duration = 2;
+	int duration = 1;
 	
 	[hud hide:YES afterDelay:duration];
 	[hud setCompletionBlock:^{
@@ -351,7 +424,7 @@
 }
 
 - (IBAction)cancel:(id)sender {
-	[self dismissViewControllerAnimated:YES completion:Nil];
+	[self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 

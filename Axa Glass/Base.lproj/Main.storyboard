@@ -48,7 +48,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="rS3-R9-Ivy" kind="modal" modalTransitionStyle="flipHorizontal" id="aBa-WE-KKe"/>
+                                    <segue destination="rS3-R9-Ivy" kind="modal" identifier="showHome" modalTransitionStyle="flipHorizontal" id="aBa-WE-KKe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -98,7 +98,7 @@
                                 </state>
                                 <connections>
                                     <action selector="consultantAction:" destination="K7L-tY-Tp1" eventType="touchUpInside" id="nbL-HI-ZxV"/>
-                                    <segue destination="Iqg-bq-EtU" kind="modal" id="OCS-DO-t2g"/>
+                                    <segue destination="Iqg-bq-EtU" kind="modal" identifier="showMyConsultant" id="OCS-DO-t2g"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUb-Ah-Ftk">
@@ -130,6 +130,9 @@
                     <navigationItem key="navigationItem" id="zOD-HG-7FL">
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="cR7-4a-Nc2">
                             <color key="tintColor" red="0.10588235294117647" green="0.55294117647058827" blue="0.80784313725490198" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="MTm-mZ-3g0" kind="modal" modalTransitionStyle="flipHorizontal" id="CqK-FY-2yr"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
@@ -153,7 +156,7 @@
                                 <rect key="frame" x="0.0" y="-10" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h45-zw-MkZ">
-                                <rect key="frame" x="284" y="17" width="23" height="23"/>
+                                <rect key="frame" x="284" y="21" width="23" height="23"/>
                                 <state key="normal" backgroundImage="Info-croix.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -165,7 +168,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="h45-zw-MkZ" firstAttribute="top" secondItem="itL-mb-E17" secondAttribute="bottom" constant="-3" id="Dql-PG-Ccc"/>
+                            <constraint firstItem="h45-zw-MkZ" firstAttribute="top" secondItem="itL-mb-E17" secondAttribute="bottom" constant="1" id="Dql-PG-Ccc"/>
                             <constraint firstItem="95V-cl-WyV" firstAttribute="leading" secondItem="2kI-k8-bNc" secondAttribute="leading" id="asG-QR-uJc"/>
                             <constraint firstAttribute="trailing" secondItem="h45-zw-MkZ" secondAttribute="trailing" constant="13" id="be3-Ph-0Hu"/>
                             <constraint firstItem="95V-cl-WyV" firstAttribute="top" secondItem="itL-mb-E17" secondAttribute="bottom" constant="-10" id="c52-qK-MAI"/>
@@ -590,6 +593,7 @@
                     <navigationItem key="navigationItem" title="Is it insured ?" id="qZk-WH-Xn5">
                         <barButtonItem key="backBarButtonItem" title="Image" id="fDb-3s-tBV"/>
                         <barButtonItem key="rightBarButtonItem" title="Cancel" id="72t-89-yE7">
+                            <color key="tintColor" red="0.10588235294117647" green="0.55294117647058827" blue="0.80784313725490198" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="cancel:" destination="Thf-2p-TID" id="6fy-UZ-PqQ"/>
                             </connections>
@@ -818,7 +822,14 @@ MATCH</string>
                             <constraint firstItem="9ql-h2-uZc" firstAttribute="top" secondItem="gGd-cB-bju" secondAttribute="bottom" id="rrM-Wp-GtJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Search result" id="wB6-OM-QAr"/>
+                    <navigationItem key="navigationItem" title="Search result" id="wB6-OM-QAr">
+                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="ddf-zw-i16">
+                            <color key="tintColor" red="0.1058823529" green="0.55294117649999996" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="cancel:" destination="5RE-mG-gSS" id="NKp-gv-q1d"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="9ql-h2-uZc" id="WU4-sF-mKB"/>
                     </connections>
@@ -863,6 +874,7 @@ MATCH</string>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="LRU-Mb-Whq"/>
+        <segue reference="JnJ-4D-dkp"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
