@@ -83,7 +83,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xl6-BH-LTL">
-                                <rect key="frame" x="8" y="327" width="305" height="50"/>
+                                <rect key="frame" x="8" y="320" width="305" height="50"/>
                                 <state key="normal" image="Boutton-report-item.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -113,7 +113,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKK-3F-28Q">
                                 <rect key="frame" x="218" y="427" width="94" height="121"/>
-                                <state key="normal" image="3-my-claims.png">
+                                <state key="normal" image="my-watch-list.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -121,8 +121,8 @@
                                     <segue destination="MTm-mZ-3g0" kind="modal" modalTransitionStyle="flipHorizontal" id="JnJ-4D-dkp"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Graph.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Z0-tS-dAE">
-                                <rect key="frame" x="10" y="121" width="293" height="134"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Home-last-items.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Z0-tS-dAE">
+                                <rect key="frame" x="0.0" y="82" width="320" height="188"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -842,13 +842,12 @@ MATCH</string>
     <resources>
         <image name="1-my-consultant.png" width="94" height="121"/>
         <image name="2-my-securities.png" width="94" height="121"/>
-        <image name="3-my-claims.png" width="94" height="121"/>
         <image name="Background.png" width="320" height="568"/>
         <image name="BackgroundSearchResults.png" width="320" height="568"/>
         <image name="Boutton-report-item.png" width="305" height="50"/>
         <image name="DisclosureBlue.png" width="12" height="21"/>
         <image name="GlassCell.png" width="320" height="102"/>
-        <image name="Graph.png" width="293" height="134"/>
+        <image name="Home-last-items.png" width="320" height="188"/>
         <image name="HomeAxa.png" width="320" height="568"/>
         <image name="Info-background.png" width="320" height="568"/>
         <image name="Info-croix.png" width="23" height="23"/>
@@ -863,6 +862,7 @@ MATCH</string>
         <image name="image-2.jpg" width="1846" height="1082"/>
         <image name="image-3.jpg" width="399" height="304"/>
         <image name="my-consultant.png" width="320" height="568"/>
+        <image name="my-watch-list.png" width="94" height="121"/>
         <image name="option-at-home.png" width="48" height="48"/>
         <image name="option-check.png" width="16" height="16"/>
         <image name="option-info.png" width="27" height="27"/>

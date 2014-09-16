@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1510FBEA19C8248700D81805 /* OptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1510FBE919C8248700D81805 /* OptionCell.m */; };
+		1510FBED19C8414F00D81805 /* Home-last-items@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1510FBEB19C8414F00D81805 /* Home-last-items@2x.png */; };
+		1510FBEE19C8414F00D81805 /* my-watch-list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1510FBEC19C8414F00D81805 /* my-watch-list@2x.png */; };
 		151A406E19C74397002970C6 /* ITCFranklinGothicStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 151A406B19C74397002970C6 /* ITCFranklinGothicStd-Book.otf */; };
 		151A406F19C74397002970C6 /* ITCFranklinGothicStd-Demi.otf in Resources */ = {isa = PBXBuildFile; fileRef = 151A406C19C74397002970C6 /* ITCFranklinGothicStd-Demi.otf */; };
 		151A407019C74397002970C6 /* ITCFranklinGothicStd-DmCd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 151A406D19C74397002970C6 /* ITCFranklinGothicStd-DmCd.otf */; };
@@ -130,6 +132,8 @@
 /* Begin PBXFileReference section */
 		1510FBE819C8248700D81805 /* OptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionCell.h; sourceTree = "<group>"; };
 		1510FBE919C8248700D81805 /* OptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionCell.m; sourceTree = "<group>"; };
+		1510FBEB19C8414F00D81805 /* Home-last-items@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home-last-items@2x.png"; sourceTree = "<group>"; };
+		1510FBEC19C8414F00D81805 /* my-watch-list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-watch-list@2x.png"; sourceTree = "<group>"; };
 		151A406B19C74397002970C6 /* ITCFranklinGothicStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ITCFranklinGothicStd-Book.otf"; sourceTree = "<group>"; };
 		151A406C19C74397002970C6 /* ITCFranklinGothicStd-Demi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ITCFranklinGothicStd-Demi.otf"; sourceTree = "<group>"; };
 		151A406D19C74397002970C6 /* ITCFranklinGothicStd-DmCd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ITCFranklinGothicStd-DmCd.otf"; sourceTree = "<group>"; };
@@ -443,6 +447,8 @@
 		1588837B19C2E6A200127E1A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1510FBEB19C8414F00D81805 /* Home-last-items@2x.png */,
+				1510FBEC19C8414F00D81805 /* my-watch-list@2x.png */,
 				151A40DC19C74915002970C6 /* my-consultant@2x.png */,
 				151A40D619C743ED002970C6 /* HomeAxa@2x.png */,
 				151A407119C743CC002970C6 /* image-0 */,
@@ -731,6 +737,7 @@
 				151A40CD19C743CC002970C6 /* images-3-3.jpeg in Resources */,
 				15A906A319C711840068D0C4 /* Info-background@2x.png in Resources */,
 				1588838C19C2F12E00127E1A /* logo-axa-glass@2x.png in Resources */,
+				1510FBED19C8414F00D81805 /* Home-last-items@2x.png in Resources */,
 				15A9069C19C70DB30068D0C4 /* option-info@2x.png in Resources */,
 				1547AA4F19C30CE100245389 /* elipse-category@2x.png in Resources */,
 				151A40C019C743CC002970C6 /* images-2-2.jpeg in Resources */,
@@ -775,6 +782,7 @@
 				151A40D419C743CC002970C6 /* image-4.jpg in Resources */,
 				151A40BB19C743CC002970C6 /* images-1-9.jpeg in Resources */,
 				1547AA5019C30CE100245389 /* elipse-tag@2x.png in Resources */,
+				1510FBEE19C8414F00D81805 /* my-watch-list@2x.png in Resources */,
 				15A9068119C644300068D0C4 /* DisclosureBlue@2x.png in Resources */,
 				151A40D719C743ED002970C6 /* HomeAxa@2x.png in Resources */,
 				1547AA3C19C3001B00245389 /* logo-axa-glass_marge@2x.png in Resources */,
