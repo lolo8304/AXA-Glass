@@ -89,16 +89,13 @@
 
 
 - (void) defineFont {
-	self.tag.font = [UIFont fontWithName:FONT_BOOK size:14];
-	self.category.font = [UIFont fontWithName:FONT_BOOK size:14];
-	self.price.font = [UIFont fontWithName:FONT_BOOK size:14];
-	
-	self.yourProtectionTitle.font = [UIFont fontWithName:FONT_DEMI size:24];
+	self.tag.font = [UIFont fontWithName:FONT_BOOK size:15];
+	self.category.font = [UIFont fontWithName:FONT_BOOK size:15];
+	self.price.font = [UIFont fontWithName:FONT_BOOK size:15];
 }
 
 - (void)didReceiveMemoryWarning {
 	[super didReceiveMemoryWarning];
-	// Dispose of any resources that can be recreated.
 }
 
 
@@ -119,25 +116,9 @@
 #pragma mark -
 #pragma mark Keyboard Controls Delegate
 
-//- (void)keyboardControls:(BSKeyboardControls *)keyboardControls selectedField:(UIView *)field inDirection:(BSKeyboardControlsDirection)direction {
-//}
-
 - (void)keyboardControlsDonePressed:(BSKeyboardControls *)keyboardControls {
 	[self.view endEditing:YES];
 }
-
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
- {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
-
-
 
 #pragma mark - Tableview
 
@@ -155,8 +136,7 @@
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	LoggerData(1, @"row=%ld section = %ld", (long)indexPath.row, (long)indexPath.section);
 
 	if (indexPath.section==kOptionSectionIndex) {
@@ -232,24 +212,6 @@
 
 	return nil;
 }
-
-//
-//- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//	
-////	UITableViewCell * cell = [self.tableView cellForRowAtIndexPath:indexPath];
-////	if ([cell.reuseIdentifier isEqualToString: @"PayFooter" ]) {
-////	//if ( indexPath.section == (kProtectionSectionIndex) && indexPath.row == (kNumberProtection-1)) {
-////		return indexPath;
-////	}
-//	return nil;
-//}
-//
-
-
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//	
-//	[self loader];
-//}
 
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -338,23 +300,7 @@
 	}];
 	
 	[alerte show];
-	 
-	 
-//	 showWithTitle:@"Drink Selection"
-//					   message:@"Choose a refreshing beverage"
-//			 cancelButtonTitle:@"Cancel"
-//			 otherButtonTitles:@[@"Beer", @"Wine"]
-//					  tapBlock:^(UIAlertView *alertView, NSInteger buttonIndex) {
-//						  if (buttonIndex == [alertView cancelButtonIndex]) {
-//							  NSLog(@"Cancelled");
-//						  } else if ([[alertView buttonTitleAtIndex:buttonIndex] isEqualToString:@"Beer"]) {
-//							  NSLog(@"Have a cold beer");
-//						  } else if ([[alertView buttonTitleAtIndex:buttonIndex] isEqualToString:@"Wine"]) {
-//							  NSLog(@"Have a glass of chardonnay");
-//						  }
-//					  }];
-//	
-	
+
 }
 
 -(void) loader {

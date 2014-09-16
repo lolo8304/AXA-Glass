@@ -10,7 +10,6 @@
 #import "BSKeyboardControls.h"
 
 @interface ImageDetailViewController : UIViewController <BSKeyboardControlsDelegate, UITextFieldDelegate, UITextViewDelegate, UITableViewDataSource, UITableViewDelegate>
-@property (weak, nonatomic) IBOutlet UILabel *yourProtectionTitle;
 @property (nonatomic, strong) ImageModel * imageModel;
 @property (nonatomic, strong) SimilarImage * similarImage;
 
