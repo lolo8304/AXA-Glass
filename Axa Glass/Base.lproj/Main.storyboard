@@ -18,6 +18,9 @@
                     <navigationItem key="navigationItem" id="MKp-1r-Kbq"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="yXu-0R-QUA">
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.08235294118" green="0.55294117649999996" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="K7L-tY-Tp1" kind="relationship" relationship="rootViewController" id="kRf-ar-GGU"/>
@@ -322,7 +325,7 @@
                             <constraint firstItem="Lj9-5f-7J8" firstAttribute="top" secondItem="cIm-e0-J51" secondAttribute="bottom" constant="3" id="yiM-jU-SXI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Choose image" id="cra-N8-TIN">
+                    <navigationItem key="navigationItem" title="Choose Image" id="cra-N8-TIN">
                         <barButtonItem key="backBarButtonItem" title="Photo" id="Sdi-cd-z9a"/>
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
@@ -335,7 +338,7 @@
             </objects>
             <point key="canvasLocation" x="985" y="76"/>
         </scene>
-        <!--Is it insured ?-->
+        <!--Is It Insured?-->
         <scene sceneID="2jV-ty-uyg">
             <objects>
                 <viewController id="Thf-2p-TID" customClass="ImageDetailViewController" sceneMemberID="viewController">
@@ -441,14 +444,14 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kay-8n-Vic" id="adr-Ve-fkQ">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In a safe ?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0m-YI-5Fo">
-                                                    <rect key="frame" x="26" y="21" width="67" height="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In a safe?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0m-YI-5Fo">
+                                                    <rect key="frame" x="26" y="21" width="63" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BbK-VI-2c9">
-                                                    <rect key="frame" x="251" y="14.5" width="51" height="31"/>
+                                                    <rect key="frame" x="251" y="14" width="51" height="31"/>
                                                     <color key="tintColor" red="0.08235294118" green="0.55294117649999996" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="onTintColor" red="0.08235294118" green="0.55294117649999996" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                                                 </switch>
@@ -597,7 +600,7 @@
                             <constraint firstAttribute="trailing" secondItem="oHV-3C-py7" secondAttribute="trailing" id="yxp-29-oYQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Is it insured ?" id="qZk-WH-Xn5">
+                    <navigationItem key="navigationItem" title="Is It Insured?" id="qZk-WH-Xn5">
                         <barButtonItem key="backBarButtonItem" title="Image" id="fDb-3s-tBV"/>
                         <barButtonItem key="rightBarButtonItem" title="Cancel" id="72t-89-yE7">
                             <color key="tintColor" red="0.10588235294117647" green="0.55294117647058827" blue="0.80784313725490198" alpha="1" colorSpace="calibratedRGB"/>
@@ -835,7 +838,8 @@ MATCH</string>
                             <constraint firstItem="9ql-h2-uZc" firstAttribute="top" secondItem="gGd-cB-bju" secondAttribute="bottom" id="rrM-Wp-GtJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Search result" id="wB6-OM-QAr">
+                    <navigationItem key="navigationItem" title="Search Result" id="wB6-OM-QAr">
+                        <barButtonItem key="backBarButtonItem" title="Result" id="ubH-Uh-6Mw"/>
                         <barButtonItem key="rightBarButtonItem" title="Cancel" id="ddf-zw-i16">
                             <color key="tintColor" red="0.1058823529" green="0.55294117649999996" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -886,8 +890,8 @@ MATCH</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="4IZ-Av-zYh"/>
         <segue reference="JnJ-4D-dkp"/>
+        <segue reference="4IZ-Av-zYh"/>
     </inferredMetricsTieBreakers>
-    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+    <color key="tintColor" red="0.08235294118" green="0.55294117649999996" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
 </document>

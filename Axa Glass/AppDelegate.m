@@ -19,6 +19,12 @@
 	[[UIBarButtonItem appearance] setTitleTextAttributes:dictionnary forState:UIControlStateNormal];
 
 	
+//	NSMutableDictionary *titleBarAttributes = [NSMutableDictionary dictionaryWithDictionary: [[UINavigationBar appearance] titleTextAttributes]];
+//	[titleBarAttributes setValue:[UIFont fontWithName:FONT_DEMI size:16] forKey:NSFontAttributeName];
+//	[[UINavigationBar appearance] setTitleTextAttributes:titleBarAttributes];
+	
+	
+	
 //#ifdef DEBUG
 //[self debugFontAvailables];
 //#endif

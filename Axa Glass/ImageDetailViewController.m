@@ -286,7 +286,7 @@
 }
 
 - (IBAction)payButton:(id)sender {
-	UIAlertView * alerte = [[UIAlertView alloc] initWithTitle:@"Payement" message:@"Do you confirm the payement of 5€ ?"
+	UIAlertView * alerte = [[UIAlertView alloc] initWithTitle:@"Payement" message:@"Do you confirm the payement of 5€?"
 					 cancelButtonTitle:@"Cancel"
 					  otherButtonTitle:@"Pay"
 					   completionBlock:^(NSInteger buttonIndex, UIAlertView *alertView) {
