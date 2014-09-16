@@ -16,17 +16,13 @@
 #define kProtectionSectionIndex 1
 #define kNumberSection 2
 
-//Number
-#define kNumberOption 1
-#define kNumberProtection 4
-
-
 //Mode
 #define kStatusCheck @"option-check.png"
 #define kStatusKO @"option-croix.png"
 #define kStatusWarning @"option-exclamation.png"
 
 #define kImacIndex 3
+#define kWatchIndex 0
 #define kVuittonIndex 1
 
 @interface ImageDetailViewController ()
@@ -39,6 +35,9 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (strong, nonatomic) BSKeyboardControls * keyboardControls;
+
+@property (nonatomic) NSUInteger numberOption;
+@property (nonatomic) NSUInteger numberProtection;
 
 @end
 
@@ -85,6 +84,13 @@
 	}
 	
 	self.image.image = [UIImage imageNamed:self.imageModel.imageName];
+	
+	self.numberOption = 0;
+	self.numberProtection = 4;
+	
+	if ([ImagesModel sharedManager].currentImageIndex == kWatchIndex) {
+		self.numberOption = 1;
+	}
 }
 
 
@@ -130,8 +136,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	// Return the number of rows in the section.
-	if (section == kOptionSectionIndex) return kNumberOption;
-	else if (section == kProtectionSectionIndex) return kNumberProtection;
+	if (section == kOptionSectionIndex) return self.numberOption;
+	else if (section == kProtectionSectionIndex) return self.numberProtection;
 	else return 0;
 }
 
@@ -282,6 +288,10 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
 	//if (section==0) return 0;
+	if (section == 0 && self.numberOption == 0) {
+		return 0;
+	}
+		
 	return 24;
 }
 
