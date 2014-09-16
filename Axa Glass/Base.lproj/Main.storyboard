@@ -117,7 +117,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="claimsAction:" destination="K7L-tY-Tp1" eventType="touchUpInside" id="Ami-8b-wqJ"/>
                                     <segue destination="MTm-mZ-3g0" kind="modal" modalTransitionStyle="flipHorizontal" id="JnJ-4D-dkp"/>
                                 </connections>
                             </button>
@@ -155,9 +154,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="my-consultant.png" translatesAutoresizingMaskIntoConstraints="NO" id="95V-cl-WyV">
                                 <rect key="frame" x="0.0" y="-10" width="320" height="568"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h45-zw-MkZ">
-                                <rect key="frame" x="284" y="21" width="23" height="23"/>
-                                <state key="normal" backgroundImage="Info-croix.png">
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h45-zw-MkZ">
+                                <rect key="frame" x="262" y="9" width="71" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="SDM-6E-aHs"/>
+                                    <constraint firstAttribute="height" constant="63" id="hUR-3Z-7aB"/>
+                                </constraints>
+                                <state key="normal" image="Info-croix.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -168,9 +171,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="h45-zw-MkZ" firstAttribute="top" secondItem="itL-mb-E17" secondAttribute="bottom" constant="1" id="Dql-PG-Ccc"/>
+                            <constraint firstItem="h45-zw-MkZ" firstAttribute="top" secondItem="itL-mb-E17" secondAttribute="bottom" constant="-11" id="Dql-PG-Ccc"/>
                             <constraint firstItem="95V-cl-WyV" firstAttribute="leading" secondItem="2kI-k8-bNc" secondAttribute="leading" id="asG-QR-uJc"/>
-                            <constraint firstAttribute="trailing" secondItem="h45-zw-MkZ" secondAttribute="trailing" constant="13" id="be3-Ph-0Hu"/>
+                            <constraint firstAttribute="trailing" secondItem="h45-zw-MkZ" secondAttribute="trailing" constant="-13" id="be3-Ph-0Hu"/>
                             <constraint firstItem="95V-cl-WyV" firstAttribute="top" secondItem="itL-mb-E17" secondAttribute="bottom" constant="-10" id="c52-qK-MAI"/>
                             <constraint firstAttribute="trailing" secondItem="95V-cl-WyV" secondAttribute="trailing" id="eK9-FF-XSb"/>
                         </constraints>
@@ -627,15 +630,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0H-nD-B2h">
-                                <rect key="frame" x="286" y="28" width="23" height="23"/>
-                                <state key="normal" backgroundImage="Info-croix.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="close:" destination="hYS-2m-Os4" eventType="touchUpInside" id="Eio-cY-DD3"/>
-                                </connections>
-                            </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ucO-k6-J7V">
                                 <rect key="frame" x="260" y="469" width="51" height="31"/>
                                 <color key="tintColor" red="0.08235294118" green="0.55294117649999996" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -655,13 +649,28 @@
                                 <color key="tintColor" red="0.082352941176470587" green="0.55294117647058827" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="onTintColor" red="0.08235294118" green="0.55294117649999996" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                             </switch>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0H-nD-B2h">
+                                <rect key="frame" x="270" y="9" width="61" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="WEN-R8-zhw"/>
+                                    <constraint firstAttribute="height" constant="58" id="a95-YF-3Ku"/>
+                                </constraints>
+                                <state key="normal" image="Info-croix.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="close:" destination="hYS-2m-Os4" eventType="touchUpInside" id="Eio-cY-DD3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="eUA-hU-ISB" secondAttribute="centerY" id="6IL-K0-aZu"/>
+                            <constraint firstItem="e0H-nD-B2h" firstAttribute="top" secondItem="1VU-3n-MTn" secondAttribute="top" constant="9" id="7hY-C2-aWj"/>
                             <constraint firstItem="eUA-hU-ISB" firstAttribute="height" secondItem="1VU-3n-MTn" secondAttribute="height" id="Be6-cC-Ae9"/>
                             <constraint firstItem="eUA-hU-ISB" firstAttribute="width" secondItem="1VU-3n-MTn" secondAttribute="width" id="ZR1-AU-qzc"/>
+                            <constraint firstAttribute="trailing" secondItem="e0H-nD-B2h" secondAttribute="trailing" constant="-11" id="hue-fq-PVd"/>
                             <constraint firstAttribute="centerX" secondItem="eUA-hU-ISB" secondAttribute="centerX" id="kSA-n6-tJ9"/>
                         </constraints>
                     </view>
@@ -669,7 +678,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cap-P8-9j4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2040" y="762"/>
+            <point key="canvasLocation" x="1992" y="762"/>
         </scene>
         <!--SearchResult-->
         <scene sceneID="BbS-cD-AeP">
@@ -873,7 +882,7 @@ MATCH</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="LRU-Mb-Whq"/>
+        <segue reference="4IZ-Av-zYh"/>
         <segue reference="JnJ-4D-dkp"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
