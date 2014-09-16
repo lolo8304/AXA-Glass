@@ -73,6 +73,11 @@
 		1547AA5719C31A8800245389 /* ProtectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1547AA5619C31A8800245389 /* ProtectionCell.m */; };
 		157B1BBA19C8823F0022E5BD /* LoginTop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 157B1BB819C8823E0022E5BD /* LoginTop@2x.png */; };
 		157B1BBB19C8823F0022E5BD /* LoginBackgroundWithoutTop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 157B1BB919C8823F0022E5BD /* LoginBackgroundWithoutTop@2x.png */; };
+		157B1BBF19C885650022E5BD /* LoginSubscribeButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 157B1BBC19C885650022E5BD /* LoginSubscribeButton@2x.png */; };
+		157B1BC019C885650022E5BD /* LoginButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 157B1BBD19C885650022E5BD /* LoginButton@2x.png */; };
+		157B1BC119C885650022E5BD /* Login_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 157B1BBE19C885650022E5BD /* Login_logo@2x.png */; };
+		157B1BC319C886040022E5BD /* LoginBackgroundEmpty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 157B1BC219C886040022E5BD /* LoginBackgroundEmpty@2x.png */; };
+		157B1BC519C88A180022E5BD /* LogoAxa60.png in Resources */ = {isa = PBXBuildFile; fileRef = 157B1BC419C88A180022E5BD /* LogoAxa60.png */; };
 		1588837719C2DF8900127E1A /* ImageResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1588837619C2DF8900127E1A /* ImageResultController.m */; };
 		1588837A19C2E0F700127E1A /* ResultImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1588837919C2E0F700127E1A /* ResultImageCell.m */; };
 		1588837F19C2E6EC00127E1A /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1588837E19C2E6EC00127E1A /* Background@2x.png */; };
@@ -203,6 +208,11 @@
 		1547AA5619C31A8800245389 /* ProtectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtectionCell.m; sourceTree = "<group>"; };
 		157B1BB819C8823E0022E5BD /* LoginTop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginTop@2x.png"; sourceTree = "<group>"; };
 		157B1BB919C8823F0022E5BD /* LoginBackgroundWithoutTop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginBackgroundWithoutTop@2x.png"; sourceTree = "<group>"; };
+		157B1BBC19C885650022E5BD /* LoginSubscribeButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginSubscribeButton@2x.png"; sourceTree = "<group>"; };
+		157B1BBD19C885650022E5BD /* LoginButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginButton@2x.png"; sourceTree = "<group>"; };
+		157B1BBE19C885650022E5BD /* Login_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Login_logo@2x.png"; sourceTree = "<group>"; };
+		157B1BC219C886040022E5BD /* LoginBackgroundEmpty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginBackgroundEmpty@2x.png"; sourceTree = "<group>"; };
+		157B1BC419C88A180022E5BD /* LogoAxa60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoAxa60.png; sourceTree = "<group>"; };
 		1588837519C2DF8900127E1A /* ImageResultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageResultController.h; sourceTree = "<group>"; };
 		1588837619C2DF8900127E1A /* ImageResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageResultController.m; sourceTree = "<group>"; };
 		1588837819C2E0F700127E1A /* ResultImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultImageCell.h; sourceTree = "<group>"; };
@@ -451,6 +461,11 @@
 		1588837B19C2E6A200127E1A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				157B1BC419C88A180022E5BD /* LogoAxa60.png */,
+				157B1BC219C886040022E5BD /* LoginBackgroundEmpty@2x.png */,
+				157B1BBC19C885650022E5BD /* LoginSubscribeButton@2x.png */,
+				157B1BBD19C885650022E5BD /* LoginButton@2x.png */,
+				157B1BBE19C885650022E5BD /* Login_logo@2x.png */,
 				157B1BB819C8823E0022E5BD /* LoginTop@2x.png */,
 				157B1BB919C8823F0022E5BD /* LoginBackgroundWithoutTop@2x.png */,
 				1510FBEB19C8414F00D81805 /* Home-last-items@2x.png */,
@@ -728,6 +743,7 @@
 				151A406F19C74397002970C6 /* ITCFranklinGothicStd-Demi.otf in Resources */,
 				151A40B119C743CC002970C6 /* image-1.json in Resources */,
 				151A40B319C743CC002970C6 /* images-1-1.jpeg in Resources */,
+				157B1BC519C88A180022E5BD /* LogoAxa60.png in Resources */,
 				15A9069819C70DB30068D0C4 /* option-check@2x.png in Resources */,
 				151A40BD19C743CC002970C6 /* image-2.json in Resources */,
 				151A40B619C743CC002970C6 /* images-1-4.jpeg in Resources */,
@@ -737,6 +753,7 @@
 				15A9069E19C70DB30068D0C4 /* option-traveling@2x.png in Resources */,
 				151A40D019C743CC002970C6 /* images-3-6.jpeg in Resources */,
 				151A40A919C743CC002970C6 /* images-0-1.jpeg in Resources */,
+				157B1BC319C886040022E5BD /* LoginBackgroundEmpty@2x.png in Resources */,
 				157B1BBB19C8823F0022E5BD /* LoginBackgroundWithoutTop@2x.png in Resources */,
 				157B1BBA19C8823F0022E5BD /* LoginTop@2x.png in Resources */,
 				15C795DE19C1D0CB0068B8F2 /* Images.xcassets in Resources */,
@@ -764,6 +781,7 @@
 				151A40AE19C743CC002970C6 /* images-0-6.jpeg in Resources */,
 				1588838B19C2F12E00127E1A /* Graph@2x.png in Resources */,
 				15A9068519C6EF930068D0C4 /* check@2x.png in Resources */,
+				157B1BC119C885650022E5BD /* Login_logo@2x.png in Resources */,
 				15C795CD19C1D0CB0068B8F2 /* InfoPlist.strings in Resources */,
 				151A40B719C743CC002970C6 /* images-1-5.jpeg in Resources */,
 				151A40AA19C743CC002970C6 /* images-0-2.jpeg in Resources */,
@@ -783,6 +801,7 @@
 				15A9069719C70DB30068D0C4 /* option-at-home@2x.png in Resources */,
 				151A40B219C743CC002970C6 /* images-1-0.jpeg in Resources */,
 				151A40A619C743CC002970C6 /* image-0.jpg in Resources */,
+				157B1BC019C885650022E5BD /* LoginButton@2x.png in Resources */,
 				151A40B919C743CC002970C6 /* images-1-7.jpeg in Resources */,
 				15A9068719C6F8700068D0C4 /* applepay@2x.png in Resources */,
 				15A9069A19C70DB30068D0C4 /* option-exclamation@2x.png in Resources */,
@@ -794,6 +813,7 @@
 				15A9068119C644300068D0C4 /* DisclosureBlue@2x.png in Resources */,
 				151A40D719C743ED002970C6 /* HomeAxa@2x.png in Resources */,
 				1547AA3C19C3001B00245389 /* logo-axa-glass_marge@2x.png in Resources */,
+				157B1BBF19C885650022E5BD /* LoginSubscribeButton@2x.png in Resources */,
 				151A40CE19C743CC002970C6 /* images-3-4.jpeg in Resources */,
 				1588838A19C2F12E00127E1A /* Boutton-report-item@2x.png in Resources */,
 				151A40D519C743CC002970C6 /* image-4.json in Resources */,
