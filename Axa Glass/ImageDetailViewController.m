@@ -16,7 +16,7 @@
 #define kNumberSection 2
 
 //Number
-#define kNumberOption 0
+#define kNumberOption 1
 #define kNumberProtection 4
 
 
@@ -76,11 +76,11 @@
 	
 	if( self.similarImage ==nil) {
 		self.tag.text = self.imageModel.keywords;
-		self.price.text = [NSString stringWithFormat:@"%@ %@", self.imageModel.price, self.imageModel.currency];
+		self.price.text = [NSString stringWithFormat:@"%@", self.imageModel.price];
 	}
 	else {
 		self.tag.text = self.similarImage.keywords;
-		self.price.text = [NSString stringWithFormat:@"%@ %@", self.similarImage.price, self.similarImage.currency];
+		self.price.text = [NSString stringWithFormat:@"%@", self.similarImage.price];
 	}
 	
 	self.image.image = [UIImage imageNamed:self.imageModel.imageName];
@@ -154,17 +154,14 @@
 }
 
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-	return 70;
-}
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	LoggerData(1, @"row=%ld section = %ld", (long)indexPath.row, (long)indexPath.section);
 
 	if (indexPath.section==kOptionSectionIndex) {
 
-		UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"OptionCell" forIndexPath:indexPath];
+		UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"OptionsCell" forIndexPath:indexPath];
+
 		return cell;
 	
 	}
@@ -229,27 +226,34 @@
 		}
 		return cell;
 	}
+	
+	LoggerError(0, @"Your assurance detail : Cell return nil row=%ld section = %ld", (long)indexPath.row, (long)indexPath.section);
+
 	return nil;
 }
 
 
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	if ( indexPath.section == (kNumberSection-1) &&
-		indexPath.row == (kNumberProtection-1)) {
-		return indexPath;
-	}
+	
+//	UITableViewCell * cell = [self.tableView cellForRowAtIndexPath:indexPath];
+//	if ([cell.reuseIdentifier isEqualToString: @"PayFooter" ]) {
+//	//if ( indexPath.section == (kProtectionSectionIndex) && indexPath.row == (kNumberProtection-1)) {
+//		return indexPath;
+//	}
 	return nil;
 }
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	
-	[self loader];
-}
+
+
+
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//	
+//	[self loader];
+//}
 
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
 	return NO;
 }
-
 
 
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
@@ -266,7 +270,9 @@
 	else {
 		title.text = @"YOUR PROTECTIONS";
 	}
-	title.font = [UIFont fontWithName:FONT_DEMI size:18.0f];
+	[title sizeToFit];
+	
+	//title.font = [UIFont fontWithName:FONT_DEMI size:17.0f];
 	if (cell == nil){
 		[NSException raise:@"headerView == nil.." format:@"No cells with matching CellIdentifier loaded from your storyboard"];
 	}
@@ -294,19 +300,31 @@
 }
 
 
+
+#pragma mark - cell size
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+	if (indexPath.section == 0) return 60;
+	else {
+		return 70;
+	}
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
 	
 	if (section==[self.tableView numberOfSections]-1) {
-		return 70;
+		return 60;
 	}
 	return 0;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-	if (section==0) return 0;//TODO
-	return 50;
+	//if (section==0) return 0;
+	return 24;
 }
 
+- (IBAction)payButton:(id)sender {
+	[self loader];
+}
 
 
 

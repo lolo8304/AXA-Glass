@@ -7,7 +7,7 @@
 //
 
 #import "HomeViewController.h"
-
+#import "ImageDetailViewController.h"
 #import "DetailViewController.h"
 
 @interface HomeViewController ()
@@ -50,6 +50,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	[[ImagesModel sharedManager] loadData];
+
 	
 	
 	// Do any additional setup after loading the view, typically from a nib.
@@ -70,14 +72,21 @@
 
 
 
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-//{
-//    if ([[segue identifier] isEqualToString:@"showDetail"]) {
-//        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-//        NSDate *object = _objects[indexPath.row];
-//        [[segue destinationViewController] setDetailItem:object];
-//    }
-//}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"TestDetail"]) {
+       
+		ImageDetailViewController * destViewController = segue.destinationViewController;
+		
+		
+		[ImagesModel sharedManager].currentImageIndex = 1;
+		
+		ImageModel * imageModel = [ImagesModel sharedManager].imageModelAtCurrentIndex;
+		
+		LoggerData(1, @"Similar images count %lu", (unsigned long)[imageModel.similarImages count]);
+		destViewController.imageModel = imageModel ;
+	}
+}
 
 - (IBAction)consultantAction:(id)sender {
 	

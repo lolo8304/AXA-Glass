@@ -31,7 +31,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	[[ImagesModel sharedManager] loadData];
     // Do any additional setup after loading the view.
 }
 
