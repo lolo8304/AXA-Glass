@@ -111,7 +111,6 @@
                                 </state>
                                 <connections>
                                     <action selector="securitiesAction:" destination="K7L-tY-Tp1" eventType="touchUpInside" id="uc9-9G-djR"/>
-                                    <segue destination="Thf-2p-TID" kind="push" identifier="TestDetail" id="LRU-Mb-Whq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKK-3F-28Q">
@@ -119,9 +118,6 @@
                                 <state key="normal" image="my-watch-list.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="MTm-mZ-3g0" kind="modal" modalTransitionStyle="flipHorizontal" id="JnJ-4D-dkp"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Home-last-items.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Z0-tS-dAE">
                                 <rect key="frame" x="0.0" y="82" width="320" height="188"/>
@@ -889,9 +885,5 @@ MATCH</string>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="JnJ-4D-dkp"/>
-        <segue reference="4IZ-Av-zYh"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.08235294118" green="0.55294117649999996" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
 </document>
