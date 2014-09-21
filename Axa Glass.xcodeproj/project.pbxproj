@@ -989,6 +989,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Axa Glass/Axa Glass.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Axa Glass/Axa Glass-Prefix.pch";
 				INFOPLIST_FILE = "Axa Glass/Axa Glass-Info.plist";
@@ -1016,6 +1017,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Axa Glass/Axa Glass.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Axa Glass/Axa Glass-Prefix.pch";
 				INFOPLIST_FILE = "Axa Glass/Axa Glass-Info.plist";
