@@ -51,7 +51,7 @@
 		
 		NSError * error = nil;
 		NSBundle *bundle = [NSBundle mainBundle];
-		NSString * jsonName = [NSString stringWithFormat:@"image-%ld", (long)i];
+		NSString *jsonName = [NSString stringWithFormat:@"image-%ld", (long)i];
 		NSString *path = [bundle pathForResource: jsonName ofType:@"json"];
 		NSString *data = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
 		if (error!=nil) {
