@@ -113,17 +113,14 @@
 		15C795D619C1D0CB0068B8F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15C795D419C1D0CB0068B8F2 /* Main.storyboard */; };
 		15C795D919C1D0CB0068B8F2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C795D819C1D0CB0068B8F2 /* HomeViewController.m */; };
 		15C795DE19C1D0CB0068B8F2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15C795DD19C1D0CB0068B8F2 /* Images.xcassets */; };
-		15C795E519C1D0CB0068B8F2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C795E419C1D0CB0068B8F2 /* XCTest.framework */; };
 		15C795E619C1D0CB0068B8F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C795C219C1D0CB0068B8F2 /* Foundation.framework */; };
 		15C795E719C1D0CB0068B8F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C795C619C1D0CB0068B8F2 /* UIKit.framework */; };
-		15C795EF19C1D0CB0068B8F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15C795ED19C1D0CB0068B8F2 /* InfoPlist.strings */; };
-		15C795F119C1D0CB0068B8F2 /* Axa_GlassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C795F019C1D0CB0068B8F2 /* Axa_GlassTests.m */; };
 		15C795FC19C1D6E80068B8F2 /* ChooserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C795FB19C1D6E80068B8F2 /* ChooserViewController.m */; };
 		15C7961819C1DD860068B8F2 /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C7961719C1DD860068B8F2 /* ImageModel.m */; };
 		15C7961C19C1DFA10068B8F2 /* SimilarImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C7961B19C1DFA10068B8F2 /* SimilarImage.m */; };
 		15C7961F19C1E0BC0068B8F2 /* ImagesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C7961E19C1E0BC0068B8F2 /* ImagesModel.m */; };
 		15C7962319C1E2B90068B8F2 /* ImageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C7962219C1E2B90068B8F2 /* ImageDetailViewController.m */; };
-		A55376FA0FB743CDB1AC8383 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3D638101794301B40466E9 /* libPods.a */; };
+		E1681AD819CB45DE00768E8D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1681AD719CB45DE00768E8D /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -256,10 +253,6 @@
 		15C795D819C1D0CB0068B8F2 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		15C795DD19C1D0CB0068B8F2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		15C795E319C1D0CB0068B8F2 /* Axa GlassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Axa GlassTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		15C795E419C1D0CB0068B8F2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		15C795EC19C1D0CB0068B8F2 /* Axa GlassTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Axa GlassTests-Info.plist"; sourceTree = "<group>"; };
-		15C795EE19C1D0CB0068B8F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		15C795F019C1D0CB0068B8F2 /* Axa_GlassTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Axa_GlassTests.m; sourceTree = "<group>"; };
 		15C795FA19C1D6E80068B8F2 /* ChooserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooserViewController.h; sourceTree = "<group>"; };
 		15C795FB19C1D6E80068B8F2 /* ChooserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooserViewController.m; sourceTree = "<group>"; };
 		15C7961619C1DD860068B8F2 /* ImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
@@ -271,7 +264,8 @@
 		15C7962119C1E2B90068B8F2 /* ImageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDetailViewController.h; sourceTree = "<group>"; };
 		15C7962219C1E2B90068B8F2 /* ImageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDetailViewController.m; sourceTree = "<group>"; };
 		90D8EF492E9E4317BBFE257F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		ED3D638101794301B40466E9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1681AB919CB444200768E8D /* libPods-NSLogger.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NSLogger.a"; path = "Pods/build/Debug-iphoneos/libPods-NSLogger.a"; sourceTree = "<group>"; };
+		E1681AD719CB45DE00768E8D /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,7 +276,7 @@
 				15C795C519C1D0CB0068B8F2 /* CoreGraphics.framework in Frameworks */,
 				15C795C719C1D0CB0068B8F2 /* UIKit.framework in Frameworks */,
 				15C795C319C1D0CB0068B8F2 /* Foundation.framework in Frameworks */,
-				A55376FA0FB743CDB1AC8383 /* libPods.a in Frameworks */,
+				E1681AD819CB45DE00768E8D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +284,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15C795E519C1D0CB0068B8F2 /* XCTest.framework in Frameworks */,
 				15C795E719C1D0CB0068B8F2 /* UIKit.framework in Frameworks */,
 				15C795E619C1D0CB0068B8F2 /* Foundation.framework in Frameworks */,
 			);
@@ -539,7 +532,6 @@
 			isa = PBXGroup;
 			children = (
 				15C795C819C1D0CB0068B8F2 /* Axa Glass */,
-				15C795EA19C1D0CB0068B8F2 /* Axa GlassTests */,
 				15C795C119C1D0CB0068B8F2 /* Frameworks */,
 				15C795C019C1D0CB0068B8F2 /* Products */,
 				90D8EF492E9E4317BBFE257F /* Pods.xcconfig */,
@@ -558,11 +550,11 @@
 		15C795C119C1D0CB0068B8F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E1681AD719CB45DE00768E8D /* libPods.a */,
+				E1681AB919CB444200768E8D /* libPods-NSLogger.a */,
 				15C795C219C1D0CB0068B8F2 /* Foundation.framework */,
 				15C795C419C1D0CB0068B8F2 /* CoreGraphics.framework */,
 				15C795C619C1D0CB0068B8F2 /* UIKit.framework */,
-				15C795E419C1D0CB0068B8F2 /* XCTest.framework */,
-				ED3D638101794301B40466E9 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -590,24 +582,6 @@
 				15C795CB19C1D0CB0068B8F2 /* InfoPlist.strings */,
 				15C795CE19C1D0CB0068B8F2 /* main.m */,
 				15C795D019C1D0CB0068B8F2 /* Axa Glass-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		15C795EA19C1D0CB0068B8F2 /* Axa GlassTests */ = {
-			isa = PBXGroup;
-			children = (
-				15C795F019C1D0CB0068B8F2 /* Axa_GlassTests.m */,
-				15C795EB19C1D0CB0068B8F2 /* Supporting Files */,
-			);
-			path = "Axa GlassTests";
-			sourceTree = "<group>";
-		};
-		15C795EB19C1D0CB0068B8F2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				15C795EC19C1D0CB0068B8F2 /* Axa GlassTests-Info.plist */,
-				15C795ED19C1D0CB0068B8F2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -829,7 +803,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15C795EF19C1D0CB0068B8F2 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -894,7 +867,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15C795F119C1D0CB0068B8F2 /* Axa_GlassTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -923,14 +895,6 @@
 				15C795D519C1D0CB0068B8F2 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		15C795ED19C1D0CB0068B8F2 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				15C795EE19C1D0CB0068B8F2 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1014,10 +978,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Nicolas Lauquin (Z4JE749Z48)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Axa Glass/Axa Glass-Prefix.pch";
 				INFOPLIST_FILE = "Axa Glass/Axa Glass-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Pods/build/Release-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -1030,10 +999,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: L'Atelier du Mobile";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Axa Glass/Axa Glass-Prefix.pch";
 				INFOPLIST_FILE = "Axa Glass/Axa Glass-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Pods/build/Release-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "b945576a-22ca-470a-943e-c6879622ccaf";
 				WRAPPER_EXTENSION = app;
