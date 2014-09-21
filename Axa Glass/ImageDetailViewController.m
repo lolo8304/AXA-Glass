@@ -296,7 +296,7 @@
 }
 
 - (IBAction)payButton:(id)sender {
-	UIAlertView * alerte = [[UIAlertView alloc] initWithTitle:@"Payement" message:@"Do you confirm the payement of 5€?"
+	UIAlertView * alerte = [[UIAlertView alloc] initWithTitle:@"Payment" message:@"Do you confirm the payment of 5€?"
 					 cancelButtonTitle:@"Cancel"
 					  otherButtonTitle:@"Pay"
 					   completionBlock:^(NSInteger buttonIndex, UIAlertView *alertView) {
@@ -323,7 +323,7 @@
 	//hud.graceTime=0.1;
 	
 	hud.mode = MBProgressHUDModeAnnularDeterminate;
-	hud.labelText = @"Processing payement";
+	hud.labelText = @"Processing payment";
 	//hud.detailsLabelText = @"Processing";
 	//[hud showWhileExecuting:@selector(doSomeFunkyStuff) onTarget:self withObject:nil animated:YES];
 	
