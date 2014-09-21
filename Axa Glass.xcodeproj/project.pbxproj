@@ -264,6 +264,7 @@
 		15C7962119C1E2B90068B8F2 /* ImageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDetailViewController.h; sourceTree = "<group>"; };
 		15C7962219C1E2B90068B8F2 /* ImageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDetailViewController.m; sourceTree = "<group>"; };
 		90D8EF492E9E4317BBFE257F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		E147B8BC19CEF1AF00896B94 /* Axa Glass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Axa Glass.entitlements"; sourceTree = "<group>"; };
 		E1681AB919CB444200768E8D /* libPods-NSLogger.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NSLogger.a"; path = "Pods/build/Debug-iphoneos/libPods-NSLogger.a"; sourceTree = "<group>"; };
 		E1681AD719CB45DE00768E8D /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -562,6 +563,7 @@
 		15C795C819C1D0CB0068B8F2 /* Axa Glass */ = {
 			isa = PBXGroup;
 			children = (
+				E147B8BC19CEF1AF00896B94 /* Axa Glass.entitlements */,
 				15C795FE19C1DD4A0068B8F2 /* Ressources */,
 				15C795FD19C1DC290068B8F2 /* Model */,
 				15C795D119C1D0CB0068B8F2 /* AppDelegate.h */,
@@ -671,9 +673,15 @@
 				ORGANIZATIONNAME = Axa;
 				TargetAttributes = {
 					15C795BE19C1D0CB0068B8F2 = {
-						DevelopmentTeam = GTWSK8DVU4;
+						DevelopmentTeam = W3U24WE3R3;
+						SystemCapabilities = {
+							com.apple.OMC = {
+								enabled = 0;
+							};
+						};
 					};
 					15C795E219C1D0CB0068B8F2 = {
+						DevelopmentTeam = W3U24WE3R3;
 						TestTargetID = 15C795BE19C1D0CB0068B8F2;
 					};
 				};
@@ -978,10 +986,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "Axa Glass/Axa Glass.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Axa Glass/Axa Glass-Prefix.pch";
 				INFOPLIST_FILE = "Axa Glass/Axa Glass-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
@@ -989,6 +1000,9 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -999,17 +1013,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "Axa Glass/Axa Glass.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Axa Glass/Axa Glass-Prefix.pch";
 				INFOPLIST_FILE = "Axa Glass/Axa Glass-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/Pods/build/Release-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b945576a-22ca-470a-943e-c6879622ccaf";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1018,6 +1037,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Axa Glass.app/Axa Glass";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1031,6 +1052,7 @@
 				);
 				INFOPLIST_FILE = "Axa GlassTests/Axa GlassTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -1040,6 +1062,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Axa Glass.app/Axa Glass";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1049,6 +1073,7 @@
 				GCC_PREFIX_HEADER = "Axa Glass/Axa Glass-Prefix.pch";
 				INFOPLIST_FILE = "Axa GlassTests/Axa GlassTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
