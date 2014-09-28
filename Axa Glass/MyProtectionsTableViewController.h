@@ -6,8 +6,10 @@
 //  Copyright (c) 2014 Axa. All rights reserved.
 //
 
-#ifndef Axa_Glass_MyProtectionsTableViewController_h
-#define Axa_Glass_MyProtectionsTableViewController_h
+#import <UIKit/UIKit.h>
 
+@interface MyProtectionsTableViewController : UITableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-#endif
+@property (nonatomic, strong) ImageModel * imageModel;
+
+@end

@@ -120,6 +120,12 @@
 		15C7961C19C1DFA10068B8F2 /* SimilarImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C7961B19C1DFA10068B8F2 /* SimilarImage.m */; };
 		15C7961F19C1E0BC0068B8F2 /* ImagesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C7961E19C1E0BC0068B8F2 /* ImagesModel.m */; };
 		15C7962319C1E2B90068B8F2 /* ImageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C7962219C1E2B90068B8F2 /* ImageDetailViewController.m */; };
+		E11720E919D8B1DD00B1FBBC /* myprotections.json in Resources */ = {isa = PBXBuildFile; fileRef = E11720E719D8B1DD00B1FBBC /* myprotections.json */; };
+		E11720EA19D8B1DD00B1FBBC /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E11720E819D8B1DD00B1FBBC /* TemplateIcon2x.png */; };
+		E11720EE19D8B30F00B1FBBC /* ProtectionsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E11720EC19D8B30F00B1FBBC /* ProtectionsModel.m */; };
+		E11720F319D8B58D00B1FBBC /* ProtectionGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E11720F219D8B58D00B1FBBC /* ProtectionGroupModel.m */; };
+		E11720F619D8BB4700B1FBBC /* ProtectionItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E11720F519D8BB4700B1FBBC /* ProtectionItemModel.m */; };
+		E11720F919D8C54500B1FBBC /* ProtectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E11720F819D8C54500B1FBBC /* ProtectionModel.m */; };
 		E1681AD819CB45DE00768E8D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1681AD719CB45DE00768E8D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -264,6 +270,18 @@
 		15C7962119C1E2B90068B8F2 /* ImageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDetailViewController.h; sourceTree = "<group>"; };
 		15C7962219C1E2B90068B8F2 /* ImageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDetailViewController.m; sourceTree = "<group>"; };
 		90D8EF492E9E4317BBFE257F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		E11720E519D712EC00B1FBBC /* MyProtectionsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyProtectionsTableViewController.h; sourceTree = "<group>"; };
+		E11720E619D8A02500B1FBBC /* MyProtectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyProtectionCell.h; sourceTree = "<group>"; };
+		E11720E719D8B1DD00B1FBBC /* myprotections.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = myprotections.json; sourceTree = "<group>"; };
+		E11720E819D8B1DD00B1FBBC /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
+		E11720EB19D8B24300B1FBBC /* ProtectionsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtectionsModel.h; sourceTree = "<group>"; };
+		E11720EC19D8B30F00B1FBBC /* ProtectionsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtectionsModel.m; sourceTree = "<group>"; };
+		E11720F119D8B4F500B1FBBC /* ProtectionGroupModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtectionGroupModel.h; sourceTree = "<group>"; };
+		E11720F219D8B58D00B1FBBC /* ProtectionGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtectionGroupModel.m; sourceTree = "<group>"; };
+		E11720F419D8BA3900B1FBBC /* ProtectionItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtectionItemModel.h; sourceTree = "<group>"; };
+		E11720F519D8BB4700B1FBBC /* ProtectionItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtectionItemModel.m; sourceTree = "<group>"; };
+		E11720F719D8C4E900B1FBBC /* ProtectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtectionModel.h; sourceTree = "<group>"; };
+		E11720F819D8C54500B1FBBC /* ProtectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtectionModel.m; sourceTree = "<group>"; };
 		E147B8BC19CEF1AF00896B94 /* Axa Glass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Axa Glass.entitlements"; sourceTree = "<group>"; };
 		E1681AB919CB444200768E8D /* libPods-NSLogger.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NSLogger.a"; path = "Pods/build/Debug-iphoneos/libPods-NSLogger.a"; sourceTree = "<group>"; };
 		E1681AD719CB45DE00768E8D /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
@@ -597,6 +615,14 @@
 				15C7961B19C1DFA10068B8F2 /* SimilarImage.m */,
 				15C7961D19C1E0BC0068B8F2 /* ImagesModel.h */,
 				15C7961E19C1E0BC0068B8F2 /* ImagesModel.m */,
+				E11720F419D8BA3900B1FBBC /* ProtectionItemModel.h */,
+				E11720F519D8BB4700B1FBBC /* ProtectionItemModel.m */,
+				E11720F119D8B4F500B1FBBC /* ProtectionGroupModel.h */,
+				E11720F219D8B58D00B1FBBC /* ProtectionGroupModel.m */,
+				E11720F719D8C4E900B1FBBC /* ProtectionModel.h */,
+				E11720F819D8C54500B1FBBC /* ProtectionModel.m */,
+				E11720EB19D8B24300B1FBBC /* ProtectionsModel.h */,
+				E11720EC19D8B30F00B1FBBC /* ProtectionsModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -606,6 +632,8 @@
 			children = (
 				151A406A19C74397002970C6 /* Font */,
 				1588837B19C2E6A200127E1A /* Images */,
+				E11720E719D8B1DD00B1FBBC /* myprotections.json */,
+				E11720E819D8B1DD00B1FBBC /* TemplateIcon2x.png */,
 			);
 			path = Ressources;
 			sourceTree = "<group>";
@@ -613,6 +641,7 @@
 		15C7962019C1E2980068B8F2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E11720E219D7091A00B1FBBC /* MyProtections */,
 				151A40D819C746C2002970C6 /* My Consultant */,
 				153E1E8219C3525D001A76E6 /* Home */,
 				153E1E8319C35262001A76E6 /* Chooser */,
@@ -621,6 +650,15 @@
 				153E1E8419C3526C001A76E6 /* Info */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E11720E219D7091A00B1FBBC /* MyProtections */ = {
+			isa = PBXGroup;
+			children = (
+				E11720E519D712EC00B1FBBC /* MyProtectionsTableViewController.h */,
+				E11720E619D8A02500B1FBBC /* MyProtectionCell.h */,
+			);
+			name = MyProtections;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -730,6 +768,7 @@
 				151A40BD19C743CC002970C6 /* image-2.json in Resources */,
 				151A40B619C743CC002970C6 /* images-1-4.jpeg in Resources */,
 				151A40CA19C743CC002970C6 /* images-3-0.jpeg in Resources */,
+				E11720EA19D8B1DD00B1FBBC /* TemplateIcon2x.png in Resources */,
 				151A407019C74397002970C6 /* ITCFranklinGothicStd-DmCd.otf in Resources */,
 				151A40AB19C743CC002970C6 /* images-0-3.jpeg in Resources */,
 				15A9069E19C70DB30068D0C4 /* option-traveling@2x.png in Resources */,
@@ -800,6 +839,7 @@
 				1588838A19C2F12E00127E1A /* Boutton-report-item@2x.png in Resources */,
 				151A40D519C743CC002970C6 /* image-4.json in Resources */,
 				1588838719C2F12E00127E1A /* 1-my-consultant@2x.png in Resources */,
+				E11720E919D8B1DD00B1FBBC /* myprotections.json in Resources */,
 				151A40A819C743CC002970C6 /* images-0-0.jpeg in Resources */,
 				15A906A519C711840068D0C4 /* Info-done@2x.png in Resources */,
 				151A40D219C743CC002970C6 /* images-3-8.jpeg in Resources */,
@@ -856,15 +896,19 @@
 			files = (
 				1588837A19C2E0F700127E1A /* ResultImageCell.m in Sources */,
 				1588837719C2DF8900127E1A /* ImageResultController.m in Sources */,
+				E11720F619D8BB4700B1FBBC /* ProtectionItemModel.m in Sources */,
 				15C7961F19C1E0BC0068B8F2 /* ImagesModel.m in Sources */,
 				153E1E8719C352A7001A76E6 /* InformationViewController.m in Sources */,
 				15C7961819C1DD860068B8F2 /* ImageModel.m in Sources */,
 				15C795FC19C1D6E80068B8F2 /* ChooserViewController.m in Sources */,
+				E11720F319D8B58D00B1FBBC /* ProtectionGroupModel.m in Sources */,
+				E11720F919D8C54500B1FBBC /* ProtectionModel.m in Sources */,
 				1510FBEA19C8248700D81805 /* OptionCell.m in Sources */,
 				1547AA5719C31A8800245389 /* ProtectionCell.m in Sources */,
 				15C7962319C1E2B90068B8F2 /* ImageDetailViewController.m in Sources */,
 				15C795D319C1D0CB0068B8F2 /* AppDelegate.m in Sources */,
 				15C795D919C1D0CB0068B8F2 /* HomeViewController.m in Sources */,
+				E11720EE19D8B30F00B1FBBC /* ProtectionsModel.m in Sources */,
 				15C795CF19C1D0CB0068B8F2 /* main.m in Sources */,
 				151A40DB19C746E5002970C6 /* MyConsultantViewController.m in Sources */,
 				15C7961C19C1DFA10068B8F2 /* SimilarImage.m in Sources */,

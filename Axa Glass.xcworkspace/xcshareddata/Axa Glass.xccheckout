@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>100F9987-0500-4F68-8934-99AF66C6CF5E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Axa Glass</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7AC32121B89C2F4CAF0789B127969D6A041A7592</key>
+		<string>https://bitbucket.org/lolo8304/axa-glass.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Axa Glass.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7AC32121B89C2F4CAF0789B127969D6A041A7592</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/lolo8304/axa-glass.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7AC32121B89C2F4CAF0789B127969D6A041A7592</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7AC32121B89C2F4CAF0789B127969D6A041A7592</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Axa%20Glass</string>
+		</dict>
+	</array>
+</dict>
+</plist>
