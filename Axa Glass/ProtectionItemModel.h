@@ -6,8 +6,25 @@
 //  Copyright (c) 2014 Axa. All rights reserved.
 //
 
-#ifndef Axa_Glass_ProtectionItemModel_h
-#define Axa_Glass_ProtectionItemModel_h
+#import <Foundation/Foundation.h>
+
+@interface ProtectionItemModel : NSObject
 
 
-#endif
+@property (nonatomic, strong) NSString * identifier;
+@property (nonatomic, strong) NSString * title;
+@property (nonatomic, strong) NSString * type;
+@property (nonatomic, strong) NSString * image;
+@property (nonatomic, strong) NSNumber * insuredSum;
+@property (nonatomic, strong) NSNumber * deductible;
+@property (nonatomic) BOOL covered;
+@property (nonatomic, strong) NSString * coveredById;
+@property (nonatomic, strong) NSNumber * premium;
+
+@property (nonatomic, strong) NSNumber * price;
+@property (nonatomic, strong) NSString * category;
+
+
+- (id) initWithJson:(NSDictionary*)dict;
+
+@end

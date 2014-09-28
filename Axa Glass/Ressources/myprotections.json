@@ -1,0 +1,77 @@
+ [
+  {
+  "id": "protected",
+  "items": [
+            {
+            "group": {
+            "id": "inTheHouse",
+            "title": "in the house"
+            },
+            "items": [
+                      {
+                      "id": "1",
+                      "title": "household summary",
+                      "type": "coverage",
+                      "image": "",
+                      "insurance": {
+                      "insuredSum": 150000,
+                      "deductible": 200,
+                      "covered": "true",
+                      "coveredById": "",
+                      "premium": 250
+                      },
+                      "attributes": {
+                      "group": "family"
+                      }
+                      },
+                      {
+                      "id": "2",
+                      "tile": "iMac 13 inch",
+                      "type": "object-capture",
+                      "image": "image-1-2.jpeg",
+                      "insurance": {
+                      "covered": "true",
+                      "coveredById": "1",
+                      "price": 1431,
+                      "category": "notebooks"
+                      },
+                      "attributes": {}
+                      }
+                      ]
+            },
+            {
+            "group": {
+            "id": "inTheCar",
+            "title": "in the car"
+            },
+            "items": []
+            },
+            {
+            "group": {
+            "id": "outside",
+            "title": "outside"
+            },
+            "items": []
+            },
+            {
+            "group": {
+            "id": "onTravel",
+            "title": "on travel"
+            },
+            "items": []
+            }
+            ]
+  },
+  {
+  "id": "watching",
+  "items": []
+  },
+  {
+  "id": "archived",
+  "items": []
+  },
+  {
+  "id": "activities",
+  "items": []
+  }
+  ]

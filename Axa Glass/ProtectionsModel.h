@@ -6,8 +6,18 @@
 //  Copyright (c) 2014 Axa. All rights reserved.
 //
 
-#ifndef Axa_Glass_ProtectionsModel_h
-#define Axa_Glass_ProtectionsModel_h
+#import <Foundation/Foundation.h>
 
 
-#endif
+@interface ProtectionsModel : NSObject
+
++ (ProtectionsModel*) sharedManager;//singleton
+
+@property (nonatomic, strong) NSMutableArray * items;
+
+- (void) loadData;
+
+- (ImageModel *) modelAtIndex:(NSUInteger) index;
+
+
+@end

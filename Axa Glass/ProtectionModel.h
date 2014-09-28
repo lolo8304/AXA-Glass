@@ -6,8 +6,14 @@
 //  Copyright (c) 2014 Axa. All rights reserved.
 //
 
-#ifndef Axa_Glass_ProtectionModel_h
-#define Axa_Glass_ProtectionModel_h
+#import <Foundation/Foundation.h>
 
 
-#endif
+@interface ProtectionModel : NSObject
+
+@property (nonatomic, strong) NSString * identifier;
+@property (nonatomic, strong) NSMutableArray * groups;
+
+- (id) initWithJson:(NSDictionary*)dict;
+
+@end

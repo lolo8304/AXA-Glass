@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "ImageDetailViewController.h"
 #import "DetailViewController.h"
+#import "ProtectionsModel.h"
 
 @interface HomeViewController ()
 	@property (nonatomic,strong) UIImageView *titleView;
@@ -51,6 +52,7 @@
 {
     [super viewDidLoad];
 	[[ImagesModel sharedManager] loadData];
+    [[ProtectionsModel sharedManager] loadData];
 
 	
 	
