@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ProtectionsModel.h"
+#import "ProtectionModel.h"
 
-@interface MyProtectionsTableViewController : UITableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface MyProtectionsTableViewController : UITableViewController <UITextViewDelegate, UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic, strong) ImageModel * imageModel;
+@property (nonatomic, strong) ProtectionsModel * models;
+@property (nonatomic, strong) ProtectionModel * currentModel;
 
 @end

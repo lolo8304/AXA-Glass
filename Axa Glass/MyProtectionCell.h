@@ -17,9 +17,8 @@
 #import <UIKit/UIKit.h>
 
 @interface MyProtectionCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UILabel *keyword;
-@property (weak, nonatomic) IBOutlet UILabel *price;
-@property (weak, nonatomic) IBOutlet UIImageView *photo;
-@property (nonatomic) BOOL isBestMatch;
+@property (weak, nonatomic) IBOutlet UILabel *title;
+//@property (weak, nonatomic) IBOutlet UILabel *details;
+@property (weak, nonatomic) IBOutlet UILabel *type;
 
 @end
