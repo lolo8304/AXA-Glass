@@ -126,6 +126,9 @@
 		E11720F319D8B58D00B1FBBC /* ProtectionGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E11720F219D8B58D00B1FBBC /* ProtectionGroupModel.m */; };
 		E11720F619D8BB4700B1FBBC /* ProtectionItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E11720F519D8BB4700B1FBBC /* ProtectionItemModel.m */; };
 		E11720F919D8C54500B1FBBC /* ProtectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E11720F819D8C54500B1FBBC /* ProtectionModel.m */; };
+		E11720FB19DA025400B1FBBC /* MyProtectionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E11720FA19DA025400B1FBBC /* MyProtectionsTableViewController.m */; };
+		E11720FD19DA0AFE00B1FBBC /* MyProtectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E11720FC19DA0AFE00B1FBBC /* MyProtectionCell.m */; };
+		E117210019DC906D00B1FBBC /* MyProtectionDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E11720FF19DC906D00B1FBBC /* MyProtectionDetailsViewController.m */; };
 		E1681AD819CB45DE00768E8D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1681AD719CB45DE00768E8D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -282,6 +285,10 @@
 		E11720F519D8BB4700B1FBBC /* ProtectionItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtectionItemModel.m; sourceTree = "<group>"; };
 		E11720F719D8C4E900B1FBBC /* ProtectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtectionModel.h; sourceTree = "<group>"; };
 		E11720F819D8C54500B1FBBC /* ProtectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtectionModel.m; sourceTree = "<group>"; };
+		E11720FA19DA025400B1FBBC /* MyProtectionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProtectionsTableViewController.m; sourceTree = "<group>"; };
+		E11720FC19DA0AFE00B1FBBC /* MyProtectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProtectionCell.m; sourceTree = "<group>"; };
+		E11720FE19DC903D00B1FBBC /* MyProtectionDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyProtectionDetailsViewController.h; sourceTree = "<group>"; };
+		E11720FF19DC906D00B1FBBC /* MyProtectionDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProtectionDetailsViewController.m; sourceTree = "<group>"; };
 		E147B8BC19CEF1AF00896B94 /* Axa Glass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Axa Glass.entitlements"; sourceTree = "<group>"; };
 		E1681AB919CB444200768E8D /* libPods-NSLogger.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NSLogger.a"; path = "Pods/build/Debug-iphoneos/libPods-NSLogger.a"; sourceTree = "<group>"; };
 		E1681AD719CB45DE00768E8D /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
@@ -656,7 +663,11 @@
 			isa = PBXGroup;
 			children = (
 				E11720E519D712EC00B1FBBC /* MyProtectionsTableViewController.h */,
+				E11720FA19DA025400B1FBBC /* MyProtectionsTableViewController.m */,
 				E11720E619D8A02500B1FBBC /* MyProtectionCell.h */,
+				E11720FC19DA0AFE00B1FBBC /* MyProtectionCell.m */,
+				E11720FE19DC903D00B1FBBC /* MyProtectionDetailsViewController.h */,
+				E11720FF19DC906D00B1FBBC /* MyProtectionDetailsViewController.m */,
 			);
 			name = MyProtections;
 			sourceTree = "<group>";
@@ -902,15 +913,18 @@
 				15C7961819C1DD860068B8F2 /* ImageModel.m in Sources */,
 				15C795FC19C1D6E80068B8F2 /* ChooserViewController.m in Sources */,
 				E11720F319D8B58D00B1FBBC /* ProtectionGroupModel.m in Sources */,
+				E117210019DC906D00B1FBBC /* MyProtectionDetailsViewController.m in Sources */,
 				E11720F919D8C54500B1FBBC /* ProtectionModel.m in Sources */,
 				1510FBEA19C8248700D81805 /* OptionCell.m in Sources */,
 				1547AA5719C31A8800245389 /* ProtectionCell.m in Sources */,
+				E11720FB19DA025400B1FBBC /* MyProtectionsTableViewController.m in Sources */,
 				15C7962319C1E2B90068B8F2 /* ImageDetailViewController.m in Sources */,
 				15C795D319C1D0CB0068B8F2 /* AppDelegate.m in Sources */,
 				15C795D919C1D0CB0068B8F2 /* HomeViewController.m in Sources */,
 				E11720EE19D8B30F00B1FBBC /* ProtectionsModel.m in Sources */,
 				15C795CF19C1D0CB0068B8F2 /* main.m in Sources */,
 				151A40DB19C746E5002970C6 /* MyConsultantViewController.m in Sources */,
+				E11720FD19DA0AFE00B1FBBC /* MyProtectionCell.m in Sources */,
 				15C7961C19C1DFA10068B8F2 /* SimilarImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
