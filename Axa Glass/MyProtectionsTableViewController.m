@@ -14,7 +14,6 @@
 #import "ProtectionGroupModel.h"
 #import "ProtectionItemModel.h"
 
-
 @interface MyProtectionsTableViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -23,6 +22,7 @@
 @end
 
 @implementation MyProtectionsTableViewController
+
 
 
 - (void)viewDidLoad
@@ -66,30 +66,40 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    MyProtectionCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ItemCell" forIndexPath:indexPath];
-    
+
     ProtectionGroupModel *group = self.currentModel.groups[indexPath.section];
-    //header
+    MyProtectionCell *cell = nil;
+    
     if (indexPath.row == 0) {
+        /* if group */
+        cell = [tableView dequeueReusableCellWithIdentifier: @"ItemCell-group" forIndexPath:indexPath];
         cell.title.text = group.title;
-//        cell.details.hidden = YES;
-        cell.type.hidden = YES;
-        cell.accessoryType = UITableViewCellAccessoryDetailButton;
+        NSString *logoNamed = [ NSString stringWithFormat:@"option-%@@2x", group.identifier ];
+        cell.image.image = [UIImage imageNamed: logoNamed];
+        
     } else {
         NSInteger curItem = indexPath.row - 1;
         ProtectionItemModel *item = group.items[curItem];
-        cell.title.text = item.title;
-        /*
-        if ( !IsEmpty(item.premium) ) {
-            cell.details.text = [ NSString stringWithFormat:@"%@", item.premium ];
-        } else if (!IsEmpty(item.price) ) {
-            cell.details.text = [ NSString stringWithFormat:@"%@", item.price ];
-        } else {
-            cell.details.hidden = NO;
+        NSString *cellIdentifier = [ NSString stringWithFormat:@"ItemCell-%@", item.type ];
+        cell = [tableView dequeueReusableCellWithIdentifier: cellIdentifier forIndexPath:indexPath];
+        
+        NSString *coveredImageNamed = [ NSString stringWithFormat:@"option-%@@2x", item.covered ];
+        cell.coveredImage.image = [UIImage imageNamed: coveredImageNamed];
+        NSString *title =[ NSString stringWithFormat:@"%@", item.title ];
+        cell.title.text = title;
+        
+        /* if type == "coverage" */
+        if ([@"coverage" isEqualToString:item.type]) {
+            cell.premium.text = [ NSString stringWithFormat:@"%@.-", item.premium ];
+            cell.insuredSum.text = [ NSString stringWithFormat:@"%@.-", item.insuredSum ];
+            cell.deductible.text = [ NSString stringWithFormat:@"%@.-", item.deductible ];
+            
+        /* if type == "object-capture" */
+        } else if ([@"object-capture" isEqualToString:item.type]) {
+            cell.price.text = [ NSString stringWithFormat:@"%@", item.price ];
+            cell.category.text = [ NSString stringWithFormat:@"%@", item.category ];
+            cell.image.image = [UIImage imageNamed: item.image];
         }
-         */
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     
     return cell;
@@ -109,39 +119,34 @@
 
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    LoggerData(1, @"indexPath.section=%d", indexPath.section);
+    LoggerData(1, @"indexPath.row=%d", indexPath.row);
+
     ProtectionGroupModel *group = self.currentModel.groups[indexPath.section];
-    ProtectionItemModel *item = group.items[indexPath.row];
     self.selectedGroup = group;
-    self.selectedItem = item;
+    if (indexPath.row == 0) {
+        self.selectedItem = nil;
+        return nil;
+    } else {
+        NSInteger curItem = indexPath.row - 1;
+        ProtectionItemModel *item = group.items[curItem];
+        self.selectedItem = item;
+    }
     return indexPath;
 }
 
 
-/*
-
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    //	if (indexPath.section == 0) {
-    //		return 175;
-    //	}
-    //	else {
-    
-    if (indexPath.section==0) {
-        return 65;
-    }
-    else if (indexPath.section == 1 || indexPath.section==3) {
-        return 85;
-    }
-    else if (indexPath.section==2) {
-        return 43;
+    NSString *section = [ NSString stringWithFormat:@"%d", indexPath.section];
+    NSString *row = [ NSString stringWithFormat:@"%d", indexPath.row];
+    if (indexPath.row == 0) {
+        return 42;
     }
     else {
-        return 0;
+        return 93;
     }
-    
-    //}
 }
-*/
- 
+
  
 #pragma mark - header
 
@@ -213,7 +218,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"showProtectionDetail"]) {
-//        MyProtectionDetailsViewController * destViewController = segue.destinationViewController;
+        MyProtectionDetailsViewController * destViewController = segue.destinationViewController;
         
     }
 }

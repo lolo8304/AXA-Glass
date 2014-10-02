@@ -18,7 +18,19 @@
 
 @interface MyProtectionCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *title;
-//@property (weak, nonatomic) IBOutlet UILabel *details;
-@property (weak, nonatomic) IBOutlet UILabel *type;
+
+@property (weak, nonatomic) IBOutlet UIImageView *coveredImage;
+@property (weak, nonatomic) IBOutlet UILabel *covered;
+
+/* if type == "coverage" */
+@property (weak, nonatomic) IBOutlet UILabel *premium;
+@property (weak, nonatomic) IBOutlet UILabel *insuredSum;
+@property (weak, nonatomic) IBOutlet UILabel *deductible;
+
+/* if type == "object-capture" */
+@property (weak, nonatomic) IBOutlet UIImageView *image;
+@property (weak, nonatomic) IBOutlet UILabel *price;
+@property (weak, nonatomic) IBOutlet UILabel *category;
+
 
 @end

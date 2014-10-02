@@ -22,13 +22,13 @@
 - (void)awakeFromNib
 {
     [self setSelectionStyle:UITableViewCellSelectionStyleNone];
-    
+    /*
     UIFont *myFontText = [ UIFont fontWithName:FONT_BOOK size: 15.0 ];
     UIFont *myFontPrice = [ UIFont fontWithName:FONT_DEMI size: 15.0 ];
     UIFont *myFontType = [ UIFont fontWithName:FONT_BOOK size: 15.0 ];
     self.title.font = myFontText;
-//    self.details.font = myFontPrice;
     self.type.font = myFontType;
+     */
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
