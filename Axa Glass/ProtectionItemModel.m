@@ -24,14 +24,21 @@
     if ([dict isKindOfClass:[NSDictionary class]]) {
         self = [self init];
         if (self) {
+            self.type = dict[@"type"];
             self.identifier = dict[@"id"];
             self.title = dict[@"title"];
-            self.type = dict[@"type"];
+            self.image = dict[@"image"];
+
+//            self.covered = [@"true" isEqualToString: (dict[@"insurance"][@"covered"])];
+            self.covered = dict[@"insurance"][@"covered"];
+            self.coveredById = dict[@"insurance"][@"coveredById"];
+
+            /* if type == "coverage" */
             self.insuredSum = dict[@"insurance"][@"insuredSum"];
             self.deductible = dict[@"insurance"][@"deductible"];
-            self.covered = [@"true" isEqualToString: (dict[@"insurance"][@"covered"])];
-            self.coveredById = dict[@"insurance"][@"coveredById"];
             self.premium = dict[@"insurance"][@"premium"];
+
+            /* if type == "object-capture" */
             self.price = dict[@"insurance"][@"price"];
             self.category = dict[@"insurance"][@"category"];            
             return self;

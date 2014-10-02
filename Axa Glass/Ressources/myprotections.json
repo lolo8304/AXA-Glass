@@ -4,20 +4,20 @@
   "items": [
             {
             "group": {
-            "id": "inTheHouse",
+            "id": "at-home",
             "title": "in the house"
             },
             "items": [
                       {
+                      "type": "coverage",
                       "id": "1",
                       "title": "household summary",
-                      "type": "coverage",
                       "image": "",
                       "insurance": {
+                      "covered": "check",
+                      "coveredById": "",
                       "insuredSum": 150000,
                       "deductible": 200,
-                      "covered": "true",
-                      "coveredById": "",
                       "premium": 250
                       },
                       "attributes": {
@@ -25,12 +25,25 @@
                       }
                       },
                       {
-                      "id": "2",
-                      "tile": "iMac 13 inch",
                       "type": "object-capture",
-                      "image": "image-1-2.jpeg",
+                      "id": "2",
+                      "title": "iMac 27 inch",
+                      "image": "image-3-0.jpeg",
                       "insurance": {
-                      "covered": "true",
+                      "covered": "exclamation",
+                      "coveredById": "1",
+                      "price": 1431,
+                      "category": "notebooks"
+                      },
+                      "attributes": {}
+                      },
+                      {
+                      "type": "object-capture",
+                      "id": "3",
+                      "title": "Luis Vuillton bag",
+                      "image": "image-1-0.jpeg",
+                      "insurance": {
+                      "covered": "croix",
                       "coveredById": "1",
                       "price": 1431,
                       "category": "notebooks"
@@ -41,7 +54,7 @@
             },
             {
             "group": {
-            "id": "inTheCar",
+            "id": "in-the-car",
             "title": "in the car"
             },
             "items": []
@@ -55,7 +68,7 @@
             },
             {
             "group": {
-            "id": "onTravel",
+            "id": "traveling",
             "title": "on travel"
             },
             "items": []
