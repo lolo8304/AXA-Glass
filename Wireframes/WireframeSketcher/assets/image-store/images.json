@@ -1,0 +1,51 @@
+{
+  "images": [
+    {
+      "name": "Watch",
+      "folder": "image-0",
+      "questions": {
+        "title": "in a safe?",
+        "datatype": "boolean"
+      },
+      "risks": [
+        {
+          "logo": "home",
+          "information": {
+            "paragraph": "Your object protected inside your house against",
+            "list": [
+              "Theft",
+              "Water (leaks, spills)",
+              "Fire & lighning",
+              "Natural perils (flood, storm, hail)"
+            ]
+          },
+          "additionalProtections": []
+        },
+        {
+          "logo": "car",
+          "information": {
+            "paragraph": "Your object is not protected inside your car",
+            "list": []
+          },
+          "additionalProtections": [
+            {
+              "title": "Theft in car",
+              "prize": {
+                "value": 5,
+                "currency": "€"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "LouisVuitton",
+      "folder": "image-1"
+    },
+    {
+      "name": "MacbookAir",
+      "folder": "image-2"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides" theme="clean">
+  <widgets xsi:type="model:Panel" id="82" x="230" y="146" width="320" height="548" measuredWidth="320" measuredHeight="548" alpha="0"/>
+  <widgets xsi:type="model:Table" id="163" x="233" y="280" width="316" height="49" text="09.09,{image},Luis Vuitton bag,>" measuredWidth="316" measuredHeight="49" border="false" alpha="0" rowHeight="43" horizontalLines="true" alternative="#cfe2f3" verticalLines="false" header="false">
+    <font size="17px" bold="false"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="169" x="240" y="198" width="300" measuredWidth="300" measuredHeight="30">
+    <screen xsi:type="model:WidgetGroup" href="assets/iOS7/Controls.screen#Segmented%20Control"/>
+    <overrides>
+      <widgets ref="6" width="300" text="protections, watch,activities,archive">
+        <attributes key="selection" value="3"/>
+        <items ref="@items.1" text="protections"/>
+        <itemChanges xsi:type="o:Insert" newIndex="3">
+          <object xsi:type="model:Item" text="archive"/>
+        </itemChanges>
+        <itemChanges xsi:type="o:Insert" newIndex="3">
+          <object xsi:type="model:Item" text="activities"/>
+        </itemChanges>
+        <itemChanges xsi:type="o:Insert" newIndex="3">
+          <object xsi:type="model:Item" text="watch"/>
+        </itemChanges>
+        <itemChanges xsi:type="o:Delete" ref="@items.2"/>
+        <itemChanges xsi:type="o:Delete" ref="@items.0"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Table" id="172" x="233" y="460" width="316" height="166" text="02.05,{image},Coca-Cola         ,>&#xA;01.05,{image},test         ,>&#xA;31.03,{email},fnac: batteries,>&#xA;30.03,{email},red vine 12bt,>" measuredWidth="316" measuredHeight="166" border="false" alpha="0" rowHeight="43" horizontalLines="true" alternative="#cfe2f3" verticalLines="false" header="false">
+    <font size="17px" bold="false"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="173" x="233" y="417" measuredWidth="315" measuredHeight="44">
+    <screen xsi:type="model:WidgetGroup" href="assets/iOS7/Tables.screen#Table%20Header"/>
+    <overrides>
+      <widgets ref="2" text="deleted"/>
+      <widgets ref="1" width="315"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="175" x="233" y="374" measuredWidth="315" measuredHeight="44">
+    <screen xsi:type="model:WidgetGroup" href="assets/iOS7/Tables.screen#Table%20Header"/>
+    <overrides>
+      <widgets ref="2" text="damaged"/>
+      <widgets ref="1" width="315"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="178" x="233" y="237" measuredWidth="315" measuredHeight="44">
+    <screen xsi:type="model:WidgetGroup" href="assets/iOS7/Tables.screen#Table%20Header"/>
+    <overrides>
+      <widgets ref="2" text="no protection choosen"/>
+      <widgets ref="1" width="315"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="170" x="233" y="330" measuredWidth="315" measuredHeight="44">
+    <screen xsi:type="model:WidgetGroup" href="assets/iOS7/Tables.screen#Table%20Header"/>
+    <overrides>
+      <widgets ref="2" text="sold"/>
+      <widgets ref="1" width="315"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="179" x="233" y="147" measuredWidth="315" measuredHeight="45">
+    <screen xsi:type="model:Screen" href="assets/Status-header.screen#/"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Delete" ref="3"/>
+      <widgets ref="1/11" text="my store"/>
+    </overrides>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Table" id="1" x="120" y="80" width="316" height="414" text="Today,{image},Certina DS Podium, {import}&#xA;09.09,{image},Luis Vuitton bag,{assets/ios7-close2}&#xA;01.09,{comments},Macbook Air 13,{import}&#xA;15.08, {internet},Amazon: Samsung\nLED 55'', {import}&#xA;14.08,{email},iPad mini, {import}&#xA;14.08,{email},iPad minibag,{import}&#xA;12.07,{internet},Lamp berger,{import}&#xA;11.07, {internet},TV chair delux'', {import}&#xA;01.06,{image},Certina DS Podium, {import}&#xA;28.05,{image},Luis Vuitton bag,{export}&#xA;28.05,{comments},Amazon: tv chair,{import}&#xA;27.05, {internet},Amazon: Samsung\nLED 55'', {import}&#xA;25.05,{image},iWatch, {import}&#xA;15.05,{image},Sandals,,{import}&#xA;01.05,{comments},Macbook Air 13,{import}&#xA;01.04, {internet},Apple: iPhone6'', {import}&#xA;" measuredWidth="316" measuredHeight="414" border="false" alpha="0" rowHeight="43" horizontalLines="true" alternative="#cfe2f3" verticalLines="false" header="false">
+    <font size="17px" bold="false"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

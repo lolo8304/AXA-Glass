@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides" theme="clean">
+  <widgets xsi:type="model:Panel" id="82" x="230" y="146" width="320" height="548" measuredWidth="320" measuredHeight="548" alpha="0"/>
+  <widgets xsi:type="model:Table" id="163" x="233" y="280" width="316" height="193" text="Today,{image},Certina DS Podium\n1200 € ,>&#xA;09.09,{image},Luis Vuitton bag\n1880 €,>&#xA;25.05,{image},iWatch\n456 $,>&#xA;25.05, {internet},Apple: iPhone6''\n670 €,>" measuredWidth="316" measuredHeight="193" border="false" alpha="0" rowHeight="43" horizontalLines="true" alternative="#cfe2f3" verticalLines="false" header="false">
+    <font size="17px" bold="false"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="169" x="240" y="198" width="300" measuredWidth="300" measuredHeight="30">
+    <screen xsi:type="model:WidgetGroup" href="assets/iOS7/Controls.screen#Segmented%20Control"/>
+    <overrides>
+      <widgets ref="6" width="300" text="protections,watch,activities,archive">
+        <attributes key="selection" value="1"/>
+        <font bold="false"/>
+        <items ref="@items.1" text="protections"/>
+        <itemChanges xsi:type="o:Insert" newIndex="3">
+          <object xsi:type="model:Item" text="archive"/>
+        </itemChanges>
+        <itemChanges xsi:type="o:Insert" newIndex="3">
+          <object xsi:type="model:Item" text="activities"/>
+        </itemChanges>
+        <itemChanges xsi:type="o:Insert" newIndex="3">
+          <object xsi:type="model:Item" text="watch"/>
+        </itemChanges>
+        <itemChanges xsi:type="o:Delete" ref="@items.2"/>
+        <itemChanges xsi:type="o:Delete" ref="@items.0"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="170" x="233" y="237" width="315" measuredWidth="315" measuredHeight="44">
+    <screen xsi:type="model:WidgetGroup" href="assets/iOS7/Tables.screen#Table%20Header"/>
+    <overrides>
+      <widgets ref="2" text="captured"/>
+      <widgets ref="1" width="315"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="174" x="233" y="472" measuredWidth="315" measuredHeight="44">
+    <screen xsi:type="model:WidgetGroup" href="assets/iOS7/Tables.screen#Table%20Header"/>
+    <overrides>
+      <widgets ref="2" text="receipts"/>
+      <widgets ref="1" width="315"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Table" id="175" x="235" y="515" width="316" height="179" text="15.08, {internet},Amazon: Samsung\nLED 55'' 1700 €, >&#xA;14.08,{email},iPad mini\n680 €, >&#xA;12.07,{internet},Lamp berger\n120 €,>&#xA;11.07, {internet},TV chair deluxe\n860 €,>&#xA;" measuredWidth="316" measuredHeight="179" border="false" alpha="0" rowHeight="43" horizontalLines="true" alternative="#cfe2f3" verticalLines="false" header="false">
+    <font size="17px" bold="false"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="176" x="233" y="147" measuredWidth="315" measuredHeight="45">
+    <screen xsi:type="model:Screen" href="assets/Status-header.screen#/"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Delete" ref="3"/>
+      <widgets ref="1/11" text="my store"/>
+    </overrides>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

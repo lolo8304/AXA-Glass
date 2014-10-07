@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides">
+  <widgets xsi:type="model:Panel" id="6" x="230" y="146" width="320" height="548" measuredWidth="320" measuredHeight="548" alpha="0"/>
+  <widgets xsi:type="model:Master" id="58" x="233" y="147" measuredWidth="315" measuredHeight="45">
+    <screen xsi:type="model:Screen" href="assets/Status-header.screen#/"/>
+  </widgets>
+  <widgets xsi:type="model:Icon" id="60" x="259" y="255" width="61" height="65" measuredWidth="61" measuredHeight="65" icon="snapshot (large)"/>
+  <widgets xsi:type="model:Image" id="63" x="371" y="244" width="52" height="98" measuredWidth="52" measuredHeight="98" src="assets/image-store/image-0/image-0.jpg"/>
+  <widgets xsi:type="model:Image" id="65" x="449" y="242" width="94" height="98" measuredWidth="94" measuredHeight="98" src="assets/image-store/image-1/image-1.jpg"/>
+  <widgets xsi:type="model:Image" id="68" x="248" y="352" width="98" height="58" measuredWidth="98" measuredHeight="58" src="assets/image-store/image-2/image-2.jpg"/>
+  <widgets xsi:type="model:Master" id="80" x="233" y="192" measuredWidth="315" measuredHeight="45">
+    <screen xsi:type="model:WidgetGroup" href="assets/iOS7/Bars.screen#Toolbar"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Delete" ref="16"/>
+      <widgetChanges xsi:type="o:Delete" ref="15"/>
+      <widgets ref="13" width="315"/>
+      <widgets ref="14" text="capture"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="91" x="233" y="429" measuredWidth="314" measuredHeight="45">
+    <screen xsi:type="model:WidgetGroup" href="assets/iOS7/Bars.screen#Toolbar"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Delete" ref="16"/>
+      <widgetChanges xsi:type="o:Delete" ref="15"/>
+      <widgets ref="13" width="314"/>
+      <widgets ref="14" text="watch list"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Table" id="110" x="233" y="474" width="316" height="218" text="15.08, {internet},Amazon: Samsung\nLED 55'', >&#xA;14.08,{email},iPad mini, >&#xA;14.08,{email},iPad minibag,>&#xA;12.07,{email},Lamp berger,>&#xA;11.07, {internet},TV chair delux'', >&#xA;28.05,{comments},Amazon: tv chair,>&#xA;25.05,{image},iWatch, >&#xA;01.04, {internet},Apple: iPhone6'', >" measuredWidth="316" measuredHeight="218" border="false" rowHeight="20" alternative="#cfe2f3" verticalLines="false" header="false">
+    <font size="16px" bold="false"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

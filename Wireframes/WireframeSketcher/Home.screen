@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides" theme="clean">
+  <widgets xsi:type="model:Panel" id="82" x="230" y="146" width="320" height="548" measuredWidth="320" measuredHeight="548" alpha="0"/>
+  <widgets xsi:type="model:Master" id="5" x="233" y="148" measuredWidth="317" measuredHeight="45">
+    <screen xsi:type="model:WidgetGroup" href="assets/iOS7/Bars.screen#Navigation%20Bar"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Insert" newIndex="4">
+        <object xsi:type="model:Image" x="2" y="3" width="41" height="38" src="assets/AXA_rvb_center.jpeg"/>
+      </widgetChanges>
+      <widgetChanges xsi:type="o:Delete" ref="9"/>
+      <widgets ref="8" width="315"/>
+      <widgets ref="10" x="253" text="Logout"/>
+      <widgets ref="11" width="148" text="AXA / GLASS"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="21" x="235" y="585" measuredWidth="72" measuredHeight="100">
+    <widgets xsi:type="model:Panel" id="20" width="71" measuredWidth="71" measuredHeight="100"/>
+    <widgets xsi:type="model:Label" id="18" x="25" y="22" width="21" text="my" measuredWidth="21" measuredHeight="23">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="19" x="5" y="44" width="67" text="consultant" measuredWidth="67" measuredHeight="23">
+      <font/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="22" x="314" y="585" measuredWidth="71" measuredHeight="100">
+    <widgets xsi:type="model:Panel" id="23" width="71" measuredWidth="71" measuredHeight="100"/>
+    <widgets xsi:type="model:Label" id="24" x="25" y="22" width="21" text="my" measuredWidth="21" measuredHeight="23">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="25" x="9" y="44" width="56" text="securities" measuredWidth="56" measuredHeight="23">
+      <font/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="26" x="393" y="585" measuredWidth="73" measuredHeight="100">
+    <widgets xsi:type="model:Panel" id="27" width="71" measuredWidth="71" measuredHeight="100"/>
+    <widgets xsi:type="model:Label" id="28" x="25" y="22" width="21" text="my" measuredWidth="21" measuredHeight="23">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="29" x="7" y="44" width="66" text="watch list" measuredWidth="66" measuredHeight="23">
+      <font/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="35" x="473" y="585" measuredWidth="71" measuredHeight="100">
+    <widgets xsi:type="model:WidgetGroup" id="31" width="71" measuredWidth="71" measuredHeight="100">
+      <widgets xsi:type="model:Panel" id="32" width="71" measuredWidth="71" measuredHeight="100"/>
+    </widgets>
+    <widgets xsi:type="model:Image" id="30" x="7" y="36" width="58" measuredWidth="58" measuredHeight="28" src="assets/myAXA.png"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="57" x="291" y="210" text="Your last activities" measuredWidth="180" measuredHeight="29">
+    <font size="18px" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="136" x="235" y="512" width="150" height="65" text="+ add" measuredWidth="150" measuredHeight="65" background="#3d85c6">
+    <font size="16px"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="137" x="393" y="512" width="150" height="65" text="- remove" measuredWidth="150" measuredHeight="65" background="#3d85c6">
+    <font size="16px"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="159" x="360" y="479" measuredWidth="65" measuredHeight="28">
+    <screen xsi:type="model:WidgetGroup" href="assets/iOS7/Controls.screen#Button"/>
+    <overrides>
+      <widgets ref="33" text="more">
+        <attributes key="icon" value="assets/ios7-more (small)"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Table" id="163" x="232" y="259" width="312" height="227" text="(align:right).Date v,(align:center). ,Title,(align:center).in/out&#xA;Today,{image},Certina DS Podium, {import}&#xA;09.09,{image},Luis Vuitton bag,{assets/ios7-close2}&#xA;01.09,{comments},Macbook Air 13,{import}&#xA;15.08, {internet},Amazon: Samsung\nLED 55'', {import}&#xA;14.08,{email},iPad mini, {import}&#xA;14.08,{email},iPad minibag,{import}&#xA;12.07,{internet},Lamp berger,{import}" measuredWidth="312" measuredHeight="227" border="false" rowHeight="20" alternative="#cfe2f3" verticalLines="false" header="false">
+    <font size="16px" bold="false"/>
+  </widgets>
+  <widgets xsi:type="model:Icon" id="164" x="502" y="208" measuredWidth="32" measuredHeight="32" icon="line-chart (large)"/>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

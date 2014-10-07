@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" theme="clean">
+  <widgets xsi:type="model:Panel" id="102" x="144" y="16" width="320" height="548" measuredWidth="320" measuredHeight="548" alpha="0"/>
+  <widgets xsi:type="model:Image" id="103" x="144" y="16" width="320" height="548" measuredWidth="320" measuredHeight="548" src="assets/monAXA-Consultant.png"/>
+  <widgets xsi:type="model:Image" id="104" x="232" y="50" width="65" height="49" measuredWidth="65" measuredHeight="49" src="assets/AXA-Glass-Small.png"/>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
