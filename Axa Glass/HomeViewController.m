@@ -43,7 +43,7 @@
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
-	[UIView animateWithDuration:0.4 animations:^{
+	[UIView animateWithDuration:0.1 animations:^{
 		[self.titleView removeFromSuperview];
 	}];
 }
@@ -98,5 +98,10 @@
 }
 
 - (IBAction)claimsAction:(id)sender {
+}
+
+
+- (IBAction)logoutAction:(id)sender {
+    [self.navigationController dismissViewControllerAnimated:YES completion: nil];
 }
 @end
