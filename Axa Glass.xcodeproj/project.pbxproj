@@ -129,6 +129,8 @@
 		E11720FB19DA025400B1FBBC /* MyProtectionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E11720FA19DA025400B1FBBC /* MyProtectionsTableViewController.m */; };
 		E11720FD19DA0AFE00B1FBBC /* MyProtectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E11720FC19DA0AFE00B1FBBC /* MyProtectionCell.m */; };
 		E117210019DC906D00B1FBBC /* MyProtectionDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E11720FF19DC906D00B1FBBC /* MyProtectionDetailsViewController.m */; };
+		E15EE26519E4C4C500DE9344 /* Info-background-core@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E15EE26319E4C4C500DE9344 /* Info-background-core@2x.png */; };
+		E15EE26619E4C4C500DE9344 /* Info-background-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E15EE26419E4C4C500DE9344 /* Info-background-small@2x.png */; };
 		E1681AD819CB45DE00768E8D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1681AD719CB45DE00768E8D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -290,6 +292,8 @@
 		E11720FE19DC903D00B1FBBC /* MyProtectionDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyProtectionDetailsViewController.h; sourceTree = "<group>"; };
 		E11720FF19DC906D00B1FBBC /* MyProtectionDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProtectionDetailsViewController.m; sourceTree = "<group>"; };
 		E147B8BC19CEF1AF00896B94 /* Axa Glass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Axa Glass.entitlements"; sourceTree = "<group>"; };
+		E15EE26319E4C4C500DE9344 /* Info-background-core@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info-background-core@2x.png"; sourceTree = "<group>"; };
+		E15EE26419E4C4C500DE9344 /* Info-background-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info-background-small@2x.png"; sourceTree = "<group>"; };
 		E1681AB919CB444200768E8D /* libPods-NSLogger.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NSLogger.a"; path = "Pods/build/Debug-iphoneos/libPods-NSLogger.a"; sourceTree = "<group>"; };
 		E1681AD719CB45DE00768E8D /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -547,6 +551,8 @@
 		15A9069F19C711840068D0C4 /* info */ = {
 			isa = PBXGroup;
 			children = (
+				E15EE26319E4C4C500DE9344 /* Info-background-core@2x.png */,
+				E15EE26419E4C4C500DE9344 /* Info-background-small@2x.png */,
 				15A906A019C711840068D0C4 /* Info-background@2x.png */,
 				15A906A119C711840068D0C4 /* Info-croix@2x.png */,
 				15A906A219C711840068D0C4 /* Info-done@2x.png */,
@@ -775,6 +781,7 @@
 				151A40B119C743CC002970C6 /* image-1.json in Resources */,
 				151A40B319C743CC002970C6 /* images-1-1.jpeg in Resources */,
 				157B1BC519C88A180022E5BD /* LogoAxa60.png in Resources */,
+				E15EE26519E4C4C500DE9344 /* Info-background-core@2x.png in Resources */,
 				15A9069819C70DB30068D0C4 /* option-check@2x.png in Resources */,
 				151A40BD19C743CC002970C6 /* image-2.json in Resources */,
 				151A40B619C743CC002970C6 /* images-1-4.jpeg in Resources */,
@@ -854,6 +861,7 @@
 				151A40A819C743CC002970C6 /* images-0-0.jpeg in Resources */,
 				15A906A519C711840068D0C4 /* Info-done@2x.png in Resources */,
 				151A40D219C743CC002970C6 /* images-3-8.jpeg in Resources */,
+				E15EE26619E4C4C500DE9344 /* Info-background-small@2x.png in Resources */,
 				1588838919C2F12E00127E1A /* 3-my-claims@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
