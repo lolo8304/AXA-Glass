@@ -10,22 +10,16 @@
 
 @implementation InformationViewController
 
-- (void) viewWillAppear:(BOOL)animated {
-	[self setModalPresentationStyle:UIModalPresentationCurrentContext];
-}
-
-- (void)viewDidLoad {
-	[self setModalPresentationStyle:UIModalPresentationCurrentContext];
+- (void)viewWillAppear:(BOOL)animated
+{
+    
+    self.navigationItem.backBarButtonItem.title = @"Insured?";
 }
 
 - (IBAction)close:(id)sender {
-	[self dismissViewControllerAnimated:YES completion:Nil];
-}
-
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-	[self setModalPresentationStyle:UIModalPresentationCurrentContext];
+    [self.navigationController popViewControllerAnimated: YES];
 
 }
+
 
 @end

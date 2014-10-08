@@ -9,6 +9,7 @@
 #import "ImageDetailViewController.h"
 #import "BSKeyboardControls.h"
 #import "ProtectionCell.h"
+#import "ChooserViewController.h"
 #import <UIAlertView+BBlock.h>
 
 //Sections
@@ -274,7 +275,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 	if (indexPath.section == 0) return 60;
 	else {
-		return 70;
+		return 50;
 	}
 }
 
@@ -383,5 +384,9 @@
 	[self.navigationController popToRootViewControllerAnimated:YES];
 }
 
+- (IBAction)addAnotherAction:(id)sender {
+    ChooserViewController *chooserViewController = [[ChooserViewController alloc] init];
+    [self.navigationController pushViewController:chooserViewController animated:YES ];
+}
 
 @end
