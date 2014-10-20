@@ -74,7 +74,7 @@
         /* if group */
         cell = [tableView dequeueReusableCellWithIdentifier: @"ItemCell-group" forIndexPath:indexPath];
         cell.title.text = group.title;
-        NSString *logoNamed = [ NSString stringWithFormat:@"option-%@@2x", group.identifier ];
+        NSString *logoNamed = [ NSString stringWithFormat:@"option-%@.png", group.identifier ];
         cell.image.image = [UIImage imageNamed: logoNamed];
         
     } else {
@@ -83,7 +83,7 @@
         NSString *cellIdentifier = [ NSString stringWithFormat:@"ItemCell-%@", item.type ];
         cell = [tableView dequeueReusableCellWithIdentifier: cellIdentifier forIndexPath:indexPath];
         
-        NSString *coveredImageNamed = [ NSString stringWithFormat:@"option-%@@2x", item.covered ];
+        NSString *coveredImageNamed = [ NSString stringWithFormat:@"option-%@.png", item.covered ];
         cell.coveredImage.image = [UIImage imageNamed: coveredImageNamed];
         NSString *title =[ NSString stringWithFormat:@"%@", item.title ];
         cell.title.text = title;
@@ -141,7 +141,7 @@
         return 42;
     }
     else {
-        return 93;
+        return 80;
     }
 }
 
