@@ -28,7 +28,7 @@
                       "type": "object-capture",
                       "id": "2",
                       "title": "iMac 27 inch",
-                      "image": "image-3-0.jpeg",
+                      "image": "images-3-0.jpeg",
                       "insurance": {
                       "covered": "exclamation",
                       "coveredById": "1",
@@ -41,7 +41,7 @@
                       "type": "object-capture",
                       "id": "3",
                       "title": "Luis Vuillton bag",
-                      "image": "image-1-0.jpeg",
+                      "image": "images-1-0.jpeg",
                       "insurance": {
                       "covered": "croix",
                       "coveredById": "1",
@@ -57,21 +57,195 @@
             "id": "in-the-car",
             "title": "in the car"
             },
-            "items": []
+            "items": [
+                      {
+                      "type": "coverage",
+                      "id": "1",
+                      "title": "household summary",
+                      "image": "",
+                      "insurance": {
+                      "covered": "check",
+                      "coveredById": "",
+                      "insuredSum": 150000,
+                      "deductible": 200,
+                      "premium": 250
+                      },
+                      "attributes": {
+                      "group": "family"
+                      }
+                      },
+                      {
+                      "type": "object-capture",
+                      "id": "2",
+                      "title": "iMac 27 inch",
+                      "image": "images-2-3.jpeg",
+                      "insurance": {
+                      "covered": "exclamation",
+                      "coveredById": "1",
+                      "price": 1431,
+                      "category": "notebooks"
+                      },
+                      "attributes": {}
+                      },
+                      {
+                      "type": "object-capture",
+                      "id": "3",
+                      "title": "Luis Vuillton bag",
+                      "image": "images-4-3.jpeg",
+                      "insurance": {
+                      "covered": "croix",
+                      "coveredById": "1",
+                      "price": 1431,
+                      "category": "notebooks"
+                      },
+                      "attributes": {}
+                      }
+                      ]
             },
             {
             "group": {
             "id": "outside",
             "title": "outside"
             },
-            "items": []
+            "items": [
+                      {
+                      "type": "coverage",
+                      "id": "1",
+                      "title": "household summary",
+                      "image": "",
+                      "insurance": {
+                      "covered": "check",
+                      "coveredById": "",
+                      "insuredSum": 150000,
+                      "deductible": 200,
+                      "premium": 250
+                      },
+                      "attributes": {
+                      "group": "family"
+                      }
+                      },
+                      {
+                      "type": "coverage",
+                      "id": "1",
+                      "title": "household summary",
+                      "image": "",
+                      "insurance": {
+                      "covered": "check",
+                      "coveredById": "",
+                      "insuredSum": 150000,
+                      "deductible": 200,
+                      "premium": 250
+                      },
+                      "attributes": {
+                      "group": "family"
+                      }
+                      },
+                      {
+                      "type": "coverage",
+                      "id": "1",
+                      "title": "household summary",
+                      "image": "",
+                      "insurance": {
+                      "covered": "check",
+                      "coveredById": "",
+                      "insuredSum": 150000,
+                      "deductible": 200,
+                      "premium": 250
+                      },
+                      "attributes": {
+                      "group": "family"
+                      }
+                      },
+                      {
+                      "type": "object-capture",
+                      "id": "2",
+                      "title": "iMac 27 inch",
+                      "image": "images-0-1.jpeg",
+                      "insurance": {
+                      "covered": "exclamation",
+                      "coveredById": "1",
+                      "price": 1431,
+                      "category": "notebooks"
+                      },
+                      "attributes": {}
+                      },
+                      {
+                      "type": "object-capture",
+                      "id": "3",
+                      "title": "Luis Vuillton bag",
+                      "image": "images-2-3.jpeg",
+                      "insurance": {
+                      "covered": "croix",
+                      "coveredById": "1",
+                      "price": 1431,
+                      "category": "notebooks"
+                      },
+                      "attributes": {}
+                      }
+                      ]
             },
             {
             "group": {
             "id": "traveling",
             "title": "on travel"
             },
-            "items": []
+            "items": [
+                      {
+                      "type": "coverage",
+                      "id": "1",
+                      "title": "household summary",
+                      "image": "",
+                      "insurance": {
+                      "covered": "check",
+                      "coveredById": "",
+                      "insuredSum": 150000,
+                      "deductible": 200,
+                      "premium": 250
+                      },
+                      "attributes": {
+                      "group": "family"
+                      }
+                      },
+                      {
+                      "type": "object-capture",
+                      "id": "2",
+                      "title": "iMac 27 inch",
+                      "image": "images-3-0.jpeg",
+                      "insurance": {
+                      "covered": "exclamation",
+                      "coveredById": "1",
+                      "price": 1431,
+                      "category": "notebooks"
+                      },
+                      "attributes": {}
+                      },
+                      {
+                      "type": "object-capture",
+                      "id": "3",
+                      "title": "Luis Vuillton bag",
+                      "image": "images-2-0.jpeg",
+                      "insurance": {
+                      "covered": "croix",
+                      "coveredById": "1",
+                      "price": 1431,
+                      "category": "notebooks"
+                      },
+                      "attr ibutes": {}
+                      },
+                      {
+                      "type": "object-capture",
+                      "id": "3",
+                      "title": "Luis Vuillton bag",
+                      "image": "images-4-0.jpeg",
+                      "insurance": {
+                      "covered": "croix",
+                      "coveredById": "1",
+                      "price": 1431,
+                      "category": "notebooks"
+                      },
+                      "attributes": {}
+                      }
+                      ]
             }
             ]
   },
