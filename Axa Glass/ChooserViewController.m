@@ -8,10 +8,14 @@
 
 #import "ChooserViewController.h"
 #import "ImageResultController.h"
+#import "AHReach.h"
 
 @interface ChooserViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *image1;
 @property (strong, nonatomic) MBProgressHUD * hud;
+@property (nonatomic, assign) BOOL reachableInternet;
+@property (strong, nonatomic) AHReach *defaultInventory42;
+
 
 @end
 
@@ -21,18 +25,55 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self.reachableInternet = FALSE;
     }
     return self;
 }
 -(void)viewWillAppear:(BOOL)animated {
-	//self.navigationItem.titleView = nil;
+
 }
+- (void)viewDidDisappear:(BOOL)animated {
+    if (self.defaultInventory42 != nil) {
+        [[self defaultInventory42] stopUpdating];
+    }
+}
+
+
+
+- (void) testReachableInternet {
+    
+    if (self.defaultInventory42 == nil) {
+        self.defaultInventory42 = [AHReach reachForHost: @"inventory42-focusdays14.rhcloud.com"];
+        [self.defaultInventory42 startUpdatingWithBlock:^(AHReach *reach) {
+            if([reach isReachable]) {
+                NSURL *url = [NSURL URLWithString:@"http://inventory42-focusdays14.rhcloud.com"];
+                NSURLRequest *request = [NSURLRequest requestWithURL: url];
+                id response = nil;
+                NSError *error = nil;
+                NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+                if (error == nil && [response isKindOfClass: [NSHTTPURLResponse class]] && [response statusCode] == 200 ) {
+                    NSHTTPURLResponse *urlResponse = response;
+                    self.reachableInternet = TRUE;
+                    NSLog(@"REACHABLE!");
+                } else {
+                    self.reachableInternet = FALSE;
+                    NSLog(@"UNREACHABLE - server URL not available!");
+                }
+            } else {
+                self.reachableInternet = FALSE;
+                NSLog(@"UNREACHABLE!");
+            }
+        }];
+    }
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self testReachableInternet];
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -105,11 +146,32 @@
 	}
 }
 - (IBAction)takeAPhoto:(id)sender {
+    
+    if (self.reachableInternet) {
+        UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Picture",    @"Read eMail receipt", @"Scan barcode", @"Scan paper receipt", nil];
 	
-	UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Picture", @"Read eMail receipt", @"Scan barcode", @"Scan paper receipt", nil];
+        actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
+        [actionSheet showInView:self.view];
+    } else {
+        UIAlertView* finalCheck = [[UIAlertView alloc]
+                                   initWithTitle:@"Alert - no internet"
+                                   message:@"There is no internet connection. Retry?"
+                                   delegate:self
+                                   cancelButtonTitle:@"Retry"
+                                   otherButtonTitles:@"Cancel",nil];
+        
+        [finalCheck show];
+    }
 	
-	actionSheet.actionSheetStyle = UIActionSheetStyleDefault; [actionSheet showInView:self.view];
-	
+}
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    if(buttonIndex == 0) {
+        
+    }
+    else if(buttonIndex == 1) {
+        
+    }
 }
 
 

@@ -129,6 +129,8 @@
 		E11720FB19DA025400B1FBBC /* MyProtectionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E11720FA19DA025400B1FBBC /* MyProtectionsTableViewController.m */; };
 		E11720FD19DA0AFE00B1FBBC /* MyProtectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E11720FC19DA0AFE00B1FBBC /* MyProtectionCell.m */; };
 		E117210019DC906D00B1FBBC /* MyProtectionDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E11720FF19DC906D00B1FBBC /* MyProtectionDetailsViewController.m */; };
+		E122CE4019FB014B0052FE56 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E122CE3F19FB014B0052FE56 /* Reachability.m */; };
+		E122CE4319FB0E5F0052FE56 /* AHReach.m in Sources */ = {isa = PBXBuildFile; fileRef = E122CE4219FB0E5F0052FE56 /* AHReach.m */; };
 		E15EE26519E4C4C500DE9344 /* Info-background-core@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E15EE26319E4C4C500DE9344 /* Info-background-core@2x.png */; };
 		E15EE26619E4C4C500DE9344 /* Info-background-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E15EE26419E4C4C500DE9344 /* Info-background-small@2x.png */; };
 		E1681AD819CB45DE00768E8D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1681AD719CB45DE00768E8D /* libPods.a */; };
@@ -291,6 +293,10 @@
 		E11720FC19DA0AFE00B1FBBC /* MyProtectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProtectionCell.m; sourceTree = "<group>"; };
 		E11720FE19DC903D00B1FBBC /* MyProtectionDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyProtectionDetailsViewController.h; sourceTree = "<group>"; };
 		E11720FF19DC906D00B1FBBC /* MyProtectionDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProtectionDetailsViewController.m; sourceTree = "<group>"; };
+		E122CE3E19FB014B0052FE56 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		E122CE3F19FB014B0052FE56 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		E122CE4119FB0E5F0052FE56 /* AHReach.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHReach.h; sourceTree = "<group>"; };
+		E122CE4219FB0E5F0052FE56 /* AHReach.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHReach.m; sourceTree = "<group>"; };
 		E147B8BC19CEF1AF00896B94 /* Axa Glass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Axa Glass.entitlements"; sourceTree = "<group>"; };
 		E15EE26319E4C4C500DE9344 /* Info-background-core@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info-background-core@2x.png"; sourceTree = "<group>"; };
 		E15EE26419E4C4C500DE9344 /* Info-background-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info-background-small@2x.png"; sourceTree = "<group>"; };
@@ -594,6 +600,7 @@
 		15C795C819C1D0CB0068B8F2 /* Axa Glass */ = {
 			isa = PBXGroup;
 			children = (
+				E122CE3C19FB01010052FE56 /* Libraries */,
 				E147B8BC19CEF1AF00896B94 /* Axa Glass.entitlements */,
 				15C795FE19C1DD4A0068B8F2 /* Ressources */,
 				15C795FD19C1DC290068B8F2 /* Model */,
@@ -676,6 +683,25 @@
 				E11720FF19DC906D00B1FBBC /* MyProtectionDetailsViewController.m */,
 			);
 			name = MyProtections;
+			sourceTree = "<group>";
+		};
+		E122CE3C19FB01010052FE56 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				E122CE3D19FB010A0052FE56 /* Reachability */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		E122CE3D19FB010A0052FE56 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				E122CE3E19FB014B0052FE56 /* Reachability.h */,
+				E122CE3F19FB014B0052FE56 /* Reachability.m */,
+				E122CE4119FB0E5F0052FE56 /* AHReach.h */,
+				E122CE4219FB0E5F0052FE56 /* AHReach.m */,
+			);
+			name = Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -927,11 +953,13 @@
 				1547AA5719C31A8800245389 /* ProtectionCell.m in Sources */,
 				E11720FB19DA025400B1FBBC /* MyProtectionsTableViewController.m in Sources */,
 				15C7962319C1E2B90068B8F2 /* ImageDetailViewController.m in Sources */,
+				E122CE4019FB014B0052FE56 /* Reachability.m in Sources */,
 				15C795D319C1D0CB0068B8F2 /* AppDelegate.m in Sources */,
 				15C795D919C1D0CB0068B8F2 /* HomeViewController.m in Sources */,
 				E11720EE19D8B30F00B1FBBC /* ProtectionsModel.m in Sources */,
 				15C795CF19C1D0CB0068B8F2 /* main.m in Sources */,
 				151A40DB19C746E5002970C6 /* MyConsultantViewController.m in Sources */,
+				E122CE4319FB0E5F0052FE56 /* AHReach.m in Sources */,
 				E11720FD19DA0AFE00B1FBBC /* MyProtectionCell.m in Sources */,
 				15C7961C19C1DFA10068B8F2 /* SimilarImage.m in Sources */,
 			);
