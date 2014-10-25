@@ -58,8 +58,8 @@
 			LoggerError(0, @"File not found %@", path);
 		}
 		id jsonData = [NSJSONSerialization JSONObjectWithData:[data dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableContainers error:&error];
-		
-		if (error!=nil) {
+
+        if (error!=nil) {
 			LoggerError(0, @"JsonData is empty for %@", path);
 		}
 		

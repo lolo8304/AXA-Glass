@@ -17,6 +17,6 @@
 + (ImageDetection *)detectImageByURL:(NSURL *)url;
 
 - (id)initWithURL: (NSURL *) url;
-- (NSData*) uploadAndDetectImage;
+- (NSDictionary*) uploadAndDetectImage;
 
 @end
