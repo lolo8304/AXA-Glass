@@ -9,6 +9,7 @@
 #import "ChooserViewController.h"
 #import "ImageResultController.h"
 #import "AHReach.h"
+#import "ImageDetection.h"
 
 @interface ChooserViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *image1;
@@ -20,6 +21,23 @@
 @end
 
 @implementation ChooserViewController
+
+static NSArray *_CAPTURED_ACTIONS;
+
++ (void)initialize {
+    _CAPTURED_ACTIONS = @[
+      @"Picture",    @"Read eMail receipt", @"Scan barcode", @"Scan paper receipt"
+      ];
+}
+
+- (id)init {
+    self = [super init];
+    if (self) {
+        self.reachableInternet = FALSE;
+        
+    }
+    return self;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -85,7 +103,9 @@
 
 - (IBAction)selectImage:(id)sender {
 	
-	
+    ImageDetection *detector = [ImageDetection detectResourceNamed:@"image-0" extension: @"jpg"];
+    NSData *json = [detector uploadAndDetectImage ];
+    
 	MBProgressHUD * hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 	self.hud = hud;
 	hud.animationType = MBProgressHUDAnimationFade;
@@ -145,13 +165,18 @@
 		
 	}
 }
+
 - (IBAction)takeAPhoto:(id)sender {
     
     if (self.reachableInternet) {
-        UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Picture",    @"Read eMail receipt", @"Scan barcode", @"Scan paper receipt", nil];
+        UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:nil];
 	
+        for (NSString *action in _CAPTURED_ACTIONS) {
+            [actionSheet addButtonWithTitle: action];
+        }
         actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
         [actionSheet showInView:self.view];
+        
     } else {
         UIAlertView* finalCheck = [[UIAlertView alloc]
                                    initWithTitle:@"Alert - no internet"
@@ -173,6 +198,15 @@
         
     }
 }
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex < [_CAPTURED_ACTIONS count]) {
+        if (buttonIndex == 0) {
+            /* capture image */
+        }
+    }
+}
+
 
 
 
