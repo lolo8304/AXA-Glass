@@ -7,16 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ImageHelper.h"
 
 @interface ImageDetection : NSObject
 
-@property (nonatomic, strong) NSString * fileName;
-@property (nonatomic, strong) NSURL * imageURL;
+@property (nonatomic, strong) ImageHelper * image;
 
-+ (ImageDetection *)detectResourceNamed:(NSString *)file extension: (NSString *)ext;
-+ (ImageDetection *)detectImageByURL:(NSURL *)url;
++ (ImageDetection *)fromImage:(ImageHelper *) image;
 
-- (id)initWithURL: (NSURL *) url;
-- (NSDictionary*) uploadAndDetectImage;
+- (id)initWithImage: (ImageHelper *) image;
+- (NSDictionary*) uploadAndDetect;
 
 @end

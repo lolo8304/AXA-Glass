@@ -10,29 +10,28 @@
 
 @implementation ImageDetection
 
-+(ImageDetection *)detectResourceNamed:(NSString *)file extension:(NSString *)ext {
 
-    NSURL *resourceURL = [[NSBundle mainBundle] URLForResource: file withExtension:ext];
-    return [[ImageDetection alloc] initWithURL: resourceURL];
-}
-+(ImageDetection *)detectImageByURL:(NSURL *)resourceURL {
-    return [[ImageDetection alloc] initWithURL: resourceURL];
++ (ImageDetection *)fromImage:(ImageHelper *) image {
+    return [[ImageDetection alloc] initWithImage:image];
 }
 
--(id)initWithURL:(NSURL *)url {
-    if ((self = [super init]) && url) {
-        self.imageURL = url;
-        self.fileName = url.lastPathComponent;
+-(id)initWithImage:(ImageHelper *)image {
+    if ((self = [super init]) && image) {
+        self.image = image;
         return self;
     }
     return nil;
 }
 
-- (NSDictionary *)uploadAndDetectImage {
-    return [self uploadAndDetectImage_NSMutableURL];
+- (NSURL *) imageURL {
+    return self.image.imageURL;
+}
+- (NSString *) imageFileName {
+    return self.image.fileName;
 }
 
-- (NSDictionary *)uploadAndDetectImage_NSMutableURL {
+- (NSDictionary *)uploadAndDetect {
+    
     /** http://stackoverflow.com/questions/15410689/iphone-upload-multipart-file-using-afnetworking
      and
      https://github.com/AFNetworking
@@ -40,6 +39,8 @@
     
     NSArray *keys = [[NSArray alloc]initWithObjects:@"submit", nil];
     NSArray *values =[[NSArray alloc]initWithObjects:@"1", nil];
+
+    
     
     NSURL *url = [NSURL URLWithString:@"http://inventory42-focusdays14.rhcloud.com/UploadAndDetectServlet"];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
@@ -69,7 +70,7 @@
     }
     
     // Sample file to send as data
-    [tempPostData appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"Image\"; filename=\"%@\"\r\n", self.fileName] dataUsingEncoding:NSUTF8StringEncoding]];
+    [tempPostData appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"Image\"; filename=\"%@\"\r\n", self.imageFileName] dataUsingEncoding:NSUTF8StringEncoding]];
     [tempPostData appendData:[@"Content-Type: application/octet-stream\r\n\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
     
     NSData *mydata = [NSData dataWithContentsOfURL:self.imageURL];

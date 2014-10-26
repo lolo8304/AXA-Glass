@@ -132,6 +132,8 @@
 		E122CE4019FB014B0052FE56 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E122CE3F19FB014B0052FE56 /* Reachability.m */; };
 		E122CE4319FB0E5F0052FE56 /* AHReach.m in Sources */ = {isa = PBXBuildFile; fileRef = E122CE4219FB0E5F0052FE56 /* AHReach.m */; };
 		E122CE4719FB6FE20052FE56 /* ImageDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = E122CE4619FB6FE20052FE56 /* ImageDetection.m */; };
+		E122CE8019FCC94E0052FE56 /* ImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E122CE7F19FCC94E0052FE56 /* ImageHelper.m */; };
+		E122CE8219FD9D860052FE56 /* detetionExample.json in Resources */ = {isa = PBXBuildFile; fileRef = E122CE8119FD9D860052FE56 /* detetionExample.json */; };
 		E15EE26519E4C4C500DE9344 /* Info-background-core@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E15EE26319E4C4C500DE9344 /* Info-background-core@2x.png */; };
 		E15EE26619E4C4C500DE9344 /* Info-background-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E15EE26419E4C4C500DE9344 /* Info-background-small@2x.png */; };
 		E1681AD819CB45DE00768E8D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1681AD719CB45DE00768E8D /* libPods.a */; };
@@ -300,6 +302,9 @@
 		E122CE4219FB0E5F0052FE56 /* AHReach.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHReach.m; sourceTree = "<group>"; };
 		E122CE4519FB6FE20052FE56 /* ImageDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDetection.h; sourceTree = "<group>"; };
 		E122CE4619FB6FE20052FE56 /* ImageDetection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDetection.m; sourceTree = "<group>"; };
+		E122CE7E19FCC94E0052FE56 /* ImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageHelper.h; sourceTree = "<group>"; };
+		E122CE7F19FCC94E0052FE56 /* ImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageHelper.m; sourceTree = "<group>"; };
+		E122CE8119FD9D860052FE56 /* detetionExample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = detetionExample.json; sourceTree = "<group>"; };
 		E147B8BC19CEF1AF00896B94 /* Axa Glass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Axa Glass.entitlements"; sourceTree = "<group>"; };
 		E15EE26319E4C4C500DE9344 /* Info-background-core@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info-background-core@2x.png"; sourceTree = "<group>"; };
 		E15EE26419E4C4C500DE9344 /* Info-background-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info-background-small@2x.png"; sourceTree = "<group>"; };
@@ -713,6 +718,9 @@
 			children = (
 				E122CE4519FB6FE20052FE56 /* ImageDetection.h */,
 				E122CE4619FB6FE20052FE56 /* ImageDetection.m */,
+				E122CE7E19FCC94E0052FE56 /* ImageHelper.h */,
+				E122CE7F19FCC94E0052FE56 /* ImageHelper.m */,
+				E122CE8119FD9D860052FE56 /* detetionExample.json */,
 			);
 			name = ImageDetection;
 			sourceTree = "<group>";
@@ -898,6 +906,7 @@
 				1588838719C2F12E00127E1A /* 1-my-consultant@2x.png in Resources */,
 				E11720E919D8B1DD00B1FBBC /* myprotections.json in Resources */,
 				151A40A819C743CC002970C6 /* images-0-0.jpeg in Resources */,
+				E122CE8219FD9D860052FE56 /* detetionExample.json in Resources */,
 				15A906A519C711840068D0C4 /* Info-done@2x.png in Resources */,
 				151A40D219C743CC002970C6 /* images-3-8.jpeg in Resources */,
 				E15EE26619E4C4C500DE9344 /* Info-background-small@2x.png in Resources */,
@@ -956,6 +965,7 @@
 				1588837719C2DF8900127E1A /* ImageResultController.m in Sources */,
 				E11720F619D8BB4700B1FBBC /* ProtectionItemModel.m in Sources */,
 				15C7961F19C1E0BC0068B8F2 /* ImagesModel.m in Sources */,
+				E122CE8019FCC94E0052FE56 /* ImageHelper.m in Sources */,
 				153E1E8719C352A7001A76E6 /* InformationViewController.m in Sources */,
 				E122CE4719FB6FE20052FE56 /* ImageDetection.m in Sources */,
 				15C7961819C1DD860068B8F2 /* ImageModel.m in Sources */,
