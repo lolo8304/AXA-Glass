@@ -103,8 +103,8 @@ static NSArray *_CAPTURED_ACTIONS;
 
 - (IBAction)selectImage:(id)sender {
 	
-    ImageDetection *detector = [ImageDetection detectResourceNamed:@"image-0" extension: @"jpg"];
-    NSData *json = [detector uploadAndDetectImage ];
+    ImageHelper *detector = [ImageHelper fromResourceName:@"image-0" extension: @"jpg"];
+    BOOL detected = [detector uploadAndDetectImage];
     
 	MBProgressHUD * hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 	self.hud = hud;
