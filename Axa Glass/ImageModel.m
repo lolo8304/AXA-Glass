@@ -14,10 +14,15 @@
 - (id)init {
     self = [super init];
     if (self) {
-			
+        self.imageHelper = nil;
 	}
     return self;
 }
+
+- (BOOL)isDynamic {
+    return self.imageHelper != nil;
+}
+
 
 - (id) initWithServerJson:(NSDictionary*)dict {
     if ([dict isKindOfClass:[NSDictionary class]]) {

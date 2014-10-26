@@ -38,6 +38,11 @@
 	return nil;
 }
 
+- (ImageModel *) putImageModel: (ImageModel *) imageModel index:(NSUInteger) index {
+    self.images[index] = imageModel;
+    return imageModel;
+}
+
 - (ImageModel *) imageModelAtCurrentIndex {
 	return [self imageModelAtIndex:self.currentImageIndex];
 }

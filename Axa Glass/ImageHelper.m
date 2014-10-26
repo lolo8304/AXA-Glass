@@ -108,6 +108,7 @@
     if (dictionary) {
         self.publicImageURL= dictionary[@"image"];
         self.model = [[ImageModel alloc] initWithServerJson:dictionary];
+        self.model.imageHelper = self;
     }
 }
 

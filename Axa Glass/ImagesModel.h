@@ -20,6 +20,7 @@
 - (void) loadData;
 
 - (ImageModel *) imageModelAtIndex:(NSUInteger) index;
+- (ImageModel *) putImageModel: (ImageModel *) imageModel index:(NSUInteger) index;
 - (ImageModel *) imageModelAtCurrentIndex;
 
 @end
