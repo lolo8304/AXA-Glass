@@ -20,5 +20,6 @@
 
 
 - (id) initWithJson:(NSDictionary*)dict;
+- (id) initWithServerJson:(NSDictionary*)dict;
 
 @end

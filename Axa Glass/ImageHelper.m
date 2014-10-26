@@ -23,7 +23,7 @@
     if ((self = [super init]) && url) {
         self.imageURL = url;
         self.fileName = url.lastPathComponent;
-        if (self.isLocalResource) {
+        if (!self.isLocalResource) {
             self.publicImageURL = url;
         }
         return self;
@@ -43,6 +43,9 @@
 - (BOOL)isPublicAvailable {
     return self.publicImageURL != nil;
 }
+- (BOOL)hasDetectedResult {
+    return self.detectedResult != nil;
+}
 
 - (NSData *) imageData {
     return [NSData dataWithContentsOfURL:self.imageURL];
@@ -54,6 +57,16 @@
         [self uploadImage: FALSE];
     }
     return self.publicImageURL;
+}
+- (BOOL)uploadAndDetectImage {
+    if (!self.isPublicAvailable) {
+        [self uploadImage: TRUE];
+    } else {
+        if (!self.hasDetectedResult) {
+            [self detectImage:[self publicImageURL]];
+        }
+    }
+    return self.isPublicAvailable && self.hasDetectedResult;
 }
 
 - (NSURL *)detectionServerURL:(NSURL *)url {
@@ -90,11 +103,18 @@
     return nil;
 }
 
-- (void)updateDetectedResults: (NSDictionary *) json {
-    self.detectedResult = json;
-    if (json) {
-        
+- (void)updateDetectedResults: (NSDictionary *) dictionary {
+    self.detectedResult = dictionary;
+    if (dictionary) {
+        self.publicImageURL= dictionary[@"image"];
+        self.model = [[ImageModel alloc] initWithServerJson:dictionary];
     }
+}
+
+- (void)clearDetectedResults {
+    self.publicImageURL = nil;
+    self.detectedResult = nil;
+    self.model = nil;
 }
 
 - (void) detectImage: (NSURL *) url {
@@ -171,7 +191,7 @@
         }
         return;
     } else {
-        self.publicImageURL = nil;
+        [self clearDetectedResults];
     }
 }
 

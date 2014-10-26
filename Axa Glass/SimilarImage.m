@@ -11,6 +11,21 @@
 @implementation SimilarImage
 
 
+- (id) initWithServerJson:(NSDictionary*)dict {
+    
+    if ([dict isKindOfClass:[NSDictionary class]]) {
+        self = [self init];
+        if (self) {
+            self.keywords = dict[@"pt"];
+            self.imageURL = [NSURL URLWithString: dict[@"tu"]];
+            self.price = 0;
+            self.currency = @"EUR";
+            
+            return self;
+        }
+    }
+    return nil;
+}
 
 
 - (id) initWithJson:(NSDictionary*)dict {

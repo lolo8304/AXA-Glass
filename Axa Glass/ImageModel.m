@@ -19,6 +19,28 @@
     return self;
 }
 
+- (id) initWithServerJson:(NSDictionary*)dict {
+    if ([dict isKindOfClass:[NSDictionary class]]) {
+        self = [self init];
+        if (self) {
+            self.keywords = dict[@"keywords"];
+            self.imageName = dict[@"image"];
+            self.categorizations = [[NSArray alloc]initWithObjects:@"none", nil];
+            
+            self.price = 0;
+            self.currency = @"EUR";
+            self.similarImages = [NSMutableArray array];
+            
+            for (NSDictionary * item in dict[@"similarImages"]) {
+                SimilarImage * similarImage = [[SimilarImage alloc] initWithServerJson:item];
+                [self.similarImages addObject:similarImage];
+            }
+            
+            return self;
+        }
+    }
+    return nil;
+}
 
 - (id) initWithJson:(NSDictionary*)dict {
 	

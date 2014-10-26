@@ -11,11 +11,13 @@
 @interface SimilarImage : NSObject
 
 @property (nonatomic, strong) NSString * imageName;
+@property (nonatomic, strong) NSURL * imageURL;
 @property (nonatomic, strong) NSString * keywords;
 @property (nonatomic, strong) NSNumber * price;
 @property (nonatomic, strong) NSString * currency;
 
 
 - (id) initWithJson:(NSDictionary*)dict;
+- (id) initWithServerJson:(NSDictionary*)dict;
 
 @end

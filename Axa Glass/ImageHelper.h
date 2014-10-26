@@ -14,6 +14,7 @@
 @property (nonatomic, strong) NSURL * imageURL;
 @property (nonatomic, strong) NSURL * publicImageURL;
 @property (nonatomic, strong) NSDictionary *detectedResult;
+@property (nonatomic, strong) ImageModel *model;
 
 + (ImageHelper *)fromResourceName:(NSString *)file extension: (NSString *)ext;
 + (ImageHelper *)fromURL:(NSURL *)url;
@@ -21,8 +22,9 @@
 - (id)initWithURL: (NSURL *) url;
 - (BOOL)isLocalResource;
 - (BOOL)isPublicAvailable;
+- (BOOL)hasDetectedResult;
 - (NSURL *)uploadImage;
-- (void)detectImage: (NSURL *) url;
+- (BOOL)uploadAndDetectImage;
 
 
 @end
