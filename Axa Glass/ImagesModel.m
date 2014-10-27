@@ -24,9 +24,9 @@
 - (id)init {
     self = [super init];
     if (self) {
-		
         self.images = [NSMutableArray array];
 		self.currentImageIndex = 0;
+        srandom(time(NULL));
 	}
     return self;
 }
