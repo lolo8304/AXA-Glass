@@ -26,7 +26,7 @@ static NSArray *_CAPTURED_ACTIONS;
 
 + (void)initialize {
     _CAPTURED_ACTIONS = @[
-      @"Picture",    @"Read eMail receipt", @"Scan barcode", @"Scan paper receipt"
+      @"From Camera",  @"From Gallery",  @"From eMail receipt", @"From Barcode", @"From Paper Receipt"
       ];
 }
 
