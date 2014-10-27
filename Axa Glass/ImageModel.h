@@ -17,7 +17,7 @@
 @property (nonatomic, strong) NSNumber * price;
 @property (nonatomic, strong) NSString * currency;
 @property (nonatomic, strong) NSMutableArray * similarImages;
-@property (nonatomic, weak) NSObject * imageHelper;
+@property (nonatomic, strong) NSObject * imageHelper;
 
 
 - (id) initWithJson:(NSDictionary*)dict;
