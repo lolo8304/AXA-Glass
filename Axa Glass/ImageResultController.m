@@ -85,10 +85,10 @@
 		title.font = [UIFont fontWithName:FONT_DEMI size:25.0f];
 	}
 	
+    ImageHelper *imageHelper = (ImageHelper *)self.imageModel.imageHelper;
 	//best match
 	if (indexPath.section == 1) {
 		LoggerData(1, @"self.imageModel.imageName:%@",self.imageModel.imageName);
-        ImageHelper *imageHelper = (ImageHelper *)self.imageModel.imageHelper;
         if (imageHelper) {
             NSData *imageData =[NSData dataWithContentsOfURL: imageHelper.imageURL];
             cell.photo.image = [UIImage imageWithData:imageData];
@@ -101,10 +101,12 @@
 	else if (indexPath.section==3){
 		
 		SimilarImage * similarImage = self.imageModel.similarImages[indexPath.row];
-		
-//		cell.photo.image = [UIImage imageNamed:similarImage.imageName];
-        NSData *imageData =[NSData dataWithContentsOfURL: similarImage.imageURL];
-        cell.photo.image = [UIImage imageWithData:imageData];
+        if (imageHelper) {
+            NSData *imageData =[NSData dataWithContentsOfURL: similarImage.imageURL];
+            cell.photo.image = [UIImage imageWithData:imageData];
+        } else {
+            cell.photo.image = [UIImage imageNamed:similarImage.imageName];
+        }
 		cell.keyword.text = similarImage.keywords;
 		if ( !IsEmpty(similarImage.price) ) {
 			cell.price.hidden = NO;

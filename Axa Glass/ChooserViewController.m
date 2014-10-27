@@ -102,17 +102,6 @@ static NSArray *_CAPTURED_ACTIONS;
 
 
 - (IBAction)selectImage:(id)sender {
-	
-    NSInteger index = ((UIButton *)sender).tag;
-    ImageModel *model =[[ImagesModel sharedManager] imageModelAtIndex: index];
-    if (!model.isDynamic) {
-        NSString *resourceName = [NSString stringWithFormat:@"image-%ld", (long)index];
-        ImageHelper *detector = [ImageHelper fromResourceName:resourceName extension: @"jpg"];
-        BOOL detected = [detector uploadAndDetectImage];
-        if (detected) {
-            [[ImagesModel sharedManager] putImageModel:[detector model] index: index];
-        }
-    }
     
 	MBProgressHUD * hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 	self.hud = hud;
@@ -129,8 +118,20 @@ static NSArray *_CAPTURED_ACTIONS;
 	
 	
 	[hud showAnimated:YES whileExecutingBlock:^{
-		[self simulateLoader];
-	// hud.progress = 1.0f;
+        
+        NSInteger index = ((UIButton *)sender).tag;
+        ImageModel *model =[[ImagesModel sharedManager] imageModelAtIndex: index];
+        BOOL detected = FALSE;
+        if (!model.isDynamic) {
+            NSString *resourceName = [NSString stringWithFormat:@"image-%ld", (long)index];
+            ImageHelper *detector = [ImageHelper fromResourceName:resourceName extension: @"jpg"];
+            detected = [detector uploadAndDetectImage];
+            if (detected) {
+                [[ImagesModel sharedManager] putImageModel:[detector model] index: index];
+            } else {
+                [self simulateLoader];
+            }
+        }
 	} completionBlock:^{
 		if (self.isViewLoaded && self.view.window && self.parentViewController != nil) {
 			[self performSegueWithIdentifier:@"showImageMatch" sender:sender];}
