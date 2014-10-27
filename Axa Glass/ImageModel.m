@@ -32,7 +32,7 @@
             self.imageName = dict[@"image"];
             self.categorizations = [[NSArray alloc]initWithObjects:@"none", nil];
             
-            self.price = 0;
+            self.price = [NSNumber numberWithInt: (arc4random() % 1000 + 1)];
             self.currency = @"EUR";
             self.similarImages = [NSMutableArray array];
             

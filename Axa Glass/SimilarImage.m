@@ -18,7 +18,7 @@
         if (self) {
             self.keywords = dict[@"pt"];
             self.imageURL = [NSURL URLWithString: dict[@"tu"]];
-            self.price = 0;
+            self.price = [NSNumber numberWithInt: (arc4random() % 1000 + 1)];
             self.currency = @"EUR";
             
             return self;
