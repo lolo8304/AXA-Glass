@@ -11,6 +11,7 @@
 #import "ProtectionCell.h"
 #import "ChooserViewController.h"
 #import <UIAlertView+BBlock.h>
+#import "ImageHelper.h"
 
 //Sections
 #define kOptionSectionIndex 0
@@ -83,8 +84,15 @@
 		self.tag.text = self.similarImage.keywords;
 		self.price.text = [NSString stringWithFormat:@"%@", self.similarImage.price];
 	}
-	
-	self.image.image = [UIImage imageNamed:self.imageModel.imageName];
+    
+    ImageHelper *imageHelper = (ImageHelper *)self.imageModel.imageHelper;
+    if (imageHelper) {
+        NSData *imageData =[NSData dataWithContentsOfURL: imageHelper.imageURL];
+        self.image.image = [UIImage imageWithData:imageData];
+    } else {
+        self.image.image = [UIImage imageNamed:self.imageModel.imageName];
+    }
+    
 	
 	self.numberOption = 0;
 	self.numberProtection = 4;
@@ -92,6 +100,12 @@
 	if ([ImagesModel sharedManager].currentImageIndex == kWatchIndex) {
 		self.numberOption = 1;
 	}
+    
+
+    
+    
+    
+    
 }
 
 
