@@ -10,6 +10,7 @@
 #import "ImageResultController.h"
 #import "AHReach.h"
 #import "ImageDetection.h"
+#import "MMProgressHUD.h"
 
 @interface ChooserViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *image1;
@@ -101,41 +102,54 @@ static NSArray *_CAPTURED_ACTIONS;
 }
 
 
+- (void)detect: (NSInteger) index {
+    ImageModel *model =[[ImagesModel sharedManager] imageModelAtIndex: index];
+    BOOL detected = FALSE;
+    if (!model.isDynamic) {
+        [[MMProgressHUD sharedHUD] setOverlayMode:MMProgressHUDWindowOverlayModeLinear];
+        [MMProgressHUD showWithTitle:@"Analyzing image" status:0];
+        NSString *resourceName = [NSString stringWithFormat:@"image-%ld", (long)index];
+        ImageHelper *detector = [ImageHelper fromResourceName:resourceName extension: @"jpg"];
+        detected = [detector uploadAndDetectImage];
+        if (detected) {
+            [[ImagesModel sharedManager] putImageModel:[detector model] index: index];
+            [MMProgressHUD dismissWithSuccess:@"Detected!"];
+        } else {
+            [self simulateLoader];
+            [MMProgressHUD dismissWithError:@"Detection aborted" afterDelay: 2];
+        }
+    }
+    
+}
+
 - (IBAction)selectImage:(id)sender {
     
+    /*
 	MBProgressHUD * hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 	self.hud = hud;
 	hud.animationType = MBProgressHUDAnimationFade;
-	//self.hud.mode = MBProgressHUDModeDeterminateHorizontalBar;
 	hud.dimBackground=YES;
-	//hud.minShowTime = 2;
-	//hud.graceTime=0.1;
 	
 	hud.mode = MBProgressHUDModeAnnularDeterminate;
 	hud.labelText = @"Analyzing image";
-	//hud.detailsLabelText = @"Processing";
-	//[hud showWhileExecuting:@selector(doSomeFunkyStuff) onTarget:self withObject:nil animated:YES];
+*/
+    
 	
-	
-	[hud showAnimated:YES whileExecutingBlock:^{
+    NSInteger index = ((UIButton *)sender).tag;
+    
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_async(queue, ^ {
+        [self detect:index];
         
-        NSInteger index = ((UIButton *)sender).tag;
-        ImageModel *model =[[ImagesModel sharedManager] imageModelAtIndex: index];
-        BOOL detected = FALSE;
-        if (!model.isDynamic) {
-            NSString *resourceName = [NSString stringWithFormat:@"image-%ld", (long)index];
-            ImageHelper *detector = [ImageHelper fromResourceName:resourceName extension: @"jpg"];
-            detected = [detector uploadAndDetectImage];
-            if (detected) {
-                [[ImagesModel sharedManager] putImageModel:[detector model] index: index];
-            } else {
-                [self simulateLoader];
-            }
-        }
-	} completionBlock:^{
-		if (self.isViewLoaded && self.view.window && self.parentViewController != nil) {
-			[self performSegueWithIdentifier:@"showImageMatch" sender:sender];}
-	}];
+        NSLog(@"Finished work in background");
+        dispatch_async(dispatch_get_main_queue(), ^ {
+            NSLog(@"Back on main thread");
+            
+            if (self.isViewLoaded && self.view.window && self.parentViewController != nil) {
+                [self performSegueWithIdentifier:@"showImageMatch" sender:sender];}
+            
+        });
+    });
 
 }
 
@@ -144,7 +158,6 @@ static NSArray *_CAPTURED_ACTIONS;
 	
 	while (progress < 1.0) {
 		progress += 0.02;
-		self.hud.progress = progress;
 		if (FAST_MODE) {
 			usleep(10000);
 		}
