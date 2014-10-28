@@ -7,6 +7,7 @@
 //
 
 #import "ImageHelper.h"
+#import "UIImage+Resize.h"
 
 @implementation ImageHelper
 
@@ -18,6 +19,10 @@
 +(ImageHelper *)fromURL:(NSURL *)resourceURL {
     return [[ImageHelper alloc] initWithURL: resourceURL];
 }
++ (ImageHelper *)fromFileWithPath:(NSString *)fileName {
+    return [[ImageHelper alloc] initWithURL: [NSURL fileURLWithPath:fileName]];
+}
+
 
 -(id)initWithURL:(NSURL *)url {
     if ((self = [super init]) && url) {
@@ -31,13 +36,17 @@
     return nil;
 }
 
+- (BOOL)isAssetsLibraryResource {
+    return [self.imageURL.scheme isEqual: @"assets-library"];
+}
+
 - (BOOL)isLocalResource {
     /**
      true = if file://
      or http://localhost or https://localhost
      */
     
-    return [self.imageURL.scheme isEqual: @"file"] || ([self.imageURL.scheme hasPrefix:@"http"] && [self.imageURL.host isEqualToString: @"localhost"]) ;
+    return [self.imageURL.scheme isEqual: @"file"] || [self isAssetsLibraryResource] ||([self.imageURL.scheme hasPrefix:@"http"] && [self.imageURL.host isEqualToString: @"localhost"]) ;
 }
 
 - (BOOL)isPublicAvailable {
@@ -47,8 +56,9 @@
     return self.detectedResult != nil;
 }
 
+
 - (NSData *) imageData {
-    return [NSData dataWithContentsOfURL:self.imageURL];
+    return [ImageData imageData:self.imageURL];
 }
 
 
@@ -107,6 +117,9 @@
     self.detectedResult = dictionary;
     if (dictionary) {
         self.publicImageURL= dictionary[@"image"];
+        if (self.isAssetsLibraryResource) {
+            self.imageURL = self.publicImageURL;
+        }
         self.model = [[ImageModel alloc] initWithServerJson:dictionary];
         self.model.imageHelper = self;
     }
@@ -196,6 +209,98 @@
     }
 }
 
++ (NSString *) applicationDocumentsDirectory
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *basePath = ([paths count] > 0) ? [paths objectAtIndex:0] : nil;
+    return basePath;
+}
 
++ (NSString *)imageNameFromUUID:(NSUUID *)uuid extension:(NSString *)ext {
+    if (ext) {
+        return [NSString stringWithFormat:@"%@.512.%@", uuid.UUIDString, ext];
+    } else {
+        return [NSString stringWithFormat:@"%@.512", uuid.UUIDString];
+    }
+}
++ (NSString *)newImageNameWithExtension:(NSString *)ext {
+    return [self imageNameFromUUID:[NSUUID UUID] extension:ext];
+}
++ (NSString *)newImageNameWithoutExtension {
+    return [self imageNameFromUUID:[NSUUID UUID] extension:nil];
+}
+
++ (NSString *)contentTypeForImageData:(NSData *)data {
+    uint8_t c;
+    [data getBytes:&c length:1];
+    
+    switch (c) {
+        case 0xFF:
+            return @"image/jpeg";
+        case 0x89:
+            return @"image/png";
+        case 0x47:
+            return @"image/gif";
+        case 0x49:
+        case 0x4D:
+            return @"image/tiff";
+    }
+    return nil;
+}
++ (NSString *)extensionForImageData:(NSData *)data {
+    uint8_t c;
+    [data getBytes:&c length:1];
+    
+    switch (c) {
+        case 0xFF:
+            return @"jpg";
+        case 0x89:
+            return @"png";
+        case 0x47:
+            return @"gif";
+        case 0x49:
+        case 0x4D:
+            return @"tiff";
+    }
+    return nil;
+}
+
++ (NSString *)saveImageToFile:(UIImage *)image withName:(NSString *)name {
+    NSData *data = UIImageJPEGRepresentation(image, 1.0);
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSString *fullPath = [self.applicationDocumentsDirectory stringByAppendingPathComponent:name];
+    [fileManager createFileAtPath:fullPath contents:data attributes:nil];
+    return fullPath;
+}
+
++ (NSString *)saveImageToFileWithoutExtension:(UIImage *)image withName:(NSString *)name {
+    NSData *data = UIImageJPEGRepresentation(image, 1.0);
+    name = [NSString stringWithFormat:@"%@.%@", name, [self extensionForImageData:data]];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSString *fullPath = [self.applicationDocumentsDirectory stringByAppendingPathComponent:name];
+    [fileManager createFileAtPath:fullPath contents:data attributes:nil];
+    return fullPath;
+}
++ (NSString *)saveImageToFileWithExtension:(UIImage *)image withName:(NSString *)name extension: (NSString *)ext {
+    NSData *data = UIImageJPEGRepresentation(image, 1.0);
+    name = [NSString stringWithFormat:@"%@.%@", name, ext];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSString *fullPath = [self.applicationDocumentsDirectory stringByAppendingPathComponent:name];
+    [fileManager createFileAtPath:fullPath contents:data attributes:nil];
+    return fullPath;
+}
+
++ (UIImage *)loadImageFromFile:(NSString *)name {
+    NSString *fullPath = [self.applicationDocumentsDirectory stringByAppendingPathComponent:name];
+    UIImage *img = [UIImage imageWithContentsOfFile:fullPath];
+    return img;
+}
+
++ (UIImage *)scaleImage:(UIImage *)image toSize:(int)targetSize {
+    return [image resizedImageWithContentMode:UIViewContentModeScaleAspectFit bounds:CGSizeMake(targetSize, targetSize) interpolationQuality:kCGInterpolationHigh];
+}
++ (UIImage *)scaleImageSmall:(UIImage *)image {
+    return [self scaleImage:image toSize:512];
+}
 
 @end
