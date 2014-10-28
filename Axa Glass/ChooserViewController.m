@@ -9,8 +9,11 @@
 #import "ChooserViewController.h"
 #import "ImageResultController.h"
 #import "AHReach.h"
-#import "ImageDetection.h"
+#import "ImageHelper.h"
+#import "ImageModel.h"
 #import "MMProgressHUD.h"
+#import <MobileCoreServices/MobileCoreServices.h>
+#import "AssetsLibrary/AssetsLibrary.h"
 
 @interface ChooserViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *image1;
@@ -27,7 +30,7 @@ static NSArray *_CAPTURED_ACTIONS;
 
 + (void)initialize {
     _CAPTURED_ACTIONS = @[
-      @"From Camera",  @"From Gallery",  @"From eMail receipt", @"From Barcode", @"From Paper Receipt"
+      @"From Camera",  @"From Photo Album", @"From Photo Library",  @"From eMail receipt", @"From Barcode", @"From Paper Receipt"
       ];
 }
 
@@ -35,7 +38,6 @@ static NSArray *_CAPTURED_ACTIONS;
     self = [super init];
     if (self) {
         self.reachableInternet = FALSE;
-        
     }
     return self;
 }
@@ -69,9 +71,8 @@ static NSArray *_CAPTURED_ACTIONS;
                 NSURLRequest *request = [NSURLRequest requestWithURL: url];
                 id response = nil;
                 NSError *error = nil;
-                NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+                [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
                 if (error == nil && [response isKindOfClass: [NSHTTPURLResponse class]] && [response statusCode] == 200 ) {
-                    NSHTTPURLResponse *urlResponse = response;
                     self.reachableInternet = TRUE;
                     NSLog(@"REACHABLE!");
                 } else {
@@ -124,17 +125,6 @@ static NSArray *_CAPTURED_ACTIONS;
 
 - (IBAction)selectImage:(id)sender {
     
-    /*
-	MBProgressHUD * hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-	self.hud = hud;
-	hud.animationType = MBProgressHUDAnimationFade;
-	hud.dimBackground=YES;
-	
-	hud.mode = MBProgressHUDModeAnnularDeterminate;
-	hud.labelText = @"Analyzing image";
-*/
-    
-	
     NSInteger index = ((UIButton *)sender).tag;
     
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
@@ -220,17 +210,158 @@ static NSArray *_CAPTURED_ACTIONS;
         
     }
 }
-
+/** "From Camera",  "From Camera Roll",  "From Library", "From eMail receipt", "From Barcode", "From Paper Receipt" **/
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
-    if (buttonIndex < [_CAPTURED_ACTIONS count]) {
-        if (buttonIndex == 0) {
-            /* capture image */
+    if (buttonIndex > 0 && buttonIndex <= [_CAPTURED_ACTIONS count]) {
+        switch (buttonIndex) {
+            case 1:
+                /** camera */
+                [self captureCamera];
+                break;
+            case 2:
+                /** gallery **/
+                [self pickFromGallery];
+                break;
+            case 3:
+                /** library **/
+                [self pickFromLibrary];
+                break;
+                
+            default:
+                break;
         }
     }
 }
 
+/** http://www.techotopia.com/index.php/Accessing_the_iOS_7_Camera_and_Photo_Library **/
+
+- (void) captureCamera {
+    if (![self hasValidCameraFeatures] || ![self hasValidPhotoAlbumFeatures]) {
+        return;
+    }
+    UIImagePickerController *imagePicker =
+    [[UIImagePickerController alloc] init];
+    imagePicker.delegate = self;
+    imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    imagePicker.mediaTypes = @[(NSString *) kUTTypeImage];
+    imagePicker.allowsEditing = NO;
+    [self presentViewController:imagePicker animated:YES completion:nil];
+}
+- (void) pickFromGallery {
+    if (![self hasValidPhotoAlbumFeatures]) {
+        return;
+    }
+    UIImagePickerController *imagePicker =
+    [[UIImagePickerController alloc] init];
+    imagePicker.delegate = self;
+    imagePicker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+    imagePicker.mediaTypes = @[(NSString *) kUTTypeImage];
+    imagePicker.allowsEditing = NO;
+    [self presentViewController:imagePicker animated:YES completion:nil];
+}
+- (void) pickFromLibrary {
+    if (![self hasValidPhotoLibraryFeatures]) {
+        return;
+    }
+    UIImagePickerController *imagePicker =
+    [[UIImagePickerController alloc] init];
+    imagePicker.delegate = self;
+    imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    imagePicker.mediaTypes = @[(NSString *) kUTTypeImage];
+    imagePicker.allowsEditing = NO;
+    [self presentViewController:imagePicker animated:YES completion:nil];
+}
 
 
+- (BOOL) hasValidCameraFeatures {
+    if (![UIImagePickerController isSourceTypeAvailable:
+          UIImagePickerControllerSourceTypeCamera]) {
+        UIAlertView *alert = [[UIAlertView alloc]
+                              initWithTitle: @"Error - Camera"
+                              message: @"Failed to capture a picture. Camera feature is not available "
+                              delegate: nil
+                              cancelButtonTitle:@"OK"
+                              otherButtonTitles:nil];
+        [alert show];
+        return FALSE;
+    }
+    return TRUE;
+}
+
+- (BOOL) hasValidPhotoAlbumFeatures {
+    if (![UIImagePickerController isSourceTypeAvailable:
+          UIImagePickerControllerSourceTypeSavedPhotosAlbum]) {
+        UIAlertView *alert = [[UIAlertView alloc]
+                              initWithTitle: @"Error - Camera roll"
+                              message: @"Failed to access Camera roll. Feature is not available or not allowed"
+                              delegate: nil
+                              cancelButtonTitle:@"OK"
+                              otherButtonTitles:nil];
+        [alert show];
+        return FALSE;
+    }
+
+    return TRUE;
+}
+
+- (BOOL) hasValidPhotoLibraryFeatures {
+    if (![UIImagePickerController isSourceTypeAvailable:
+          UIImagePickerControllerSourceTypePhotoLibrary]) {
+        UIAlertView *alert = [[UIAlertView alloc]
+                              initWithTitle: @"Error - Photos Library"
+                              message: @"Failed to access photo library. Feature is not available or not allowed"
+                              delegate: nil
+                              cancelButtonTitle:@"OK"
+                              otherButtonTitles:nil];
+        [alert show];
+        return FALSE;
+    }
+    return TRUE;
+
+}
+
+
+
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo: (NSDictionary *)info
+{
+    UIImage *image = info[UIImagePickerControllerOriginalImage];
+    if (picker.sourceType == UIImagePickerControllerSourceTypeCamera) {
+        
+        [self dismissViewControllerAnimated:YES completion:nil];
+        dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+        dispatch_async(queue, ^ {
+            
+            [[MMProgressHUD sharedHUD] setOverlayMode:MMProgressHUDWindowOverlayModeLinear];
+            [MMProgressHUD showWithTitle:@"Analyzing image" status:0];
+
+            UIImage *scaledImage = [ImageHelper scaleImageSmall:image];
+            /*no scaling */
+            NSString *newFileName = [ImageHelper saveImageToFileWithoutExtension:scaledImage withName:[ImageHelper newImageNameWithoutExtension]];
+            
+            ImageHelper *imageHelper = [ImageHelper fromFileWithPath:newFileName];
+            BOOL detected = imageHelper.uploadAndDetectImage;
+            if (detected) {
+                [[ImagesModel sharedManager] putImageModel:[imageHelper model] index: 0];
+                [MMProgressHUD dismissWithSuccess:@"Detected!"];
+            } else {
+                [self simulateLoader];
+                [MMProgressHUD dismissWithError:@"Detection aborted" afterDelay: 2];
+            }
+            
+            NSLog(@"Finished work in background");
+            dispatch_async(dispatch_get_main_queue(), ^ {
+                if (self.isViewLoaded && self.view.window && self.parentViewController != nil) {
+                    [self performSegueWithIdentifier:@"showImageMatch" sender:0];}
+                NSLog(@"Back on main thread");
+            });
+        });
+    }
+}
+
+-(void)imagePickerControllerDidCancel: (UIImagePickerController *)picker
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 
 @end
