@@ -47,6 +47,12 @@
 	return [self imageModelAtIndex:self.currentImageIndex];
 }
 
+- (NSUInteger) addImageModel:(ImageModel *) imageModel {
+    NSInteger i = self.images.count;
+    [self putImageModel:imageModel index:i];
+    return i;
+}
+
 
 #define kTotalElements 4
 - (void) loadData {
