@@ -53,6 +53,38 @@ static NSArray *_CAPTURED_ACTIONS;
 -(void)viewWillAppear:(BOOL)animated {
 
 }
+
+
+- (UIView *) searchViewOf:(Class)class tag:(int)tag view:(UIView *)view {
+    if ([view isKindOfClass: class]) {
+        if ([view tag] == tag) {
+            return view;
+        }
+        return nil;
+    }
+    for (UIView *subView in view.subviews) {
+        UIView *resultView = [self searchViewOf: class tag:tag view:subView];
+        if (resultView) {
+            return resultView;
+        }
+    }
+    return nil;
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    int i = 100;
+    for (ImageModel *model in ([[ImagesModel sharedManager] images])) {
+        ImageHelper *helper = (ImageHelper *)[model imageHelper];
+        if (helper) {
+            UIImageView *imageView = (UIImageView *)[self searchViewOf:[UIImageView class] tag:i view: self.view];
+            if (imageView) {
+                imageView.image = [helper image];
+            }
+        }
+        i = i+1;
+    }
+}
+
 - (void)viewDidDisappear:(BOOL)animated {
     if (self.defaultInventory42 != nil) {
         [[self defaultInventory42] stopUpdating];
@@ -126,6 +158,8 @@ static NSArray *_CAPTURED_ACTIONS;
 - (IBAction)selectImage:(id)sender {
     
     NSInteger index = ((UIButton *)sender).tag;
+    ImageModel *model =[[ImagesModel sharedManager] imageModelAtIndex: index];
+    if (model == nil) return;
     
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_async(queue, ^ {
@@ -341,7 +375,7 @@ static NSArray *_CAPTURED_ACTIONS;
             ImageHelper *imageHelper = [ImageHelper fromFileWithPath:newFileName];
             BOOL detected = imageHelper.uploadAndDetectImage;
             if (detected) {
-                [[ImagesModel sharedManager] putImageModel:[imageHelper model] index: 0];
+                [[ImagesModel sharedManager] addImageModel:[imageHelper model]];
                 [MMProgressHUD dismissWithSuccess:@"Detected!"];
             } else {
                 [self simulateLoader];
@@ -350,8 +384,10 @@ static NSArray *_CAPTURED_ACTIONS;
             
             NSLog(@"Finished work in background");
             dispatch_async(dispatch_get_main_queue(), ^ {
+                int count = [[[ImagesModel sharedManager] images] count]-1;
+                UIView *button = [self searchViewOf: [UIButton class] tag: count view:self.view];
                 if (self.isViewLoaded && self.view.window && self.parentViewController != nil) {
-                    [self performSegueWithIdentifier:@"showImageMatch" sender:0];}
+                    [self performSegueWithIdentifier:@"showImageMatch" sender: button];}
                 NSLog(@"Back on main thread");
             });
         });
