@@ -56,6 +56,10 @@
     return self.detectedResult != nil;
 }
 
+- (UIImage *)image {
+    NSData *imageData =[NSData dataWithContentsOfURL: self.imageURL];
+    return [UIImage imageWithData:imageData];
+}
 
 - (NSData *) imageData {
     return [ImageData imageData:self.imageURL];

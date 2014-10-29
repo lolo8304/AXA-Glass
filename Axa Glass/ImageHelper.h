@@ -38,6 +38,8 @@
 
 
 - (NSData *) imageData;
+- (UIImage *)image;
+
 - (BOOL)isLocalResource;
 - (BOOL)isPublicAvailable;
 - (BOOL)hasDetectedResult;
