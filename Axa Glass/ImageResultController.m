@@ -90,8 +90,7 @@
 	if (indexPath.section == 1) {
 		LoggerData(1, @"self.imageModel.imageName:%@",self.imageModel.imageName);
         if (imageHelper) {
-            NSData *imageData =[NSData dataWithContentsOfURL: imageHelper.imageURL];
-            cell.photo.image = [UIImage imageWithData:imageData];
+            cell.photo.image = [imageHelper image];
         } else {
             cell.photo.image = [UIImage imageNamed:self.imageModel.imageName];
         }
