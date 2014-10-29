@@ -131,7 +131,6 @@
 		E117210019DC906D00B1FBBC /* MyProtectionDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E11720FF19DC906D00B1FBBC /* MyProtectionDetailsViewController.m */; };
 		E122CE4019FB014B0052FE56 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E122CE3F19FB014B0052FE56 /* Reachability.m */; };
 		E122CE4319FB0E5F0052FE56 /* AHReach.m in Sources */ = {isa = PBXBuildFile; fileRef = E122CE4219FB0E5F0052FE56 /* AHReach.m */; };
-		E122CE4719FB6FE20052FE56 /* ImageDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = E122CE4619FB6FE20052FE56 /* ImageDetection.m */; };
 		E122CE8019FCC94E0052FE56 /* ImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E122CE7F19FCC94E0052FE56 /* ImageHelper.m */; };
 		E122CE8219FD9D860052FE56 /* detetionExample.json in Resources */ = {isa = PBXBuildFile; fileRef = E122CE8119FD9D860052FE56 /* detetionExample.json */; };
 		E122CE9919FEF70F0052FE56 /* MMHud.m in Sources */ = {isa = PBXBuildFile; fileRef = E122CE8519FEF70F0052FE56 /* MMHud.m */; };
@@ -147,6 +146,16 @@
 		E15EE26519E4C4C500DE9344 /* Info-background-core@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E15EE26319E4C4C500DE9344 /* Info-background-core@2x.png */; };
 		E15EE26619E4C4C500DE9344 /* Info-background-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E15EE26419E4C4C500DE9344 /* Info-background-small@2x.png */; };
 		E1681AD819CB45DE00768E8D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1681AD719CB45DE00768E8D /* libPods.a */; };
+		E1F0F11F19FF337D000FF68B /* PBJGLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F0F11519FF337D000FF68B /* PBJGLProgram.m */; };
+		E1F0F12019FF337D000FF68B /* PBJMediaWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F0F11719FF337D000FF68B /* PBJMediaWriter.m */; };
+		E1F0F12119FF337D000FF68B /* PBJVision.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F0F11919FF337D000FF68B /* PBJVision.m */; };
+		E1F0F12219FF337D000FF68B /* PBJVisionUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F0F11B19FF337D000FF68B /* PBJVisionUtilities.m */; };
+		E1F0F12319FF337D000FF68B /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = E1F0F11D19FF337D000FF68B /* Shader.fsh */; };
+		E1F0F12419FF337D000FF68B /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = E1F0F11E19FF337D000FF68B /* Shader.vsh */; };
+		E1F0F12719FFF479000FF68B /* ImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F0F12619FFF479000FF68B /* ImageData.m */; };
+		E1F0F12B1A002A19000FF68B /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F0F1291A002A19000FF68B /* UIImage+Resize.m */; };
+		E1F0F1301A002A41000FF68B /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F0F12D1A002A41000FF68B /* UIImage+Alpha.m */; };
+		E1F0F1311A002A41000FF68B /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F0F12E1A002A41000FF68B /* UIImage+RoundedCorner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -310,8 +319,6 @@
 		E122CE3F19FB014B0052FE56 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		E122CE4119FB0E5F0052FE56 /* AHReach.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHReach.h; sourceTree = "<group>"; };
 		E122CE4219FB0E5F0052FE56 /* AHReach.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHReach.m; sourceTree = "<group>"; };
-		E122CE4519FB6FE20052FE56 /* ImageDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDetection.h; sourceTree = "<group>"; };
-		E122CE4619FB6FE20052FE56 /* ImageDetection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDetection.m; sourceTree = "<group>"; };
 		E122CE7E19FCC94E0052FE56 /* ImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageHelper.h; sourceTree = "<group>"; };
 		E122CE7F19FCC94E0052FE56 /* ImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageHelper.m; sourceTree = "<group>"; };
 		E122CE8119FD9D860052FE56 /* detetionExample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = detetionExample.json; sourceTree = "<group>"; };
@@ -341,6 +348,24 @@
 		E15EE26419E4C4C500DE9344 /* Info-background-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info-background-small@2x.png"; sourceTree = "<group>"; };
 		E1681AB919CB444200768E8D /* libPods-NSLogger.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NSLogger.a"; path = "Pods/build/Debug-iphoneos/libPods-NSLogger.a"; sourceTree = "<group>"; };
 		E1681AD719CB45DE00768E8D /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		E1F0F11419FF337D000FF68B /* PBJGLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBJGLProgram.h; sourceTree = "<group>"; };
+		E1F0F11519FF337D000FF68B /* PBJGLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBJGLProgram.m; sourceTree = "<group>"; };
+		E1F0F11619FF337D000FF68B /* PBJMediaWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBJMediaWriter.h; sourceTree = "<group>"; };
+		E1F0F11719FF337D000FF68B /* PBJMediaWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBJMediaWriter.m; sourceTree = "<group>"; };
+		E1F0F11819FF337D000FF68B /* PBJVision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBJVision.h; sourceTree = "<group>"; };
+		E1F0F11919FF337D000FF68B /* PBJVision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBJVision.m; sourceTree = "<group>"; };
+		E1F0F11A19FF337D000FF68B /* PBJVisionUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBJVisionUtilities.h; sourceTree = "<group>"; };
+		E1F0F11B19FF337D000FF68B /* PBJVisionUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBJVisionUtilities.m; sourceTree = "<group>"; };
+		E1F0F11D19FF337D000FF68B /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
+		E1F0F11E19FF337D000FF68B /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
+		E1F0F12519FFF479000FF68B /* ImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageData.h; sourceTree = "<group>"; };
+		E1F0F12619FFF479000FF68B /* ImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageData.m; sourceTree = "<group>"; };
+		E1F0F1291A002A19000FF68B /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		E1F0F12A1A002A19000FF68B /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		E1F0F12C1A002A41000FF68B /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		E1F0F12D1A002A41000FF68B /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		E1F0F12E1A002A41000FF68B /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		E1F0F12F1A002A41000FF68B /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -727,6 +752,8 @@
 		E122CE3C19FB01010052FE56 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				E1F0F1281A002A01000FF68B /* UIImage+Resize */,
+				E1F0F11319FF335B000FF68B /* PBJVision */,
 				E122CE8319FEF69D0052FE56 /* MMProgressHUD */,
 				E122CE4419FB6FB20052FE56 /* ImageDetection */,
 				E122CE3D19FB010A0052FE56 /* Reachability */,
@@ -748,11 +775,11 @@
 		E122CE4419FB6FB20052FE56 /* ImageDetection */ = {
 			isa = PBXGroup;
 			children = (
-				E122CE4519FB6FE20052FE56 /* ImageDetection.h */,
-				E122CE4619FB6FE20052FE56 /* ImageDetection.m */,
 				E122CE7E19FCC94E0052FE56 /* ImageHelper.h */,
 				E122CE7F19FCC94E0052FE56 /* ImageHelper.m */,
 				E122CE8119FD9D860052FE56 /* detetionExample.json */,
+				E1F0F12519FFF479000FF68B /* ImageData.h */,
+				E1F0F12619FFF479000FF68B /* ImageData.m */,
 			);
 			name = ImageDetection;
 			sourceTree = "<group>";
@@ -783,6 +810,44 @@
 				E122CE9819FEF70F0052FE56 /* MMVectorImage.m */,
 			);
 			name = MMProgressHUD;
+			sourceTree = "<group>";
+		};
+		E1F0F11319FF335B000FF68B /* PBJVision */ = {
+			isa = PBXGroup;
+			children = (
+				E1F0F11419FF337D000FF68B /* PBJGLProgram.h */,
+				E1F0F11519FF337D000FF68B /* PBJGLProgram.m */,
+				E1F0F11619FF337D000FF68B /* PBJMediaWriter.h */,
+				E1F0F11719FF337D000FF68B /* PBJMediaWriter.m */,
+				E1F0F11819FF337D000FF68B /* PBJVision.h */,
+				E1F0F11919FF337D000FF68B /* PBJVision.m */,
+				E1F0F11A19FF337D000FF68B /* PBJVisionUtilities.h */,
+				E1F0F11B19FF337D000FF68B /* PBJVisionUtilities.m */,
+				E1F0F11C19FF337D000FF68B /* Shaders */,
+			);
+			name = PBJVision;
+			sourceTree = "<group>";
+		};
+		E1F0F11C19FF337D000FF68B /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				E1F0F11D19FF337D000FF68B /* Shader.fsh */,
+				E1F0F11E19FF337D000FF68B /* Shader.vsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		E1F0F1281A002A01000FF68B /* UIImage+Resize */ = {
+			isa = PBXGroup;
+			children = (
+				E1F0F12C1A002A41000FF68B /* UIImage+Alpha.h */,
+				E1F0F12D1A002A41000FF68B /* UIImage+Alpha.m */,
+				E1F0F12E1A002A41000FF68B /* UIImage+RoundedCorner.m */,
+				E1F0F12F1A002A41000FF68B /* UIImage+RoundedCorner.h */,
+				E1F0F12A1A002A19000FF68B /* UIImage+Resize.h */,
+				E1F0F1291A002A19000FF68B /* UIImage+Resize.m */,
+			);
+			name = "UIImage+Resize";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -900,6 +965,7 @@
 				151A40D019C743CC002970C6 /* images-3-6.jpeg in Resources */,
 				151A40A919C743CC002970C6 /* images-0-1.jpeg in Resources */,
 				157B1BC319C886040022E5BD /* LoginBackgroundEmpty@2x.png in Resources */,
+				E1F0F12419FF337D000FF68B /* Shader.vsh in Resources */,
 				157B1BBB19C8823F0022E5BD /* LoginBackgroundWithoutTop@2x.png in Resources */,
 				157B1BBA19C8823F0022E5BD /* LoginTop@2x.png in Resources */,
 				15C795DE19C1D0CB0068B8F2 /* Images.xcassets in Resources */,
@@ -956,6 +1022,7 @@
 				151A40BB19C743CC002970C6 /* images-1-9.jpeg in Resources */,
 				1547AA5019C30CE100245389 /* elipse-tag@2x.png in Resources */,
 				1510FBEE19C8414F00D81805 /* my-watch-list@2x.png in Resources */,
+				E1F0F12319FF337D000FF68B /* Shader.fsh in Resources */,
 				15A9068119C644300068D0C4 /* DisclosureBlue@2x.png in Resources */,
 				151A40D719C743ED002970C6 /* HomeAxa@2x.png in Resources */,
 				1547AA3C19C3001B00245389 /* logo-axa-glass_marge@2x.png in Resources */,
@@ -1021,6 +1088,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1F0F12119FF337D000FF68B /* PBJVision.m in Sources */,
 				E122CE9A19FEF70F0052FE56 /* MMLinearProgressView.m in Sources */,
 				1588837A19C2E0F700127E1A /* ResultImageCell.m in Sources */,
 				1588837719C2DF8900127E1A /* ImageResultController.m in Sources */,
@@ -1029,28 +1097,34 @@
 				E122CE9D19FEF70F0052FE56 /* MMProgressHUD+Class.m in Sources */,
 				E122CE8019FCC94E0052FE56 /* ImageHelper.m in Sources */,
 				E122CE9F19FEF70F0052FE56 /* MMProgressHUDViewController.m in Sources */,
+				E1F0F12B1A002A19000FF68B /* UIImage+Resize.m in Sources */,
 				153E1E8719C352A7001A76E6 /* InformationViewController.m in Sources */,
-				E122CE4719FB6FE20052FE56 /* ImageDetection.m in Sources */,
 				E122CE9E19FEF70F0052FE56 /* MMProgressHUDOverlayView.m in Sources */,
 				E122CE9919FEF70F0052FE56 /* MMHud.m in Sources */,
 				15C7961819C1DD860068B8F2 /* ImageModel.m in Sources */,
+				E1F0F12719FFF479000FF68B /* ImageData.m in Sources */,
 				E122CE9B19FEF70F0052FE56 /* MMProgressHUD.m in Sources */,
+				E1F0F1311A002A41000FF68B /* UIImage+RoundedCorner.m in Sources */,
 				15C795FC19C1D6E80068B8F2 /* ChooserViewController.m in Sources */,
 				E11720F319D8B58D00B1FBBC /* ProtectionGroupModel.m in Sources */,
 				E117210019DC906D00B1FBBC /* MyProtectionDetailsViewController.m in Sources */,
 				E11720F919D8C54500B1FBBC /* ProtectionModel.m in Sources */,
 				E122CEA119FEF70F0052FE56 /* MMRadialProgressView.m in Sources */,
 				1510FBEA19C8248700D81805 /* OptionCell.m in Sources */,
+				E1F0F12019FF337D000FF68B /* PBJMediaWriter.m in Sources */,
 				E122CE9C19FEF70F0052FE56 /* MMProgressHUD+Animations.m in Sources */,
 				1547AA5719C31A8800245389 /* ProtectionCell.m in Sources */,
 				E122CEA219FEF70F0052FE56 /* MMVectorImage.m in Sources */,
+				E1F0F1301A002A41000FF68B /* UIImage+Alpha.m in Sources */,
 				E11720FB19DA025400B1FBBC /* MyProtectionsTableViewController.m in Sources */,
+				E1F0F11F19FF337D000FF68B /* PBJGLProgram.m in Sources */,
 				15C7962319C1E2B90068B8F2 /* ImageDetailViewController.m in Sources */,
 				E122CEA019FEF70F0052FE56 /* MMProgressHUDWindow.m in Sources */,
 				E122CE4019FB014B0052FE56 /* Reachability.m in Sources */,
 				15C795D319C1D0CB0068B8F2 /* AppDelegate.m in Sources */,
 				15C795D919C1D0CB0068B8F2 /* HomeViewController.m in Sources */,
 				E11720EE19D8B30F00B1FBBC /* ProtectionsModel.m in Sources */,
+				E1F0F12219FF337D000FF68B /* PBJVisionUtilities.m in Sources */,
 				15C795CF19C1D0CB0068B8F2 /* main.m in Sources */,
 				151A40DB19C746E5002970C6 /* MyConsultantViewController.m in Sources */,
 				E122CE4319FB0E5F0052FE56 /* AHReach.m in Sources */,
