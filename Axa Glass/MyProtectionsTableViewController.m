@@ -119,8 +119,8 @@
 
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    LoggerData(1, @"indexPath.section=%d", indexPath.section);
-    LoggerData(1, @"indexPath.row=%d", indexPath.row);
+    LoggerData(1, @"indexPath.section=%ld", (long)indexPath.section);
+    LoggerData(1, @"indexPath.row=%ld", (long)indexPath.row);
 
     ProtectionGroupModel *group = self.currentModel.groups[indexPath.section];
     self.selectedGroup = group;
@@ -215,10 +215,12 @@
 #pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    /*
     if ([segue.identifier isEqualToString:@"showProtectionDetail"]) {
         MyProtectionDetailsViewController * destViewController = segue.destinationViewController;
         
     }
+     */
 }
 
 

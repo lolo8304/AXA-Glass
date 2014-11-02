@@ -384,7 +384,7 @@ static NSArray *_CAPTURED_ACTIONS;
             
             NSLog(@"Finished work in background");
             dispatch_async(dispatch_get_main_queue(), ^ {
-                int count = [[[ImagesModel sharedManager] images] count]-1;
+                int count = (int)[[[ImagesModel sharedManager] images] count] -1 ;
                 UIView *button = [self searchViewOf: [UIButton class] tag: count view:self.view];
                 if (self.isViewLoaded && self.view.window && self.parentViewController != nil) {
                     [self performSegueWithIdentifier:@"showImageMatch" sender: button];}
