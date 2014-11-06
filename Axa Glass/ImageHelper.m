@@ -8,6 +8,7 @@
 
 #import "ImageHelper.h"
 #import "UIImage+Resize.h"
+#import "AmazonTest.h"
 
 @implementation ImageHelper
 
@@ -107,6 +108,9 @@
 }
 
 - (NSDictionary *) parseJSON: (NSString *) dataString {
+    
+   // [[AmazonTest alloc] testSearch];
+    
     NSError *error = nil;
     id jsonData = [NSJSONSerialization JSONObjectWithData:[ dataString dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableContainers error:&error];
     if (error == nil) {
