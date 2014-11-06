@@ -10,4 +10,8 @@
 
 @interface AmazonTest : NSObject
 
+@property (nonatomic, strong) id response;
+
+- (void)testSearch;
+
 @end

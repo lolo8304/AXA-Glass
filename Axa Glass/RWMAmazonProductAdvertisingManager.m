@@ -103,4 +103,25 @@ NSString * const RWMAmazonProductAdvertisingManagerErrorDomain = @"RWMAmazonProd
     [self.operationQueue addOperation:requestOperation];
 }
 
+
+- (void)enqueueStringRequestOperationWithMethod:(NSString *)method
+                               parameters:(NSDictionary *)parameters
+                                  success:(void (^)(NSString *responseString))success
+                                  failure:(void (^)(NSError *error))failure
+{
+    NSMutableURLRequest *request = [self.requestSerializer requestWithMethod:method URLString:[self.baseURL absoluteString] parameters:parameters error:nil];
+    AFHTTPRequestOperation *requestOperation = [self HTTPRequestOperationWithRequest:request success:^(__unused AFHTTPRequestOperation *operation, id responseObject) {
+        if (success) {
+            success([operation responseString]);
+        }
+    } failure:^(__unused AFHTTPRequestOperation *operation, NSError *error) {
+        if (failure) {
+            failure(error);
+        }
+    }];
+    
+    [self.operationQueue addOperation:requestOperation];
+}
+
+
 @end

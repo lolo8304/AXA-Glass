@@ -50,4 +50,9 @@ typedef NS_ENUM(NSInteger, RWMAmazonProductAdvertisingISBN){
                                  parameters:(NSDictionary *)parameters
                                     success:(void (^)(id responseObject))success
                                     failure:(void (^)(NSError *error))failure;
+- (void)enqueueStringRequestOperationWithMethod:(NSString *)method
+                               parameters:(NSDictionary *)parameters
+                                  success:(void (^)(NSString *responseString))success
+                                  failure:(void (^)(NSError *error))failure;
+
 @end
