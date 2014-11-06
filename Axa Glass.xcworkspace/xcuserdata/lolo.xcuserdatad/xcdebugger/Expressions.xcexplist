@@ -3,18 +3,18 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "-[MyProtectionsTableViewController tableView:numberOfRowsInSection:]:MyProtectionsTableViewController.m">
-      </ContextState>
-      <ContextState
-         contextName = "-[MyProtectionsTableViewController viewDidLoad]:MyProtectionsTableViewController.m">
-      </ContextState>
-      <ContextState
          contextName = "-[ChooserViewController viewWillAppear:]:ChooserViewController.m">
          <PersistentStrings>
             <PersistentString
                value = "">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MyProtectionsTableViewController viewDidLoad]:MyProtectionsTableViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[MyProtectionsTableViewController tableView:numberOfRowsInSection:]:MyProtectionsTableViewController.m">
       </ContextState>
       <ContextState
          contextName = "-[MyProtectionsTableViewController tableView:willSelectRowAtIndexPath:]:MyProtectionsTableViewController.m">

@@ -146,6 +146,19 @@
 		E15EE26519E4C4C500DE9344 /* Info-background-core@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E15EE26319E4C4C500DE9344 /* Info-background-core@2x.png */; };
 		E15EE26619E4C4C500DE9344 /* Info-background-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E15EE26419E4C4C500DE9344 /* Info-background-small@2x.png */; };
 		E1681AD819CB45DE00768E8D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1681AD719CB45DE00768E8D /* libPods.a */; };
+		E19E9FF81A0613DD00D9188E /* AmazonProductFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = E19E9FF71A0613DD00D9188E /* AmazonProductFinder.m */; };
+		E19EA0011A06C7CF00D9188E /* RWMAmazonProductAdvertisingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E19E9FFE1A06C7CF00D9188E /* RWMAmazonProductAdvertisingManager.m */; };
+		E19EA0021A06C7CF00D9188E /* RWMAmazonProductAdvertisingRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E19EA0001A06C7CF00D9188E /* RWMAmazonProductAdvertisingRequestSerializer.m */; };
+		E19EA0061A06C8E600D9188E /* AmazonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E19EA0051A06C8E600D9188E /* AmazonTest.m */; };
+		E19EA01D1A06CACD00D9188E /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E19EA00B1A06CACD00D9188E /* AFHTTPRequestOperation.m */; };
+		E19EA01E1A06CACD00D9188E /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E19EA00D1A06CACD00D9188E /* AFHTTPRequestOperationManager.m */; };
+		E19EA01F1A06CACD00D9188E /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E19EA00F1A06CACD00D9188E /* AFHTTPSessionManager.m */; };
+		E19EA0201A06CACD00D9188E /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E19EA0121A06CACD00D9188E /* AFNetworkReachabilityManager.m */; };
+		E19EA0211A06CACD00D9188E /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = E19EA0141A06CACD00D9188E /* AFSecurityPolicy.m */; };
+		E19EA0221A06CACD00D9188E /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E19EA0161A06CACD00D9188E /* AFURLConnectionOperation.m */; };
+		E19EA0231A06CACD00D9188E /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E19EA0181A06CACD00D9188E /* AFURLRequestSerialization.m */; };
+		E19EA0241A06CACD00D9188E /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E19EA01A1A06CACD00D9188E /* AFURLResponseSerialization.m */; };
+		E19EA0251A06CACD00D9188E /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E19EA01C1A06CACD00D9188E /* AFURLSessionManager.m */; };
 		E1F0F11F19FF337D000FF68B /* PBJGLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F0F11519FF337D000FF68B /* PBJGLProgram.m */; };
 		E1F0F12019FF337D000FF68B /* PBJMediaWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F0F11719FF337D000FF68B /* PBJMediaWriter.m */; };
 		E1F0F12119FF337D000FF68B /* PBJVision.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F0F11919FF337D000FF68B /* PBJVision.m */; };
@@ -348,6 +361,33 @@
 		E15EE26419E4C4C500DE9344 /* Info-background-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info-background-small@2x.png"; sourceTree = "<group>"; };
 		E1681AB919CB444200768E8D /* libPods-NSLogger.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NSLogger.a"; path = "Pods/build/Debug-iphoneos/libPods-NSLogger.a"; sourceTree = "<group>"; };
 		E1681AD719CB45DE00768E8D /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		E19E9FF61A0613DD00D9188E /* AmazonProductFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmazonProductFinder.h; sourceTree = "<group>"; };
+		E19E9FF71A0613DD00D9188E /* AmazonProductFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmazonProductFinder.m; sourceTree = "<group>"; };
+		E19E9FFD1A06C7CF00D9188E /* RWMAmazonProductAdvertisingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWMAmazonProductAdvertisingManager.h; sourceTree = "<group>"; };
+		E19E9FFE1A06C7CF00D9188E /* RWMAmazonProductAdvertisingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWMAmazonProductAdvertisingManager.m; sourceTree = "<group>"; };
+		E19E9FFF1A06C7CF00D9188E /* RWMAmazonProductAdvertisingRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWMAmazonProductAdvertisingRequestSerializer.h; sourceTree = "<group>"; };
+		E19EA0001A06C7CF00D9188E /* RWMAmazonProductAdvertisingRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWMAmazonProductAdvertisingRequestSerializer.m; sourceTree = "<group>"; };
+		E19EA0041A06C8E600D9188E /* AmazonTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmazonTest.h; sourceTree = "<group>"; };
+		E19EA0051A06C8E600D9188E /* AmazonTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmazonTest.m; sourceTree = "<group>"; };
+		E19EA00A1A06CACD00D9188E /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		E19EA00B1A06CACD00D9188E /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		E19EA00C1A06CACD00D9188E /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		E19EA00D1A06CACD00D9188E /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		E19EA00E1A06CACD00D9188E /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		E19EA00F1A06CACD00D9188E /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		E19EA0101A06CACD00D9188E /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		E19EA0111A06CACD00D9188E /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		E19EA0121A06CACD00D9188E /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		E19EA0131A06CACD00D9188E /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		E19EA0141A06CACD00D9188E /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		E19EA0151A06CACD00D9188E /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		E19EA0161A06CACD00D9188E /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		E19EA0171A06CACD00D9188E /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		E19EA0181A06CACD00D9188E /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		E19EA0191A06CACD00D9188E /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		E19EA01A1A06CACD00D9188E /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		E19EA01B1A06CACD00D9188E /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		E19EA01C1A06CACD00D9188E /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		E1F0F11419FF337D000FF68B /* PBJGLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBJGLProgram.h; sourceTree = "<group>"; };
 		E1F0F11519FF337D000FF68B /* PBJGLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBJGLProgram.m; sourceTree = "<group>"; };
 		E1F0F11619FF337D000FF68B /* PBJMediaWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBJMediaWriter.h; sourceTree = "<group>"; };
@@ -752,6 +792,7 @@
 		E122CE3C19FB01010052FE56 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				E19E9FF51A0613C000D9188E /* Amazon */,
 				E1F0F1281A002A01000FF68B /* UIImage+Resize */,
 				E1F0F11319FF335B000FF68B /* PBJVision */,
 				E122CE8319FEF69D0052FE56 /* MMProgressHUD */,
@@ -810,6 +851,56 @@
 				E122CE9819FEF70F0052FE56 /* MMVectorImage.m */,
 			);
 			name = MMProgressHUD;
+			sourceTree = "<group>";
+		};
+		E19E9FF51A0613C000D9188E /* Amazon */ = {
+			isa = PBXGroup;
+			children = (
+				E19EA0091A06CAC100D9188E /* AFNetworking */,
+				E19E9FFC1A06C7B700D9188E /* RWMAmazonProductAdvertisingManager */,
+				E19E9FF61A0613DD00D9188E /* AmazonProductFinder.h */,
+				E19E9FF71A0613DD00D9188E /* AmazonProductFinder.m */,
+				E19EA0041A06C8E600D9188E /* AmazonTest.h */,
+				E19EA0051A06C8E600D9188E /* AmazonTest.m */,
+			);
+			name = Amazon;
+			sourceTree = "<group>";
+		};
+		E19E9FFC1A06C7B700D9188E /* RWMAmazonProductAdvertisingManager */ = {
+			isa = PBXGroup;
+			children = (
+				E19E9FFD1A06C7CF00D9188E /* RWMAmazonProductAdvertisingManager.h */,
+				E19E9FFE1A06C7CF00D9188E /* RWMAmazonProductAdvertisingManager.m */,
+				E19E9FFF1A06C7CF00D9188E /* RWMAmazonProductAdvertisingRequestSerializer.h */,
+				E19EA0001A06C7CF00D9188E /* RWMAmazonProductAdvertisingRequestSerializer.m */,
+			);
+			name = RWMAmazonProductAdvertisingManager;
+			sourceTree = "<group>";
+		};
+		E19EA0091A06CAC100D9188E /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				E19EA00A1A06CACD00D9188E /* AFHTTPRequestOperation.h */,
+				E19EA00B1A06CACD00D9188E /* AFHTTPRequestOperation.m */,
+				E19EA00C1A06CACD00D9188E /* AFHTTPRequestOperationManager.h */,
+				E19EA00D1A06CACD00D9188E /* AFHTTPRequestOperationManager.m */,
+				E19EA00E1A06CACD00D9188E /* AFHTTPSessionManager.h */,
+				E19EA00F1A06CACD00D9188E /* AFHTTPSessionManager.m */,
+				E19EA0101A06CACD00D9188E /* AFNetworking.h */,
+				E19EA0111A06CACD00D9188E /* AFNetworkReachabilityManager.h */,
+				E19EA0121A06CACD00D9188E /* AFNetworkReachabilityManager.m */,
+				E19EA0131A06CACD00D9188E /* AFSecurityPolicy.h */,
+				E19EA0141A06CACD00D9188E /* AFSecurityPolicy.m */,
+				E19EA0151A06CACD00D9188E /* AFURLConnectionOperation.h */,
+				E19EA0161A06CACD00D9188E /* AFURLConnectionOperation.m */,
+				E19EA0171A06CACD00D9188E /* AFURLRequestSerialization.h */,
+				E19EA0181A06CACD00D9188E /* AFURLRequestSerialization.m */,
+				E19EA0191A06CACD00D9188E /* AFURLResponseSerialization.h */,
+				E19EA01A1A06CACD00D9188E /* AFURLResponseSerialization.m */,
+				E19EA01B1A06CACD00D9188E /* AFURLSessionManager.h */,
+				E19EA01C1A06CACD00D9188E /* AFURLSessionManager.m */,
+			);
+			name = AFNetworking;
 			sourceTree = "<group>";
 		};
 		E1F0F11319FF335B000FF68B /* PBJVision */ = {
@@ -1088,28 +1179,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E19EA0221A06CACD00D9188E /* AFURLConnectionOperation.m in Sources */,
 				E1F0F12119FF337D000FF68B /* PBJVision.m in Sources */,
 				E122CE9A19FEF70F0052FE56 /* MMLinearProgressView.m in Sources */,
 				1588837A19C2E0F700127E1A /* ResultImageCell.m in Sources */,
 				1588837719C2DF8900127E1A /* ImageResultController.m in Sources */,
 				E11720F619D8BB4700B1FBBC /* ProtectionItemModel.m in Sources */,
 				15C7961F19C1E0BC0068B8F2 /* ImagesModel.m in Sources */,
+				E19E9FF81A0613DD00D9188E /* AmazonProductFinder.m in Sources */,
 				E122CE9D19FEF70F0052FE56 /* MMProgressHUD+Class.m in Sources */,
 				E122CE8019FCC94E0052FE56 /* ImageHelper.m in Sources */,
+				E19EA0231A06CACD00D9188E /* AFURLRequestSerialization.m in Sources */,
 				E122CE9F19FEF70F0052FE56 /* MMProgressHUDViewController.m in Sources */,
 				E1F0F12B1A002A19000FF68B /* UIImage+Resize.m in Sources */,
 				153E1E8719C352A7001A76E6 /* InformationViewController.m in Sources */,
+				E19EA0201A06CACD00D9188E /* AFNetworkReachabilityManager.m in Sources */,
+				E19EA0251A06CACD00D9188E /* AFURLSessionManager.m in Sources */,
 				E122CE9E19FEF70F0052FE56 /* MMProgressHUDOverlayView.m in Sources */,
+				E19EA01D1A06CACD00D9188E /* AFHTTPRequestOperation.m in Sources */,
 				E122CE9919FEF70F0052FE56 /* MMHud.m in Sources */,
 				15C7961819C1DD860068B8F2 /* ImageModel.m in Sources */,
 				E1F0F12719FFF479000FF68B /* ImageData.m in Sources */,
 				E122CE9B19FEF70F0052FE56 /* MMProgressHUD.m in Sources */,
+				E19EA0061A06C8E600D9188E /* AmazonTest.m in Sources */,
 				E1F0F1311A002A41000FF68B /* UIImage+RoundedCorner.m in Sources */,
 				15C795FC19C1D6E80068B8F2 /* ChooserViewController.m in Sources */,
 				E11720F319D8B58D00B1FBBC /* ProtectionGroupModel.m in Sources */,
 				E117210019DC906D00B1FBBC /* MyProtectionDetailsViewController.m in Sources */,
 				E11720F919D8C54500B1FBBC /* ProtectionModel.m in Sources */,
 				E122CEA119FEF70F0052FE56 /* MMRadialProgressView.m in Sources */,
+				E19EA0011A06C7CF00D9188E /* RWMAmazonProductAdvertisingManager.m in Sources */,
 				1510FBEA19C8248700D81805 /* OptionCell.m in Sources */,
 				E1F0F12019FF337D000FF68B /* PBJMediaWriter.m in Sources */,
 				E122CE9C19FEF70F0052FE56 /* MMProgressHUD+Animations.m in Sources */,
@@ -1118,11 +1217,16 @@
 				E1F0F1301A002A41000FF68B /* UIImage+Alpha.m in Sources */,
 				E11720FB19DA025400B1FBBC /* MyProtectionsTableViewController.m in Sources */,
 				E1F0F11F19FF337D000FF68B /* PBJGLProgram.m in Sources */,
+				E19EA0021A06C7CF00D9188E /* RWMAmazonProductAdvertisingRequestSerializer.m in Sources */,
 				15C7962319C1E2B90068B8F2 /* ImageDetailViewController.m in Sources */,
 				E122CEA019FEF70F0052FE56 /* MMProgressHUDWindow.m in Sources */,
 				E122CE4019FB014B0052FE56 /* Reachability.m in Sources */,
+				E19EA01E1A06CACD00D9188E /* AFHTTPRequestOperationManager.m in Sources */,
 				15C795D319C1D0CB0068B8F2 /* AppDelegate.m in Sources */,
+				E19EA01F1A06CACD00D9188E /* AFHTTPSessionManager.m in Sources */,
 				15C795D919C1D0CB0068B8F2 /* HomeViewController.m in Sources */,
+				E19EA0211A06CACD00D9188E /* AFSecurityPolicy.m in Sources */,
+				E19EA0241A06CACD00D9188E /* AFURLResponseSerialization.m in Sources */,
 				E11720EE19D8B30F00B1FBBC /* ProtectionsModel.m in Sources */,
 				E1F0F12219FF337D000FF68B /* PBJVisionUtilities.m in Sources */,
 				15C795CF19C1D0CB0068B8F2 /* main.m in Sources */,
@@ -1252,6 +1356,14 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/lolo/Downloads/aws-ios-sdk-2.0.11/frameworks",
+					"$(PROJECT_DIR)/Axa",
+					Glass/Ressources,
+					"$(PROJECT_DIR)/Axa",
+					Glass,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Axa Glass/Axa Glass-Prefix.pch";
 				INFOPLIST_FILE = "Axa Glass/Axa Glass-Info.plist";
@@ -1280,6 +1392,14 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/lolo/Downloads/aws-ios-sdk-2.0.11/frameworks",
+					"$(PROJECT_DIR)/Axa",
+					Glass/Ressources,
+					"$(PROJECT_DIR)/Axa",
+					Glass,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Axa Glass/Axa Glass-Prefix.pch";
 				INFOPLIST_FILE = "Axa Glass/Axa Glass-Info.plist";
