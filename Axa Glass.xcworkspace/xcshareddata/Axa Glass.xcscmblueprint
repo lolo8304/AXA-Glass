@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7AC32121B89C2F4CAF0789B127969D6A041A7592",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7AC32121B89C2F4CAF0789B127969D6A041A7592" : 0,
+    "CDB82E4677B93E82FD85ABC7E60AFA1089F2C404" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "100F9987-0500-4F68-8934-99AF66C6CF5E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7AC32121B89C2F4CAF0789B127969D6A041A7592" : "Axa%20Glass",
+    "CDB82E4677B93E82FD85ABC7E60AFA1089F2C404" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Axa Glass",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Axa Glass.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/lolo8304\/axa-glass.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7AC32121B89C2F4CAF0789B127969D6A041A7592"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lolo8304\/schnee-horn.ch.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CDB82E4677B93E82FD85ABC7E60AFA1089F2C404"
+    }
+  ]
+}
