@@ -27,7 +27,7 @@
                                          } mutableCopy];
     
     [manager enqueueStringRequestOperationWithMethod:@"GET" parameters:[parameters copy] success:^(NSString *responseString) {
-        NSXMLParser *parser;
+       // NSXMLParser *parser;
         
     } failure:^(NSError *error) {
         self.response = error;

@@ -192,7 +192,7 @@
     
     NSData *mydata = [self imageData];
     
-    NSLog(@"Image data:%d",mydata.length);
+    NSLog(@"Image data:%lu",(unsigned long)mydata.length);
     [tempPostData appendData:mydata];
     
     [tempPostData appendData:[[NSString stringWithFormat:@"\r\n--%@--\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];

@@ -26,7 +26,7 @@
     if (self) {
         self.images = [NSMutableArray array];
 		self.currentImageIndex = 0;
-        srandom(time(NULL));
+        srandom((unsigned)time(NULL));
 	}
     return self;
 }

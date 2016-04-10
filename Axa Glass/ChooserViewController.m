@@ -149,7 +149,7 @@ static NSArray *_CAPTURED_ACTIONS;
             [MMProgressHUD dismissWithSuccess:@"Detected!"];
         } else {
             [self simulateLoader];
-            [MMProgressHUD dismissWithError:@"Detection aborted" afterDelay: 2];
+            [MMProgressHUD dismissWithError:@"Detection aborted" afterDelay: 1];
         }
     }
     
@@ -214,8 +214,12 @@ static NSArray *_CAPTURED_ACTIONS;
 
 - (IBAction)takeAPhoto:(id)sender {
     
-    if (self.reachableInternet) {
-        UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:nil];
+    if (true && self.reachableInternet) {
+        NSString *destructiveButton = nil;
+        if (!self.reachableInternet) {
+            destructiveButton = @"No internet";
+        }
+        UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle: nil otherButtonTitles:nil];
 	
         for (NSString *action in _CAPTURED_ACTIONS) {
             [actionSheet addButtonWithTitle: action];

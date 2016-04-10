@@ -67,7 +67,7 @@
     
      NSString *mainURLString = [NSString stringWithFormat:@"http://webservices.amazon.com/onca/xml?AWSAccessKeyId=%@&AssociateTag=%@&Operation=ItemSearch&Service=AWSECommerceService&Timestamp=%@&Version=2013-08-01&Signature=%@", self.key, self.associateTag, self.timestamp, self.signature];
     NSString *searchURLString = [NSString stringWithFormat:@"%@&SearchIndex=%@&Keywords=%@", mainURLString, index, keyword];
-     NSURL *searchURL = [NSURL URLWithString: searchURLString];
+    NSURL *searchURL = [NSURL URLWithString: searchURLString];
     return nil;
 }
 
